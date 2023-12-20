@@ -1,0 +1,10 @@
+If else       ?    :
+    Condition ? true case : false case;
+
+isempty()    ?!                          // if the condition have a value, put it
+    Condition & ?! default/ false case
+     true case
+
+isset()      ??                          // if this variabele is set, put it
+    Condition & ?! default/ false case
+     true case

@@ -1,0 +1,25 @@
+RACI Matix: 
+    also known as a RACI chart or RACI diagram
+    is a [project management tool],
+    used to clarify and communicate roles and responsibilities within a team or organization.
+    "RACI" stands for Responsible, Accountable, Consulted, and Informed,
+        which represent different levels of involvement or participation in a project or task.
+
+        
+    Responsible (R):
+        The person or people who are responsible for performing the task or completing the work.
+        They are the "doers" who carry out the activities.
+
+    Accountable (A):
+        The person who is ultimately accountable and has the authority to make decisions.
+        This person ensures that the task is completed successfully.
+        There should be only one "A" assigned to each task.
+        
+    Consulted (C):
+        Individuals or groups who need to be consulted before a decision is made or before the task is completed.
+        They provide input and feedback but are not ultimately responsible for the task.
+        
+    Informed (I):
+        Individuals or groups who need to be kept in the loop about the progress of the task
+            but are not directly involved in its execution.
+        They receive updates and information.

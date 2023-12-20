@@ -1,0 +1,89 @@
+Network: 
+    network is a group of computer systems two or more interconnected together
+    for the sake of communicating and exchanging data using lengths
+    
+    these computer systems whether they're laptops, desktops, smartphones, TVs cars etc 
+    are called -in terms of the network- [nodes],
+    
+    these nodes establish connections between them using 
+        either cable media 
+        or wireless media.
+    
+
+----------------------------------------------------------------------------------------------
+History of the Internet: 
+    in the 1960s Advanced Research Projects Agency [ARPA] of the US Department of Defense 
+        funded a research to develop protocols to allow the computers to interconnect with each other
+        using digital communication regardless the geographical area
+        
+        therefore the first network a research network was created the network was used for 
+        academic and scientific purposes, it started small connecting a bunch of connected:
+        university campuses, research institutions, and companies 
+        
+        the network grew to a few hundred by the early 1980s,
+        at the same time all the networks were being created using other protocols
+        
+        other networks were being created using other protocols networks such as x.25,Usenet and others
+        
+    [until now there are many networks(each one use a particular protocol),]
+                [but each one is isolated from others].
+        
+
+    These networks wanted to interconnect with each other by connecting the networks together
+        and in order to successfully interconnect networks must use the exact same protocols
+        this problem led to the invention of a global unique suit of protocols called [TCP/IP]. 
+        
+        Thus the advent of the internet(بداية عصر الإنترنت)
+    
+
+----------------------------------------------------------------------------------------------
+The Internet: 
+    Internet is more than Web...
+    Internet = Inter-Network(i.e all are in the same network).
+
+    Internet is a global network of networks 
+    -networks that are either private, public, academic, business, government or etc- 
+    actually there are millions of interconnected networks out there,
+    And that what makes the internet a global network
+
+    Internet is interconnected computers via cables or wireless media,
+    using the global [TCP/IP] suite of protocols.
+    
+    to take advantage of this huge network and make use of it,
+    many internet services has been created and engineered such as:
+        -mobile apps,
+        -electronic mail 
+        -file-sharing 
+        -the world wide web 
+        -online games 
+        -Internet telephony , etc
+        
+        so all these services are built on top of the Internet
+---------------------------------------------------------------------------------------------------------------
+Web: 
+    A web is a general word that's mean every approach that's depened on [cleint-server-approach], 
+    whether it was a 
+        -website: send request and receive html page,
+        -mobile application: send request and receive JSON file,
+        -IOT device that sends requests and receive responces from a server.
+
+    Web is means [any interaction] between cleint and server.
+    Always the request response pattern is the same,
+    but each device requests it's own format, to deal with it.
+
+
+    when you enter a URL (e.g. "academind.com/learn") into the browser you get a website in return.
+
+    what is the world wide web or (simply the web) 
+        The world wide web is probably the most commonly used service on the Internet.
+        Let people to search get and share data therefore it's the most influential application in this world.
+        
+        To be more specific the web is a sort of virtual system that interconnects resources on the Internet
+        such as documents images videos and many other resources via hyperlinks and references
+        with you our eyes Uniform Resource identifier.
+        
+        we use web browsers such as Chrome, Internet Explorer, Firefox, Safari, 
+            and other similar programs to have access to web resources usually
+    
+    
+    

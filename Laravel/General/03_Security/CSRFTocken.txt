@@ -1,0 +1,12 @@
+CSRF is one of the security ways that laravel will provide to developers, 
+    when a user submit a form, it will be submited using a specific number, 
+    and laravel will generate the same number in user's session, 
+    if the number that's send from user side is the same number that's stored in the session, 
+    then accept this request.
+
+    if the number isn't the same number, then this is not the original user that's submitted the form, 
+    this is a hacker who stole the data from the form, and want to sumbit it to chage some user's data.
+
+
+
+You can stopped it using Middleware.

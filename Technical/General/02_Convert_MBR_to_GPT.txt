@@ -1,0 +1,43 @@
+In windows: 
+    Method 1: 
+        Change MBR to GPT with a reliable partition tool.
+        This is the fastest and easiest way to convert your disk without deleting any partitions or volumes.
+        You can use a free software like [EaseUS] Partition Master1.
+        Download and install the software, launch it, right-click the MBR disk you want to convert, and choose “Convert to GPT”.
+        Then apply the changes and restart your computer.
+    
+    Method 2:
+        Convert MBR to GPT disk with Disk Management.
+        This is a built-in tool in Windows 10 that can help you manage your disks and partitions.
+        However, this method [requires you to delete all the partitions and volumes on the MBR] disk before converting it to GPT.
+        To do this, open Disk Management, right-click the MBR disk, and choose “Delete Volume” for each partition.
+        Then right-click the disk again and choose “Convert to GPT Disk”.
+        You will need to create new partitions and volumes after the conversion.
+
+
+In Linux: 
+    you need to use a tool that can recognize and manipulate both partitioning schemes.
+    One such tool is [gdisk], which is a text-based menu-driven program that can create and modify GPT partitions.
+    
+    the steps to convert a disk from MBR to GPT using gdisk:
+    1-Install gdisk on your Linux system.
+        You can use the command [sudo apt install gdisk -y].
+
+    2-List and identify the disks on your system.
+        You can use the command [sudo fdisk -l] to see the disk names, sizes, and partition types1.
+        Find the disk that you want to convert from MBR to GPT and note its name
+
+    3-Run the gdisk utility on the disk that you want to convert.
+        You can use the command sudo gdisk /dev/sda to launch gdisk on the disk /dev/sda (replace it with the correct disk name).
+        You will see the current partition table and some options to choose from.
+
+    4-Convert the disk from MBR to GPT.
+        You can use the command w to write a new GPT partition table to the disk.
+        You will be asked to confirm your choice and warned that this may cause data loss or boot problems.
+        If you are sure, press y to proceed. The conversion will take a few seconds and then you will exit gdisk.
+
+    5-Reboot your system and check if everything works fine.
+        You may need to reinstall or update your boot loader to make your system bootable with the new GPT partition table.
+        You can use the command sudo grub-install /dev/sda to reinstall GRUB on the disk /dev/sda (replace it with the correct disk name).
+        You may also need to update your fstab file to reflect the new UUIDs of your partitions.
+        You can use the command sudo blkid to see the UUIDs of your partitions and edit the /etc/fstab file accordingly.

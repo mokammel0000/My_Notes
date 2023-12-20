@@ -1,0 +1,27 @@
+Each Query consume some time and memory to be excecuted, 
+    so it is better to fetch all data in one query,
+
+But in some situation, Fetching all data in one query will be exhausted operation, 
+    it will consume much memory to store the whole data when it's fetched, 
+    also you have to loop on the whole query in the View.
+
+So, always compare what is the best practice in the current state?
+
+for example: 
+    we can return a product with it's all relations(comments, ratings, categories, photos, ...) in one query
+    and we can seperate each relation in one query, 
+        return product comments in a specefic query that returned data to a $comments variable,
+        then compact this variable and use it in the view directly, 
+        and do the same operation with each one of the relations...
+
+
+
+In some situations: not each product will contain a comment, 
+    then it will be useless operation to loop on 10000 record of products to show the comments on 40 of them,
+    so, it's better to return comments in a specefic query.
+
+-
+Note that: 
+    in one query you can fetch data from one table, and fetch multiple relations with it
+    but you can't fetch data from multiple tables
+        (in this case you have to create multiple queries -one for each table-).

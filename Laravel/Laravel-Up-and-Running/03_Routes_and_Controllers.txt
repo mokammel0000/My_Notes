@@ -1,0 +1,22 @@
+The essential function of any web application framework is to take requests from a user and deliver responses, usually via HTTP(S).
+
+MVC: 
+    Model: represents an individual database table (or a record from that table).
+    View:  represents (the template) that outputs your data to the end user. 
+    Controller: takes HTTP requests from the browser,
+                gets the right data out of the database and other storage mechanisms,
+                validates user input,
+                and eventually sends a response back to the user.
+
+
+The HTTP Verbs: 
+
+    Get: 
+    HEAD:
+    Post: 
+    Put:
+    PATCH:  
+    Delete: 
+    OPTIONS: 
+    TRACE:   >never used in normal web development
+    CONNECT: >never used in normal web development

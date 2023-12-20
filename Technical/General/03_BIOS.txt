@@ -1,0 +1,21 @@
+BIOS: 
+    stands for Basic Input/Output System,
+    is the [software] that's stored on a chip on a computer's motherboard that runs when you first turn it on.
+
+    BIOS does things like:
+        configure the keyboard,
+        mouse,
+        and other hardware,
+        set the system clock,
+        test the memory, and so on. 
+        
+    Then it looks for a drive and [loads the boot loader] on the drive, which is either an (MBR) or (GPT) partition table.
+
+    Usually when you first turn on your computer you will see a logo from either your computer or motherboard's manufacturer.
+
+    Often there's a message below the logo saying which key to press to configure the computer's BIOS.
+    This key is usually Delete, Escape, or F2, though it varies by manufacturer.
+
+    As mentioned previously, there are two main types of BIOS: 
+        -Legacy BIOS
+        -UEFI BIOS.

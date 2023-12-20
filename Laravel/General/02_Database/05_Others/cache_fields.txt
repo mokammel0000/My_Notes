@@ -1,0 +1,13 @@
+How can we calculate how many time the product has been sold? 
+    we can loop on each product on the oreders table and add one if it matches our needed product.
+
+this is a common problem, some times we need to loop on a big number of records to calculate a specific value.
+
+there is a common solution for It, 
+    we can create a cache field / cache column that's updated continously
+    in the previous example: create a column that's name is number_of_sales
+    and increment it's value each time that an order is saled with this product, 
+    then: when you need to calculate the number of sales of this product, 
+        you haven't to loop on orders yet, it's ready...
+        also you can use it in any other place
+            (e.g. showing how many times this product has been sold in the product page).

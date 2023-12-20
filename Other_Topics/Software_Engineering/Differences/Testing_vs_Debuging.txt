@@ -1,0 +1,14 @@
+Testing: 
+    Are there any errors? 
+    In this stage we don't care with the reason for the error,
+                  we don't care with the line that is placed in, 
+                and we don't care with solving it, 
+                [Just care about finding different Errors].
+
+
+Debugging: 
+    What is the reason for the error, where is the line that's caused it, and how can we fix it?
+
+
+there is a type of testing is called [Defect Testing]: 
+    It cares with Discovering Bugs that causes the errors.

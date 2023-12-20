@@ -1,0 +1,10 @@
+before u code the searching task code, please think for these: 
+    -what is the columns that u should search in them? 
+    -is the text on the website important in searching task? are u a search engine?!
+    -Specify what is your scope,
+    -Specify what is the users goal that he will search about,
+
+    -don't search in all columns in all tables in the DB,
+    -and don't search in all text in the website, 
+        that's will make the task harder for u(how can write such a complex query?!!)
+        also will consume time and memory to perform this task in the users view.

@@ -1,0 +1,19 @@
+Shell: 
+    command line Interpreter
+    (المترجم الي بيمشي على الأوامر أمر أمر يترجمها،لازم يكون موجود في أي Terminal).
+
+
+Terminal: 
+    Text input/ output [Environmet]
+    (البيئه/ المكان الي إنته هتكتب فيه الأوامر، سواء كان على unix, linux, mac or windows).
+
+
+CMD: 
+    The Original Shell For microsoft DOS(desktop operating system)
+    (مافيهوش أي إمكانيات، لا يعرف إلا أوامر الويندوز)
+
+
+PowerShell: 
+    an updated version of CMD, added with windows 10,
+    contains very complex commands that can change the whole of your system, 
+    (بيرن أوامر windows, unix, git).

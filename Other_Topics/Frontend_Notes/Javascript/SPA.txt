@@ -1,0 +1,18 @@
+SPA is stands for: Single Page Application, 
+
+    in the traditional websites, each web page is accessed via a specific Route, 
+        then, when you want to open any page, it will be realoaded for you.
+
+    in SPA, all the website is accessed via the same Route,
+        so you can move between pages without reload any one of them
+        (they have been reloaded just once, in the first time that you opened the website).
+
+        
+    each web page is considered as a component, so you can use it in any other application.
+    it depends on AJAX, 
+    it has an amazing features, 
+
+    it devide the web Application to [COMPONENTS], 
+        each componenet has it's own code(html - css - javascript), 
+        that's facilitate move it to other website if u need it.
+

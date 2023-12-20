@@ -1,0 +1,11 @@
+Config Folder: 
+    contain metadata about the project, like: (DB - sessions - auth - cach - etc...)
+    u can change data in it, but it's not prefer doing that,
+        it's uploaded to the server with the project files, so users can reach to it's informations. 
+    the best way to change metadata is to change it in .env file.
+
+
+.env File:
+    isn't uploaded into the server, so users can't reach to the informations in it.
+    if it wasn't exist in the project/ or some informations has been deleted from it:
+        laravel will use data in the Config Folder.

@@ -1,0 +1,23 @@
+[Facade]: 
+    is a design pattern in laravel, 
+    provide a simplified interface to a large body of code (DB, Auth, ...),
+
+    you call the facades' methods, and then laravel resolving them to perform some functionalities.
+
+
+[Closure]: 
+    is a anonymous function or Lambda function (functoin without a name), 
+    you create it to use only in this place, you won't need it in the future.
+
+
+[Collection]: 
+    Array + set of methods(to use them in the array),
+    methods examples: filtering, mapping, sorting, check a specific item, summtion....
+
+
+[API Resource]: 
+    
+
+[XHR XMLHttpRequest]:
+    is a JavaScript object that provides an easy way to send HTTP or HTTPS requests to a server, 
+    and receive responses without needing to refresh the entire webpage. 

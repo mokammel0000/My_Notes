@@ -1,0 +1,19 @@
+            Routing >>> ControllerFunction >>> View
+
+From a Form(get or post) to Controller:
+    pass the Data and retreive it in the $request or in request().
+
+
+From Link to Controller:
+    -if the link has the data in laravel form /{id}     {{ url('/category/'.$category->id) }}
+     pass the Data and retreive it in the request       public function toggleActive(string $id){}. 
+
+    -if the link has the data in traditional form
+     use the data using $_GET[] array.
+
+     
+From a Controller to View: retuen a view, 
+    pass the data u will use in it using COMPACT().
+
+
+

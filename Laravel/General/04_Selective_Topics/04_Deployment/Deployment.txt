@@ -1,0 +1,10 @@
+there is three ways to deploy a website in a host: 
+
+1- SHARED HOSTING: 
+
+2- VPS: (Amazon - Digital Ocean)
+    -you have 100$ free in Digital Ocean.
+    -you can search how to use your university-email.
+    -vps is more defficult to beginners.
+
+3- DEDICATED SERVER/RESOURCE

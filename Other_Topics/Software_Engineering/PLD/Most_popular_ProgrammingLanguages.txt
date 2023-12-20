@@ -1,0 +1,42 @@
+Functional programming: F#, ML
+
+    --------------------------------------------------------------------
+
+C-based programming languages: c, c++, c#, Java
+
+    --------------------------------------------------------------------
+
+Fortran
+Algol60 
+        Used in Scientific Applications, 
+        use array in intensive way, 
+        Large number of Floating point Combutations.
+
+    --------------------------------------------------------------------
+CoBol
+        Used in Business Applications, 
+        produce Reports,
+        use decimal numbers & Characters.
+
+    --------------------------------------------------------------------
+Lisp
+Prolog
+        Used Artificial Intelegince, 
+        use of Linked Lists, 
+        Symbols rather than numbers.
+
+    --------------------------------------------------------------------
+Sonbol 4
+        String Mnupulation Languge.
+
+    --------------------------------------------------------------------
+Rust: 
+        Used in Statistics, now python more popular.
+    --------------------------------------------------------------------
+
+APL
+Ada
+Ruby 
+Lua
+Perl
+C99

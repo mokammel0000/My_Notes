@@ -1,0 +1,82 @@
+# Retreiving all records from the table in the DB:
+flights = Flight::all();
+flights = Flight::get();
+    # take care: this way can lead your application to run out of memory, 
+    # if you attempt to load tens of thousands of Eloquent records => [use chunking Results to handle that].
+
+____________________________________________________________________________________________________________
+# Retreiving record/records with specific attributes:
+flight = Flight::select('arrived_at')->get();
+
+
+____________________________________________________________________________________________________________
+# Retreiving only one record from the table in the DB:
+flight = Flight::find(1);
+flight = Flight::where('active', 1)->first();
+flight = Flight::firstWhere('active', 1);
+
+
+# find or do something if there is no record fit this condition.
+flight = Flight::findOr(1, function () {
+    // ...
+}); 
+flight = Flight::where('legs', '>', 3)->firstOr(function () {
+    // ...
+});
+
+
+# Find or raise an exception if there is no record fit this condition
+Route::get('/api/flights/{id}', function (string $id) {
+    return Flight::findOrFail($id);
+});
+
+
+# Find the first record, or create it:
+flight = Flight::firstOrCreate([
+    'name' => 'London to Paris'
+]);
+flight = Flight::firstOrNew([
+    'name' => 'London to Paris'
+]);
+____________________________________________________________________________________________________________
+
+# Retrieving Aggregates:
+count = Flight::where('active', 1)->count();
+
+max = Flight::where('active', 1)->max('price');
+                                                                
+____________________________________________________________________________________________________________
+# Retreiving records in a specific order:
+products = product::orderBy('views', 'desc')->get();               #get all products after ordering them
+products = product::orderBy('views', 'desc')->limit(10)->get();
+                                                                
+____________________________________________________________________________________________________________
+
+# Retreiving records under a specific condition:
+flights = Flight::where('active', 1)->orderBy('name')->take(10)->get();
+
+slides = Slide::where('active', 1)->get();
+
+prodcuts = $products->where(function($q) use($keyword){
+                    # this is a compound where statement, one where contains multiple cases
+                    return $q->where('name', 'LIKE', "%$keyword%")
+                                ->orWhere('description', 'LIKE', "%$keyword%")
+                                ->orWhere('sku', '=', "$keyword")
+                                ->orWhere('price', '=', "$keyword");
+                });
+
+____________________________________________________________________________________________________________
+
+# Refreshing Models
+
+
+# Collections
+
+
+# Chunking Results
+
+
+# Chunking Using Lazy Collections
+
+
+# Cursors

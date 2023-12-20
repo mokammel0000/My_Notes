@@ -1,0 +1,15 @@
+1- create the DB, and put it's name in the .env file. 
+
+2- use Migrations to build the tables(DDL).
+    create table - drop table - alter table - 
+    add column - delete column - modify column.
+
+3- use ORM/ Query Builder to deal with them(DML).
+    Select/ Read data - Add/ Create data - Update data - Delete data.
+
+
+    -Using them u don't write sql code,
+    u create with DB using traditional OOP code(objects, methods and variables).
+
+then u can use seeder to add dummy data to the tables, 
+also u can use factory to make the data that u want.

@@ -1,0 +1,7 @@
+Program is a set of [Instructions] which perform some operations on [Data] to get same Results.
+
+so it's critical to learn Algorithims: 
+    to know how to enhance program excecution.
+
+also it's critical to learn data structures: 
+    to know how to deal with data in a better way.

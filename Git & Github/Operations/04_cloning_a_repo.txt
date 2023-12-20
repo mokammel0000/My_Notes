@@ -1,0 +1,4 @@
+    # pull any updates before u write anything on the cloning repo, then push your newer code.
+
+    git clone repository-url
+    git pull origin main

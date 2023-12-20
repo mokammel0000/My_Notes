@@ -1,0 +1,6 @@
+u havn't to do every thing using cmd, the most convenient way is to use GUI programms, 
+    the most popular ones are: 
+
+-Github Desktop
+
+-Source Tree

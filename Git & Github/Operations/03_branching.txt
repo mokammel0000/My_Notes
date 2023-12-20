@@ -1,0 +1,9 @@
+git branch   
+    # This command will list all the branches in your repository, and the current branch will be indicated with an asterisk (*) next to it.
+
+
+git checkout the-branch-name
+    # Switch to another branch
+
+git checkout -b your-branch-name
+    # Check if there is abranch with this name to be in, or create a new one

@@ -1,0 +1,6 @@
+Continous Websites Vs. Discreate Websites.
+    -Continous Websites: write the data that's returned from backend in frontend template.
+    -Discreate Websites: Backend store and process data,
+        and then returned JSON file that's can be readable form all systems(frontend - Mobile - IOT machines - etc...)
+        then u can use json file to show data in your frontend template.
+

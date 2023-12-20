@@ -1,0 +1,30 @@
+Any Input Element in html, consider as a variable from the php Perspective. 
+    the name of the Element: is the name of the variable.
+    the value of the Element: is the value of the variable.
+    so, using Input elements u can receive data from user, and send it to backend...
+
+
+but what if we looped in a specific element, and each loop it add a new value to it,
+    if we deal with this element as a variable: we can't store any value expect the last one
+        because each one will override the previous value in this variable. 
+
+    so we want to convert the Input Element to an array, so that we can store more than one value in it.
+
+
+example for an INDEXED array:              name="quantity[]"
+    @foreach ($products as $product)
+        <input class="input_number" type="text" name="quantity[]" value="{{ $product->pivot->quantity }}">
+    @endforeach
+
+    In this case: the input field will be an indexed array in the request() in the backend, 
+                some quantities we can't specifiy which one is for whome product....!!!!!!!
+
+
+example for an ASSOSIATIVE array:          name="quantity[{{$product->id}}]"
+    @foreach ($products as $product)
+        <input class="input_number" type="text" name="quantity[{{$product->id}}]" value="{{ $product->pivot->quantity }}">
+    @endforeach
+
+    In this case: the input field will be an assosiative array in the request() in the backend, 
+                the product_id will be the key, and the product_quantity will be the value in this array.
+ 

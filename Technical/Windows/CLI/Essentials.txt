@@ -1,0 +1,35 @@
+-clear
+-cls (windows)
+
+-pwd
+-ls, ll
+-dir(windows)
+
+-exit             (close the terminal)
+-ctrl c           (force the terminal to end the current command and start accepting a new command from you)
+    
+
+-code . 
+-code "اسم الفايل"
+
+
+-cp --help
+-mv --help        (open help list of the current command)
+
+
+-cp /? 
+-mv /?            (open the manual(بيشرح فيه الأمر ده) for the current command)
+ 
+
+-file osama.txt   (get informations about this file)
+-file *           (get informations about all files in the current directory)
+
+osk               (to open [on screen keyboard])
+
+tasklist          (similar to your task manager, list all the opened tasks in your machine)
+                    also you can kill any task of them.
+
+tree /a           (open your directory as a tree(to list all files and folders on it))
+
+you can add [alias] of any command in the cmd (vup = vagrant up), also you can delete an alias
+

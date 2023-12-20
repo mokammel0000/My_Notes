@@ -1,0 +1,13 @@
+To share your code with others, and collaborate with them in the same project, 
+    u need to use a central Repository to store all informations all the time, 
+    there are some options that u can use: 
+
+Github: 
+    the most popular one.
+
+Bitbucket: 
+    the owner of Sourcetree application.
+
+Gitlab
+
+------------------------------------------------------------------------------

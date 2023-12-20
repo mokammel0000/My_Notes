@@ -1,0 +1,12 @@
+If your hard drive was [SSD] and was [GPT], then install the OS in the [UEFI format], 
+in UEFI, you can Enable the Secure Boot option, 
+UEFI offere multiple advantages than the legacy one
+
+
+If you will use only one hard drive with your OS, then make the SATA operations to be: "AHCI"
+[AHCI]: is the best option to deal with one hard drive.
+[Dual]: is better than AHCI in the context of dealing with multiple Hard drives. 
+[ATA]:  is an old operation that no longer be used now.
+
+note: if you install the OS in one of the previous formats, you will NOT be able to change it, 
+unless you try to reinstall a new OS with the new operation. 

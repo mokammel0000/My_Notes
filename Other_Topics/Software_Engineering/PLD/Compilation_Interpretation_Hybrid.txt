@@ -1,0 +1,17 @@
+Compilation: 
+    -Faster.
+    -Translate all the code to the Assembly, then execute all of it.
+    -Used in Large systems.
+    -Included JIT Systems(Translate what Only what it needed not all the code).
+
+
+Interpretation: 
+    -Slower than Compiler (10 to 100).
+    -Easier in Programming.
+    -don't need to translate all the code, it execute line by line.
+    -examples: Javascript, PHP, APL, Lisp and Perl.
+
+
+Hybrid: 
+    Translate all the code to Assembly language(as a compiler), 
+    then execute it line by line (as an Interpreter).

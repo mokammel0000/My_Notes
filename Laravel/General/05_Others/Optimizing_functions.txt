@@ -1,0 +1,7 @@
+when u write a function, devide it to small functions, each one has it's own job.
+    if u want to modify it later, you can do it easily.
+
+
+firstly, write the whole function with all jobs, and test your code, 
+then devide the big functions that can be devided,
+and optimize any thin can be optimized(such as queries).

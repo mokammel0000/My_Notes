@@ -1,0 +1,9 @@
+"enum" stands for "enumeration." It is a data type that represents a set of [named values],
+    also known as enumerators or constants.
+    
+Enums are used to define a collection of related values that have a specific meaning or purpose.
+
+The primary purpose of enums is to improve code readability and maintainability
+    by providing a way to define a set of named values that are semantically meaningful.
+    Instead of using arbitrary values or strings to represent different states or options,
+    enums allow programmers to use descriptive names.

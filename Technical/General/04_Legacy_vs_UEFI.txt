@@ -1,0 +1,12 @@
+Legacy BIOS:
+    -older,
+    -entirely keyboard driven(ما ينفعش تتحكم فيه بالماوس),
+    -usually simple in terms of UI
+    -have either a black or blue-screen-of-death background color.
+
+    
+UEFI:
+    -stands for Unified Extensible Firmware Interface, 
+    -can be thought of as a newer type of BIOS, 
+    -UEFI often includes graphics to show fan speed, temperature, and CPU clock speeds,
+    -can sometimes be controlled with a mouse or trackpad.

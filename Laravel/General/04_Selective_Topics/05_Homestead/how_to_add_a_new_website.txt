@@ -1,0 +1,11 @@
+1- add the new domaing in the host file: "C:\Windows\System32\drivers\etc"
+
+2- add the [map & to] in the homestead.yaml
+
+3- vagrant reload --provision
+    (to reload the VM and add the new websites)
+
+4- add the DB name and password: 
+    DB_DATABASES:
+        username: homestead
+        password: secret

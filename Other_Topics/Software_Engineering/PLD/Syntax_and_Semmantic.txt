@@ -1,0 +1,19 @@
+Syntax: 
+    -الشكل، الهيئة، الطريقة الي هيتكتب بها الكود
+    -إنك تكتب جملة موافقه لقواعد اللغة
+    -It deals with how to write the structure of the statement, 
+        put ; at the end of the statement, 
+        you can't write else statement unless there is if() statement before it, 
+    -you must follow syntax rules, compiler can't understand your statements unless you follow them.
+    
+
+Semmantic: 
+    -المعنى بتاع الكلام الي إنته كاتبه
+    -هل المعنى بتاع الكود صح، طب هل هينفذ المطلوب منه بشكل صح؟
+    -It deals with the logic and relations about your code
+
+    int x = "mohamed"; 
+    int x = 5/ 0; 
+        there is no syntax error, the grammar is correct but it will raise an error due to the meaning.
+
+    -there is 2 types of Semmantic: Static Semmantic and Dynamic Semmantic.

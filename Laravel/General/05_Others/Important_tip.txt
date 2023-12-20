@@ -1,0 +1,2 @@
+Each laravel component is a package that can be use individually in a php project.
+    eg. u can use ORM in a php project without using laravel.

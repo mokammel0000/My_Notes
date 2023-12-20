@@ -1,0 +1,10 @@
+Forward Engineering: 
+    the traditional SDLC, Steps to create a program
+    1- Specifications       2- Development        3- Validation       4- Evaluation
+
+
+Reverse Engineering: 
+    you have a program with it's code, 
+    you want to make a documentation for this program, 
+    firstly you need to understand all the aspects of this program
+        (Architicture - Functional Requirments - NonFunctional Requirments - etc...)

@@ -1,0 +1,60 @@
+[What is JSON Web Token?]
+    JSON Web Token (JWT) is an open standard (RFC 7519),
+    and it represents a compact and self-contained method for securely transmitting information between parties as a JSON object.
+    Digital signature makes the data transmission via JWT trusted and verified.
+    JWTs built upon the secret [HMAC algorithm] or a public/private key pair using [RSA] or [ECDSA].
+
+
+[Why is JWT Required?]
+    JWT is used for Authorization and information exchange between server and client.
+    It authenticates the incoming request and provides an additional security layer to REST API, which is best for security purposes.
+
+
+[How does JWT Work?]
+    User information such as username and password is sent to the web-server using HTTP GET and POST requests.
+    The web server identifies the user information and generates a JWT token and sends it back to the client.
+    Client store that token into the session and also set it to the header.
+    On the next HTTP call, that token is verified by the server, which returns the response to the client.
+
+
+[JSON Web Token Structure:]
+    JSON Web Tokens contains three parts separated by dots (.) In its dense form.
+    Header.Payload.Signature
+    Eventually, a JWT similarly looks like this: [xxxxxx.yyyyyyy.zzzzzzzzzz].
+
+
+
+[Table of Contents]
+    1-Install Laravel Application
+
+    
+    2-Database Connection
+    
+    
+    3-Add User into MySQL Database(users table)
+    
+    
+    4-Install & Configure JWT Authentication Package
+        -install package and add it's path to (app.php) in the config file.
+    
+        
+    5-Set Up User Model:
+        -make some updates on the user model.
+    
+        
+    6-Configure Auth Guard: 
+        -update (auth.php) in config file.
+    
+        
+    7-Build Authentication Controller: 
+        -the controller that is responsible for login, logout, sign up, and other authentication methods in the API.
+    
+        
+    8-Add Routes for Authentication: 
+        -how can we reach methods in the previous controller? create routes to reach to them.
+    
+        
+    9-Test REST API with Postman
+    
+    
+    10-Conclusion

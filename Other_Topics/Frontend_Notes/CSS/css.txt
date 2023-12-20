@@ -1,0 +1,30 @@
+Css Best Practice: 
+    try the styles that u want in the developer tool, when u reache your goal, go to edit the main code...
+
+Grid: 
+    is an old way to organize the web site page, 
+    it devide the page into 12 columns
+
+Flex: 
+    is the best way now to organize the web pages designs.
+
+Styles Periorities: 
+    1- Inline Style.
+    2- Internal Style.
+    3- External Style.
+
+    but you can give a property to the Internal style that is 'IMPORTANTA',
+        so it will take more piriority than the Inline Style.
+    In this case, if u want to activate the Inline style, give it the same property('IMPORTANTA),
+        or remove it from the Internal style.
+    so if u write an inline style and it doesn't work, make it 'IMPORTANTA'.
+
+
+
+Bootstrap usually user classes: 
+    class="mt-5"
+    class="text-center"
+    class="justify-content-center"
+
+    .row>.col-3 (to put the element in one of 4 parts of the screen)
+                you can add 3 columns beside this div...

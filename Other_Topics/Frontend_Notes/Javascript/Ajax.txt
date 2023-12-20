@@ -1,0 +1,65 @@
+AJAX is not a programming language.
+AJAX is a technique for accessing web servers from a web page[WITHOUT INTERRUPTING THE WEB PAGE].
+AJAX stands for Asynchronous JavaScript And XML.
+AJAX benifits: 
+    -doesn't reload the whole page in every click,
+    / doesn't reload the whole page and download assets at every click.
+        so it is an important feature specilly for the users who have a bad internet speed.
+    -give a comfortable trial for users(make the website as the mobile app, don't reload the page in every click).
+
+The traditional html->php page:
+    Html send data to php using it's inputs, and then php make some processing on the data,
+        and then return view, or redirect u to the last view after refresh the page. 
+    
+    The default behavior that the link or the form is sending data to a specific route,
+        and then the controller deals with this data to perform a specific task,
+        and then return a view or redirect to the same view with refreshing all the data in it.
+
+Using ajax: 
+    JavaScript will control the html elements,
+        -take the data from them,
+        -sent it to the route(to perform the backend operations),
+        -then make some changes on the same view(without reload it).
+
+    
+    Ajax itself will send the data to the route, then the task will be acheived in the backend, 
+    but the difference is: ajax will do some code in success/ error cases, you can refresh just a spesific element, 
+    or change some values on the web page without refresh all the web page.
+    also if u use ajax to delete some elements in the web page,
+    use some animations to delete it/them with a good style...
+
+
+You can make an ajax requests using one of there three ways: 
+    1- Native JavaScript: writing a huge blocks of code...
+
+    2- Fetch API: package in JavaScript, that deal with Ajax.
+
+    3- Jquery: A huge library, that contains thousands of functions to facilitate coding with JavaScript. 
+        [[some of it's functions is dealing with ajax]].
+
+    4- AXIOS: the most famous library to deal only with AJAX.
+
+
+To write an AJAX Code in Jquery write it in this form: 
+
+    $('#add-to-cart-form').submit(function(e){    // firstly hold the element that will send the data using ajax
+    e.preventDefault();                           // prevent it's default behavior.
+    // the last 2 lines was't ajax code, it's a jquery code...
+
+        $.ajax({
+            url: '/add-to-cart', 
+                // the url that ajax will send data to...
+            method: 'POST',  
+                // the method of the url.
+            data: ,
+                // the data that will send to the url.
+            success: function(data){;
+            },
+                // the code that will perform in the success status.
+            error: function(){      
+            }
+                // the code that will perform if any error occurs.
+        })
+
+    });
+

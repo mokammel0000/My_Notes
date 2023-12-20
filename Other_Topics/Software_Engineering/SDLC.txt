@@ -1,0 +1,18 @@
+SDLC: 
+    1- System Specification:
+        specify what the systme should do... [Documentation Stage]
+
+
+    2- System Design and Implementation: 
+        Design and Development Processec(including Development Testing)
+    
+    
+    3- System Validation:
+        all the Testing Techniques 
+            -Release Testing
+            -User Testing(Alpha and Beta Testing)
+            -Final Testing    
+    
+    4- System Evolution: 
+        How can we Enhance this systme
+            (functional requirments - non-functional requirments - performance - eliminates bugs and erors...)

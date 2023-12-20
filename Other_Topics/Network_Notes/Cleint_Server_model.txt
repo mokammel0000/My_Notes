@@ -1,0 +1,76 @@
+The web is a service which is built on top of the Internet to allow computers to share
+    and exchange data easily and reliably,
+    and when we say data it can be anything such as images videos documents etc, 
+    in any form and for that sometimes the web is referred to as a client-server model communication
+    because there are always computers that ask for data which are called clients
+    and the computer that gives the data in other words the computer that serves which is the server.
+
+
+client can be a machine or a program 
+    when we say a client's machine we are actually talking about the devices that the end-user can use to
+    access the web for example laptop, desktop, smartphones or tablets etc are all clients machines 
+    
+    on the other hand a client program is a program that allows the user
+    to make requests through the web, for example a web browser,word processors or photo editing software,
+    have an excess of online resources
+    client whether it is a machine or a program is an appliance and a way to make requests through
+    
+    
+server on the other side is a computer program [not a device] a computer program.
+
+    high-performance computers can said to be servers if they're running programs that serve requests
+        server contains programs that provide functionality and serve other programs called clients
+        they run server operating systems we can run a Windows 10 or a Linux desktop version on a high
+
+    so, high-performance computers are called servers because they run server programs.
+
+    a single server can serve multiple clients at the same time and it runs 24/7 without stopping
+    this is why we need actually supercomputers to run such programs
+    
+    also we can run multiple servers on a one single machine and here we are talking about [virtual servers]
+
+    there are several types of servers 
+        -it's one service by doing a specific task for example web servers such as Apache serve HTTP requests 
+        -database servers run a database management system such as my Siebel 
+        -and other types of servers
+
+
+    server 
+        -can contain web resources 
+        -can contain host web applications 
+        -can contain source user and program data and do a lot of things 
+        -it is used to serve hundreds or thousands of clients 
+        -is always listening for requests and as soon as it receives one it responds with a message
+
+
+
+
+client-server model:
+    is an architecture on the web that splits computers into two sections
+    computers that ask for and requests services and they are called clients
+    and computers that serve clients sand they're called servers.
+    this architecture is based on [a centralized structure]
+    the client-server model works through the request response cycle via [HTTP messages]
+
+
+peer-to-peer model:
+    decentralized one it is the opposite of the client-server model,
+    there is no client and no server both computers can be requesters and response providers
+    in other words each one of them can be whether a client or a server
+    and each computer is functionally identical to the other
+    they are able to send and receive data directly with one another
+    and both of them can upload or download the information
+    and of course they are not required to be connected 24/7
+    an example of the peer-to-peer model is BitTorrent or videochat protocols
+
+
+
+client is a machine or a program that we use to make requests through the web
+
+server is a program that listens for our requests and respond to them 
+
+the client-server model is a centralized web architecture that classify computers into two
+    sections requesters and response providers 
+    
+and finally there is an alternative for the client-server model which is the peer-to-peer model
+    in the peer-to-peer model all computers are functionally equal.

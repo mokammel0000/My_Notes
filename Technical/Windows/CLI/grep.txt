@@ -1,0 +1,14 @@
+
+إنته عاوز تشوف في كام فايل فيهم كلمة أو جملة معينه، تعمل إيه؟؟
+بعض الفايلات بتكون مساحته كبيرة جدا أربعة أو خمسة جيجا مثلا، هل لازم تحملهم وتفتحهم وتبحث فيهم واحد واحد؟
+
+[grep] command is used to search for text patterns within files or command output.
+    The name [grep] stands for "global regular expression print."
+
+-grep "apple" fruits.txt        (search in the file about this word(apple))
+-grep "X" osama.txt             (will display any word that's starting with the char X)
+
+-grep -r "error"                (search in the current directory about this word(error))
+-grep -r "error" /var/log       (searching in a specific directory)
+-grep -r "error" C\osama\elzero (searching in any path that you want)
+-grep "error" -r -l             (make a list with the folders that include this word)  

@@ -1,0 +1,50 @@
+Traditional Inserting/ Updating in Laravel: 
+    creating object from the Model, and adding data to it [Field by Field], 
+    and then save() the new model.
+
+
+________________________________________________________________________________________________________________
+Mass Assignment/ Bulk Insert/ Bulk Save: 
+    passing an associative array to the model, and it will be saved automatically.
+    but note that: input fields -that cames from the form- must be similar to table fields, 
+        to enable laravel to put each input in it's right column.
+    This way is easier than the Traditional way, but there are a big problem in it: 
+        [it is not secure....]
+        because of it taking inputs entered from the user,
+        and entering it in your DB directly without checking these data....
+
+        so, laravel can't admit u use this way, unless u forced it to make it available for u, 
+        to do that write a $fillable array in the model that u want to Insert inputs on it,
+        but take care of that: 
+            -nullable fields can be written or not, 
+            but the notnull fields must be written in the array.
+
+    you can pass $request->all() or make your own array as $inputs to pass it to method(create() or update()).
+
+________________________________________________________________________________________________________________
+
+# The Difference between $fillable and $guarded: 
+fillable:
+When you define the fillable property in your model,
+    you specify an array of attributes [that are allowed to be mass-assigned].
+    Only the attributes listed in the fillable array will be mass-assigned;
+    all other attributes will be protected and cannot be mass-assigned.
+    This is the more restrictive approach, as it explicitly lists the attributes that can be assigned.
+
+
+guarded:
+When you define the guarded property in your model,
+    you specify an array of attributes [that are not allowed to be mass-assigned].
+    All attributes are mass-assigned by default, except those listed in the guarded array.
+    This is the less restrictive approach,
+    as it explicitly lists the attributes that should be protected from mass assignment.
+
+
+Generally recommended to use fillable because it's more explicit and safer by default.
+    With guarded, you need to be cautious about excluding attributes that should be protected, 
+    which can be error-prone if you forget to update the guarded array when adding new attributes to your model. 
+    If you would like to make all of your attributes mass assignable,
+    you may define your model's $guarded property as an empty array.
+    
+    fillable, on the other hand, explicitly lists the attributes that are allowed,
+    making it easier to maintain and understand your code.

@@ -1,0 +1,14 @@
+2 or more developers do some updates on the code, then there are some errors shown after their updates.
+
+Resolving Conflicts: 
+    tho solve the Errors that occures when u merge the updates.
+
+Merging: 
+    merge the 2 code and solve errors on it,
+    delete someon's code, 
+    delete the both code.
+
+Important Tip: 
+    [Merge updates on a little period of time]: 
+        to resolve Conflicts as it's shown, ماتراكمش عليك المشاكل
+        if anyone's code was deleted, then u make sure that u merge him code with someone else in a previos merge.

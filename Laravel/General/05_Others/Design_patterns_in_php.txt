@@ -1,0 +1,21 @@
+Design Patterns: حلول لمشاكل مشهورة، تحدث في السوفتوير
+
+    Creational Patterns: 
+        eg. creating new objects.
+
+    Structual Patterns/ Archetictual Pattern: تنظيم الكود بتاعك، أحط مين فين 
+        MVC is a Structual Pattern.
+
+    Behavioral Patterns: سلوك الكود بتاعك
+
+
+The Aim of using Design Patterns in your project: 
+    1- to facilitate refactoring your code in the future. 
+        (عشان مش كل ما تحب تضيف\ تعدل حاجه تهد وتبني من أول وجديد)
+    2- when u use them, your code will be more cleaner and more profecinal.
+
+
+
+
+
+look at this website: "https://refactoring.guru/design-patterns/php".

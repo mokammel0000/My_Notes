@@ -1,0 +1,21 @@
+1- Development Testing: 
+    finding if there are errors during the development process.
+    there are  multiple stages in this process: 
+    1- Unit Testing: 
+        Test each unit by itself(such as methods).
+
+    2- Component Testing: 
+        each component(the whole class -including all it's units-).
+
+    3- System Testing: 
+        test the whole system(is it match the functional requirments).
+--------------------------------------------------------------------------------------
+
+2- Release Testing: 
+    Testers Team will test the whole system(functional and non-functional requirments)
+        after development processes has been ended, and before deleviring it to the cleint.
+
+--------------------------------------------------------------------------------------
+
+3- User Testing: 
+    Test the system in the user's Environment

@@ -1,0 +1,8 @@
+web address = URL
+
+each web address is ended with a TLD 
+
+TLD
+    stands for Top Level Domain,
+    it's like (.com - .net - .org - .info - .eg), 
+    it's refers to the provider who provide this service to you.

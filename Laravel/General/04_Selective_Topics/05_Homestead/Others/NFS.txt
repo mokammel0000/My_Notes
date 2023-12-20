@@ -1,0 +1,3 @@
+NFS: 
+    -stands for "Network File System"
+    -it's used for improve sharing folders SPEEd between your PC and the VM.

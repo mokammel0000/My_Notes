@@ -1,0 +1,58 @@
+Data Center stored data in a solid-state device[SSD], This acts as the internal memory of a server.
+
+Data can't be transmitted using satallites, because they are too distance to receive and send data to all cleints, 
+    the large distance will cause a significant delay, it causes huge latency,
+    and that's not acceptable in most applications, also it's a bad experience for the users.
+
+The Transmission is done with the help of complicated network of optical fiber cables, 
+    which connect between the data center and your device.
+
+    Your phone could be connected to the internet via cellular data or any Wi-Fi router,
+    but they are connected with the fiber optics cables,
+    so ultimately at some point your phone will be connected to this network of optical fiber cables.
+
+Your internet service provider(ISP) will decide the IP address of your network
+    and you are able to see what IP address your ISP has given to your network.
+    
+The server in the data center also has an IP address,
+    but we deal with it using it's domain name because of we can't remember all Ip addresses for all websites.
+    
+You enter the domain name, the browser sends a request to the DNS server to get the corresponding IP address.
+    After getting the IP address, your browser simply forwards the request to the server,
+    Once the server gets a request to access a particular website the data flow starts,
+    and then server will response to you using your IP address.
+
+One amazing thing about the internet is its efficiency in transmitting data when compared with
+    cellular and landline communication technologies(خطوط التليفون مثلا).
+
+Any date is send to u is sent in the form of a huge collection of zeros and ones.
+
+What makes the data transfer in the internet efficient
+    is the way in which these zeros and ones are chopped up into small chunks known as [packets] and transmitted.
+
+    Let's assume these streams of zeros and ones are divided into different packets by the server where each packet consists of six bits.
+
+    Along with the bits of the video each packet also consists of the sequence number and the IP addresses of the server and your phone.
+    [packet contain the bits of data + Ip address for the source + Ip adderss for the destination + sequence number + other bits]
+
+    With this information the packets are routed towards your phone.
+
+    It's not necessary that all packets are routed through the same path,
+    Each packet independently takes the best route available at that time.
+
+    Upon reaching your phone the packets are reassembled according to their [sequence number].
+
+    If any packets fail to reach your phone,
+    an acknowledgement is sent from your phone to resend the lost packets.
+
+
+This process will be done in the ideal infrastructure,
+    but the customers do not follow the basic rules regarding the destination addresses.
+
+    In this scenario letters won't be able to reach the correct destination.
+
+    Similarly in the internet we use something called protocols for the management of this complex flow of data packets.
+
+    The protocols set the rules for data packet conversion,
+    (attachment of the source and destination addresses to each packet and the rules for routers etc)
+    for different applications the protocols used are different.

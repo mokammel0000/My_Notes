@@ -1,0 +1,14 @@
+Laravel Forge: 
+    -Laravel Package that you can manage your host with it(like CPanel in the shared hosts).
+    -it's used with Dedicated Hosts, but it's better to use it with VPS.
+    -it's NOT a free tool, you must pay for it, and pay for the server that you will reserve.
+        (it's like the CPanels, most of them are paied)
+    -it's provide some CI/CD features for you(like Quick Deploy).
+
+
+How to use It: 
+    1- Push your code on Githup.
+
+    2- Reserve the server(amazon - digital ocean - ...etc)
+
+    3- Manage all things on your VPS using Laravel Forge.

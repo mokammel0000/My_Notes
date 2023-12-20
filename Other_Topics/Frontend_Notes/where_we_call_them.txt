@@ -1,0 +1,31 @@
+In most web pages, we call css sheets at the [head],
+wheres we call the javascript code at the end of the body...
+    why we do that?
+
+Html and css are responsible for displaying the content in the web page, 
+    so it's necessary to display them at the begining of the page, 
+    
+wheres javascript is responsible for change the components of the page, 
+    so we must call it after we call all the components...
+
+
+if you want to write a code at the begin or at the middle of the web page, 
+    write it in this way: 
+
+    -In JavaScript: 
+    window.load = function(){
+        // the code here will NOT be executed unless the whole page will be downloaded...
+    }
+
+
+    -In Jquary: 
+    $(function(){
+        // the code here will NOT be executed unless the whole page will be downloaded...
+    });
+    $() = window.load = 
+
+
+    -other way using Jquary: 
+    $(document).ready(function(){
+        // the code here will NOT be executed unless the whole page will be downloaded...
+    });

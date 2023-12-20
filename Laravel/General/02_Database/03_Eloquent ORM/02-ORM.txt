@@ -1,0 +1,20 @@
+ORM:
+    DML for the DB in Laravel.
+    stands for: Object Relational Mapper.
+    a design pattern, each framework give it a special name, 
+        laravel named it: [Eloquent ORM].
+
+ORM is a DML that can Select/ Insert/ Update/ Delete/ data from DB,
+    Instead of write mysql code, we can use ORM to manipulate with DB using traditional classes and methods.
+
+ORM applys MVC pattern, it deals with DB through MODEL,
+    Model is the object that u call to deal with the table from it.
+
+ORM is based on query builder... [Each Eloquent model serves as a query builder]
+    # It's better to use query builder than using ORM if u want to make a complex relationships.
+
+Use ORM in the simple queries,
+    if u want to write a complex queries(like joins & calculations on Columns),
+    ORM will be very complex and low performance way to deal with, 
+    then u can use Expressions in the query builder(It enables you to write MYSQL commands).
+

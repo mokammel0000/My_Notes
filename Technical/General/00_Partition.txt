@@ -1,0 +1,11 @@
+A partition is a section of a drive that can be formatted and used for a specific purpose.
+A partition is a [virtual division] of a hard disk drive (HDD) or solid state drive (SSD).
+
+In Windows:
+    There is usually a small recovery partition and a large file system partition labeled 'C'.
+    'C': partition is what most people are familiar with, as it's where you usually install your programs and store your various files.
+
+In Linux:
+    There's typically a root partition (/),
+    one for swap which helps with memory management, and large /home partition.
+    The /home partition is similar to the C: partition in Windows in that it's where you install most of your programs and store files.

@@ -1,0 +1,39 @@
+There is an unlegall relation between Model and Controller, 
+    -we create a specific controller for each route in the project(not all models).
+    -controller has the actions/ handllers that will be done in the Model
+        (index - show - store - update - destroy), 
+    -u can reuse the model and it's controller in other projects(SOC).
+
+Properties in the Model: 
+    protected $connection = 'sqlite';
+    
+    protected $table = 'my_flights';
+
+    protected $primaryKey = 'flight_id';
+    public $incrementing = false;
+    protected $keyType = 'string';
+
+    public $timestamps = false;
+    protected $dateFormat = 'U';
+    const CREATED_AT = 'creation_date';
+    const UPDATED_AT = 'updated_date';
+
+    protected $attributes = [
+        'options' => '[]',
+        'delayed' => false,
+    ];
+
+    protected $fillable = [
+        'name', 
+        'age', 
+        'phone' 
+    ];
+    # to enable bulk saving/ mass asseignment.
+
+    protected $guarded = [];
+    
+    # to use Mass Assignment in you code, add $fillable array or $guarded array and add the fields 
+    # that is will be added in the array that will be passed to ORM methods(create - update).
+
+    # fillable or guarded must be added in the Model,these properties are required because
+    # all Eloquent models are protected against mass assignment vulnerabilities by default.

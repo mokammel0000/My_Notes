@@ -1,0 +1,16 @@
+Dependency Injection (DI): 
+    is a design pattern in software development that [deals with how components or services obtain their dependencies].
+
+
+    In object-oriented programming, a class or an object often depends on other classes or objects to perform certain tasks. 
+    Dependency Injection is a way [to provide these dependencies to a class], rather than having the class create them itself.
+
+    The main idea behind Dependency Injection is [to invert the flow of control in a system].
+    Instead of a class or module creating its own dependencies, they are "injected" from the outside.
+    This can lead to more modular, flexible, and testable code.
+
+
+    There are three common types of dependency injection:
+        1-Constructor Injection
+        2-Method Injection
+        3-Setter Injection

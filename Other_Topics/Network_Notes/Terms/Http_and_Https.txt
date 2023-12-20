@@ -1,0 +1,16 @@
+HTTP 
+    Stands for hypertext Transfer Protocol.
+
+    Is a standardized protocol which defines what a request and response has to look like,
+    standardized how a request and response should look like,
+    [which data may be included, and in which form, and how the request will be submitted].
+
+    in Http data will send as it is, any hacker can snife it in network will understand it.
+
+
+-----------------------------------------------------------------------------------------------
+HTTPS:
+    It's like HTTP but encrypted. Most modern pages use that instead of HTTP, 
+    It encryptes data from the user, and decrypts when it reachs to the server, 
+    So cleint and server only can decrypts data,
+    So, any hacker sniffing data in the network can't know the meaning of it.

@@ -1,0 +1,48 @@
+Each network in the world has a unique IP address, servers networks also have an IP address, 
+    Servers store  websites,
+    so you can access any website just by knowing it's server's IP address.
+
+
+------------------------------------------------------------------------------------------------------------
+But there are a problem, One server has the capability of storing several websites,
+    and if the server consists of multiple websites, 
+    all the websites cannot be accessed with the server's IP address.
+
+    In such cases additional pieces of information [Host Headers] are used to
+        uniquely identify the website in the choosed server.
+
+    However, for the giant web sites like Facebook.com or YouTube.com,
+        the entire data center infrastructure will be dedicate to the storage of it's particular website.
+
+
+------------------------------------------------------------------------------------------------------------
+It is difficult for a person to remember many IP addresses,
+    so we can use [domain names] like youtube.com, facebook.com etc 
+    -which are corresponding to server's IP addresses- to facilitate reaching to these servers
+    
+Domanin names are easier for us to remember than the long sequence of numbers.
+    So to access internet we always use domain names instead of the complex IP address numbers.
+    From where does the internet get IP addresses corresponding to our domain name requests???!
+
+For this purpose the internet uses a huge phone book known as [DNS].
+    If you know a person's name, but don't know their telephone number,
+    you can simply look it up in a phone book.
+    
+
+------------------------------------------------------------------------------------------------------------
+DNS servers: 
+    is stands for (Domain Name System servers).
+    special type of servers out there in the internet,
+    not just one but they are many servers of that type.
+
+    The job of these DNS servers is to translate domains to IP addresses.
+    You can imagine those servers as huge dictionaries
+        that store each Domain and it's corresponding IP adderss.
+
+[The DNS server provides the same service to the internet]
+
+Your internet service provider or other organizations can manage the DNS server.
+
+You enter the domain name, the browser sends a request to the DNS server to get the corresponding IP address.
+    After getting the IP address, your browser simply forwards the request to the server,
+    then server will response to you using your IP address.

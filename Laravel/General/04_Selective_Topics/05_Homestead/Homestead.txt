@@ -1,0 +1,10 @@
+Laravel HomeStead:
+    -is a development Environment that contains all you need to develop a laravel project.
+    -Ubuntu Linux Server + some applications(php - mysql - git - composer - docker - ...)
+
+
+
+Apps that you need to install it: 
+    1- Virtual Box or vmware,
+    2- Vagrant,
+    3- Git.

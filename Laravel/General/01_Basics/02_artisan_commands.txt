@@ -1,0 +1,150 @@
+Use it to facilitate some jobs, such as making the template of a specific class, 
+then go to the class to write the whole code in it, then you can:
+    -use the class: eg. Factory class.
+    -call it in other classes: eg. Model class.
+    -perform the class: eg. Migration class or Seeding Class.
+
+ 
+[your own artisan commands]:
+    php artisan make:command SendEmails.
+
+
+--------------------------------------------------------------------------------------
+[popular Artisan Commands]:
+    php artisan list 
+    php artisan about
+    php artisan env
+    php artisan serve
+
+
+--------------------------------------------------------------------------------------
+[Routing]:
+    php artisan route:list
+    php artisan route:list --path=categories
+
+
+--------------------------------------------------------------------------------------
+[Form Request]:
+php artisan make:request YourRequestName
+
+
+--------------------------------------------------------------------------------------
+[Controllers]:
+    -php artisan make::controller CategoryController
+    -php artisan make:controller Website/UserController
+    -php artisan make:controller Dashboard/UserController
+        (laravel will make the folder if it doesn't exist).
+
+    -php artisan make:controller ProvisionServer --invokable
+
+    -php artisan make:controller PhotoController --resource
+    -php artisan make:controller PhotoController --api
+    -php artisan make:controller API/PhotoController --api
+
+    -php artisan make:controller PhotoController --model=Photo --resource
+        (using route model binding)
+
+    -php artisan make:controller PhotoController --model=Photo --resource --requests
+        You may provide the --requests option when generating a resource controller
+        to instruct Artisan to generate form request classes for the controller's storage and update methods
+    
+
+--------------------------------------------------------------------------------------
+[Model]:
+    php artisan make::model Category
+    
+    php artisan make:model Flight -m
+    php artisan make:model Flight --migration
+        Generate a model and a [migration] class...
+
+    php artisan make:model Flight -f
+    php artisan make:model Flight --factory
+        Generate a model and a [FlightFactory] class...
+       
+    php artisan make:model Flight -s
+    php artisan make:model Flight --seed
+        Generate a model and a [FlightSeeder] class...
+        
+    
+    php artisan make:model Flight -c
+    php artisan make:model Flight --controller
+        Generate a model and a [FlightController] class...
+        
+    
+    php artisan make:model Flight -crR
+    php artisan make:model Flight --controller --resource --requests
+        Generate a model, [FlightController resource class], and [form request classes]...
+        
+    
+    php artisan make:model Flight --policy
+        Generate a model and a Flight [Policy] class...
+        
+    
+    php artisan make:model Flight -mfsc
+        Generate a model and a [migration], [factory], [seeder], and [controller]...
+        
+    
+    php artisan make:model Flight --all
+        Shortcut to generate a [model], [migration], [factory], [seeder], [policy], [controller], and [form requests]...
+        
+    
+    php artisan make:model Member --pivot
+        Generate a [pivot] model...
+
+
+--------------------------------------------------------------------------------------
+[Migrations]:
+    php artisan make::migration create_categories_table            --create=categories
+    php artisan make::migration add_icon_field_to_categories_table --table=categories 
+
+    php artisan migrate[perform the code that's written in the UP() function.]
+    
+    php artisan migrate:fresh           Drop all tables and re-run all migrations
+    php artisan migrate:install         Create the migration repository
+    php artisan migrate:refresh         Reset and re-run all migrations
+    php artisan migrate:reset           Rollback all database migrations
+    php artisan migrate:rollback        Rollback the last database migration
+    php artisan migrate:status          Show the status of each migration
+
+    php artisan migrate:status          Show the status of each migration
+    php artisan migrate:install         Create the migration repository
+
+
+    php artisan migrate:refresh         Reset and re-run all migrations
+    php artisan migrate:fresh           Drop all tables and re-run all migrations
+    php artisan migrate:fresh --seed 
+    php artisan migrate:fresh --seed --seeder=FlightSeeder
+            // Drop all tables and re-run all of your migrations.
+            This command is useful for completely re-building your database.
+            The --seeder option may be used to specify a specific seeder to run
+
+
+    php artisan migrate:rollback        Rollback the last database migration
+        [perform the code that's written in the DOWN() function.]
+    php artisan migrate:reset           Rollback all database migrations
+    php artisan migrate:rollback 
+    php artisan migrate:rollback  --step=
+    php artisan migrate:rollback  --batch=
+
+
+--------------------------------------------------------------------------------------
+[Seeding and Factories]:
+    php artisan make:factory CategoryFactory
+    php artisan make:seeder Categoryseeder
+
+    php artisan make:seeder CategorySeeder
+
+    php artisan db:seed
+    php artisan db:seed --class=CategorySeeder
+    php artisan db:seed --force  // To force the seeders to run without a prompt
+    
+   
+--------------------------------------------------------------------------------------
+[Middleware]:
+    php artisan make:middleware JwtMiddleware
+    
+--------------------------------------------------------------------------------------
+[Resource]:
+    php artisan make:resource UserResource
+
+[what is the next]:

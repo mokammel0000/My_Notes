@@ -1,0 +1,45 @@
+[Take care: you can create the query in multiple lines, then in the last line fetch the real data...]
+
+Fetching data with it's Relations: 
+    take care, before u can use with() or load() methods, you have to define the relations in the Model...
+    
+    -use with() when u fetch the Model and it's relations in the same line:
+    $products = Product::with('category')->get();
+    $products = Product::with(['category', 'photos'])->get(); 
+
+    -use load() when u call the relation after Fetching the Model(
+        u fetch the model previously or laravel fech it for u):
+    $products->load('category');
+    $products->load(['category', 'photos']);
+
+
+
+Fetching data under some conditions:
+    $products = Product::where('active', 1)->get();
+
+    $products = Product::whereNull('is_admin')->get();
+    $products = Product::where('photo', '!=', 'null')->get();
+    $products = Product::whereNotNull('photo')->get();
+
+    
+    $products = Product::whereDate()->get();
+    $products = Product::whereDatebetween()->get();
+    
+
+
+Fetching data with some modifications:
+    $products = Product::orderBy('views', 'desc')->get();
+    $products = Product::orderBy('views', 'desc')->limit(10)->get();
+
+    $products = Product::orderBy('created_at', 'desc')->get();
+    $products = Product::latest()->get();
+    $products = Product::oldest()->get();
+    
+    
+
+The last Step: Fetching data from The Model:
+    $products = Product::all();           // get all results 
+    $products = Product::get();
+    $products = Product::paginate(10);    // get the results 10 by 10
+    $products = Product::find($id);       // fetch a specific product
+    $products = Product::dd();            // dumping the query

@@ -1,0 +1,27 @@
+-ping "domain or ip_address"
+-ipconfig
+
+-whoami
+
+-systeminfo
+
+
+-ipconfig && mspaint  (نفذ الأمرين مع بعض)
+
+-systeminfo > system_info_message.txt                   (copy the systeminfo messaga and put it in a file).
+-systeminfo >> system_info_message.txt                  (copy the systeminfo messaga and put it in a file).
+-ipconfig > ipconfig_message.txt                        (copy the ipconfig messaga and put it in a file).
+-ipconfig >> ipconfig_message.txt                       (copy the ipconfig messaga and put it in a file).
+-ping elzero.org > Ping_message_of_elzero_website.txt   (copy the ping messaga and put it in a file).
+-ping elzero.org >> Ping_message_of_elzero_website.txt  (copy the ping messaga and put it in a file).
+
+
+-systeminfo | clip                                      (copy the systeminfo messaga in the clipboard).
+-systeminfo | clip                                      (copy the systeminfo messaga in the clipboard).
+-ipconfig | clip                                        (copy the ipconfig messaga in the clipboard).
+-ipconfig | clip                                        (copy the ipconfig messaga in the clipboard).
+-ping elzero.org | clip                                 (copy the ping messaga in the clipboard).
+-ping elzero.org | clip                                 (copy the ping messaga in the clipboard).
+
+
+

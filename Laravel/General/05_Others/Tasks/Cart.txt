@@ -1,0 +1,24 @@
+To Create a cart in an e-commerce application, u can perform this task using one of the 3 ways: 
+
+1- store cart products in [User's Session]: 
+    this way is depended on the traditional cart that we use in the supermarkets, 
+    we fill our cart with products, the cart belonges to it's customer while he is in the supermarket, 
+    then he can buy what he collect, or go out and leave the cart to the workers to fill it out.
+
+    in this way the cart is temproray, and any time user left the website it will be empty when he back to it.
+
+2- Store cart products in [User's Cookies]: 
+    this way has some drawbacks like: 
+        -user can delete or change these data, it's stored on it's browser.
+        -u can't store any data types in the Cookies other than strings, 
+            u can't store complex data structures and not even arrays, we can avoid this problem using some tricks.
+            [Sessions can store data structures].
+        -it's also not permenant, it's stay a specified period of time, and then deleted automatically.
+        -also it's not a secure way, it's on user's machine, so it can be under attack at any time.
+
+
+3- The best way to store Cart products is to store them in DB, 
+    -permenant way.
+    -can't be modified from any one.
+    -secure way.
+    -can store any data at an organized way.

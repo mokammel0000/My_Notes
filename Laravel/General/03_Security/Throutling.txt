@@ -1,0 +1,7 @@
+Hacker/ or stupid user will send alot of requests to the server, 
+server can't respond to all of them, then it falls...
+
+
+your rule is to prevent this operation, 
+    -for example: Ajax requests in some cases throutling the server,
+        so u can use the traditional updating/ deleting.

@@ -1,0 +1,14 @@
+Steps:
+1. Download Xampp https://www.apachefriends.org/de/inde...
+
+2. Open hosts file (File location: C:\Windows\System32\Drivers\etc\hosts)
+    Add: 
+    127.0.0.1 app.blog.local                 //the_domain_you_want
+
+3. Open httpd-vhosts.conf (File location: C:\xampp\apache\conf\extra\httpd-vhosts.conf)
+    Add: 
+    <VirtualHost *:80>
+        ServerAdmin app.blog.local
+        DocumentRoot "C:\xampp\htdocs\blog\public"  //your_project_location
+        ServerName app.blog.local
+    </VirtualHost>

@@ -1,0 +1,15 @@
+Static Data: 
+    data that is usually stable, it not changed alot of times,
+    e.g. Your Data of the Facebook account, 
+        it's Stored once, and you Not change it every day
+
+    in this Type of data, It's easy to cache it,
+        but when you try to change it, the application will ask you to restore it(to cache the new ones).
+
+
+
+Dynmic Data: 
+    data that's changing over the time, 
+    you can't cache it, as it's changing rate is big, 
+    when you try to change it, the application will NOT be restored as it sends it's query to the DB to fetch the newest one frequently.
+    e.g. Mobile Balance

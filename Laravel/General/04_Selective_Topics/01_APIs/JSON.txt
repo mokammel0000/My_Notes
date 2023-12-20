@@ -1,0 +1,6 @@
+JSON
+    standard format facilitate data interchanging.
+    standard format facilitate interchanging data between different developers.
+
+JSON is existed before APIs, when the concept of APIs exist,
+    they found that the best way to interchange data between different applications is using json format.

@@ -1,0 +1,14 @@
+[PascalCase]:
+    $MyVarForAge;
+
+[camelCase]:
+    $myVarForAge;
+
+[snake_case]:
+    $my_var_for_age;
+    $MY_VAR_FOR_AGE;               //screaming snake case: snake case but letters is capital
+
+[kebab-case]:          [we can't use KEBAB-CASE it in php and other programming languages,
+                        because [-] is a special character]
+    $myyyy-varr-forr-age;
+    $MY-VAR-FOR-AGE;             //scream kebab case: kebab case but letters is capital

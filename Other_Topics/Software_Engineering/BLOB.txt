@@ -1,0 +1,38 @@
+How can we store a file in our Database: 
+
+---The Traditional way to store any file in the DB tables: 
+    -If it was a text file, store it as it is.
+    -If it was a multi-media file: 
+        1- Upload it to your server in a specific folder
+        2- Store it's link(it is a text) in the table.
+
+    In this way, there are multiple drawbacks: 
+        1- If the Folder has been deleted, all the uploads will NOT be exist.
+        
+        2- If the name of the file has been changed, we can't reach to it(although it still exists).
+        3- If you want to change the old file, you will upload the new one and put it's name, 
+            [who will remove the old one??!]
+        4- If you want to make a Comparison between 2 files, it will be an aggressive process
+            you have to go to each link and compare it's file with the others...
+        5- If you're working in a microserveses System,
+            if the folder was in a specific machine and it's broken for any reason, 
+            [Other systems can NOT reach to the file].
+
+
+
+---A second way: 
+    store the file in the table, in a column that's type is: BLOB
+    (it will convert the file data to a binary format, and store it)
+    
+    this way will solve the problems in the previous one
+        (all the problems that assosiated with seperate data from it's table)
+    in this way each record will contain all it's data(text data and multi-media files)
+
+
+    but this way also has some drawbacks: 
+        1- the query size will be so large (espetially if you use a query like select *)
+            it will consume big time to retreive all the records.
+        2- also if you want to search in the DB, it will consume a big time,
+            each record will contain a big data,
+                then search-engine will be slow to move between different records.
+            [Search engine in DB move between records using a pointer to read all the records' data]

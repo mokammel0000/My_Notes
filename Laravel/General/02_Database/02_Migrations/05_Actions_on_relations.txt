@@ -1,0 +1,36 @@
+[Relations in Migrations]:
+$table->unsignedBigInteger('user_id');
+$table->foreign('user_id')->references('id')->on('users');
+
+$table->foreignId('blood_type_id')->constrained()->cascadeOnDelete();
+
+constrained(): to specify the other table name or the primary key name if it wasn't follow laravel convention.
+
+In Laravel migrations, when defining foreign key constraints, you can specify different actions to be taken when a referenced record is deleted or updated. Here are some of the available options:
+
+# On Delete: 
+restrictOnDelete(): This option will prevent deletion of a record in the referenced table if there are related records in the current table. In other words, it enforces referential integrity by restricting deletion of the referenced record as long as there are related records in the current table.(default behavior)
+
+noActionOnDelete(): This option is similar to `restrictOnDelete()`. It prevents deletion of a record in the referenced table if there are related records in the current table without any cascading or setting to null.
+
+cascadeOnDelete(): when a record in the referenced table is deleted, all related records in the current table will also be deleted automatically.
+
+setNullOnDelete(): This option will set the foreign key column in the current table to null when a record in the referenced table is deleted. It effectively removes the association but doesn't delete the related records.
+
+nullOnDelete()->nullable(): when a record in the referenced table is deleted, all related records in the current table will set to null 
+
+setDefaultOnDelete(): This option will set the foreign key column in the current table to its default value when a record in the referenced table is deleted. You can specify the default value when defining the column.
+
+
+
+
+# On Update: 
+noActionOnUpdate(): This option prevents updating of the foreign key values in the current table when the primary key of the referenced record is updated.
+
+cascadeOnUpdate(): This option will cause a cascade update, meaning that when the primary key of the referenced record is updated, the foreign key values in the current table will also be updated accordingly.
+
+setNullOnUpdate(): This option will set the foreign key column in the current table to null when the primary key of the referenced record is updated.
+
+setDefaultOnUpdate(): This option will set the foreign key column in the current table to its default value when the primary key of the referenced record is updated.
+
+You can choose the appropriate option based on your specific database schema and requirements to ensure data integrity and handle cascading actions or restrictions when dealing with foreign key constraints.

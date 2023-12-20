@@ -1,0 +1,29 @@
+when we use Continous Websites, there was no need to what's called APIs.
+    but now, we need to use the data that returned from backend in many applications, 
+    now the there are many faces to the Cleint such as(website - mobile - IOT device - etc...), 
+    and each one can use data that's returned from backend in it's own way.
+    
+
+When the Data returns from Controller: 
+    Javascript can take it to deal with.
+    Mobile Developer can take it to deal with.
+    Any smart device can take it to deal with.
+    Any other model(eg. machine learning) can take it to deal with.
+
+so how can u transfer data from backend to different systems(frontend - Mobile - IOT devices - etc...)
+    u can't return a php array, other languages will not understand it, 
+    so, u must return data in a standard format, so any one of them can understand it, and deal with it in it's way, 
+    the standard format is JSON[JSON standes for Javascript Object Notation].
+
+
+From the previous introduction, u can return one of the three things from the controller: 
+1- Returning [single value]
+    integer, string, and we will deal with it from the frontend.
+
+2- Returning [view]
+    if u worked on a continous website, that's backend is connected to the frontend.
+
+3- Returning API Response
+    returns JSON format, 
+    use [Eloquent/API Resource] to format returned json file into the format u need, 
+    (u can return data in multiple formats such as: numbers - dates - names - etc...)

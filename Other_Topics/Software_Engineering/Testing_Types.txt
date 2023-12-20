@@ -1,0 +1,42 @@
+1- Exhaustive Testing: 
+    try all possible inputs that's user can use...
+    it's an Exhausting process to do that.
+
+--------------------------------------------------------------------------------------
+2- Test Driven Development(TDD): 
+    usually used in Incremental Development, 
+    when you finish any increment, test it.
+    [Inter-leaved Testing and Development Processes].
+
+--------------------------------------------------------------------------------------
+3- Regression Testing: 
+    When you finish any increment, test it and all the previous increments
+        sometimes when you add a new feature it can harm the previous ones,
+        or may be some conflicts between merge two features with each others.
+    [Make ensure that each part of the project can't harm the previous work]
+
+--------------------------------------------------------------------------------------
+4- Performance Testing: 
+    Is the System Stable? 
+    What is it's Speed?
+    What is it's Resorce Usage?
+    if we try to double users on the system, will it work?
+    What is it's Reliability?
+    What is it's Scalability القابلية للتوسع?
+    What is it's Reliability ? 
+
+    # There are specific websites that can measure the performance for your systems(called Profiles)
+
+--------------------------------------------------------------------------------------
+5- Black-Box Testing and White-Box Testing: 
+
+    Black-Box Testing:
+    Is this system conforms the requirments of not
+    (in this type we don't care with the implementation, we care with the last outputs)
+
+    White-Box Testing: 
+    it has several names, like: glass testing, Structural testing, open-box testing, clear-box testing...
+    Care with the implementation,
+    you calculate Statements Coverage: -unused Statements
+                                       -Unreachable Code.
+                                       -Unused Branches.

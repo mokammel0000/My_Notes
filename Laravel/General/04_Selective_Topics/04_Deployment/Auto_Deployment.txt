@@ -1,0 +1,5 @@
+Developing a Script that pull updated files by itself.
+
+CI/CD: 
+    continous Integration/ Continous Deployment
+    when you add new updates on the project Repo, Server will Pull and Deploy them automatically.

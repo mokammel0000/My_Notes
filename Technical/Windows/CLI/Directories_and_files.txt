@@ -1,0 +1,35 @@
+>>>changing current directory: 
+    -cd 
+    -cd ..
+    -cd ~   = cd \    
+    -cd C+tap        (autocomplete)
+    -cd "enter_whole_path_whenever_the_path_you_are_in"
+
+
+>>>Creating New Folder/Folders: 
+    -mkdir
+    -md
+    -md html css js   (creating multiple files)
+    -md "Osama Elzero"
+    -md ..\testing    (creating file in the parent directory)
+
+
+>>>Renaming File: 
+    -rename X Z 
+    -mv folder folder(if it isn't exist)
+    
+
+>>>Moving file:
+    -move(windows)
+    -mv folder folder
+    -mv floder ..\      (move it one step back)
+    -mv floder \        (move it to the C directory)
+
+
+>>>Coping File: 
+    -cp -r css css2     (copy a folder with it's محتوياته)
+
+
+>>>Removing File:
+    -rm -r css          (يمسح فولدر فيه محتويات)
+    -rm -d css          (يمسح فولدر فاضي)

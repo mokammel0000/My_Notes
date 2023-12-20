@@ -1,0 +1,7 @@
+When u create a DB Scheme:
+    specify which table will be the parent and which one will be the child, then
+    -give the parent an ID
+    -make an attribute in the child table that store parent's ID(link the child with it's parent).
+
+eg. 
+    in the product table: link each product with it's category_id...

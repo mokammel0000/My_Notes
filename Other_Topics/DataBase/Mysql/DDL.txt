@@ -1,0 +1,33 @@
+DML 
+    stands for Data definition language. 
+    DDL basic operations         (Show - Use - Create - Drop) Databases, 
+                                 (Show - Create - Describe - Drop - Alter) tables;
+
+
+
+
+DDL commands: 
+    
+    -show databases;                // don't delete the 5 original databases.
+    
+    -use Lara_shop_DB;
+    
+    -drop database   Lara_shop_DB;
+
+    -create database Lara_shop_DB;
+    
+    -------------------------------------------------------------------------
+    -show tables;                   // show tables in the current database.
+
+    -create table users(
+        column_name, data type , any flags, _, _, _
+    );
+
+    -describe column_name;
+    desc column_name;
+    explain column_name;
+
+    -drop table column_name;
+
+    -alter                         // modifing somethin in the table.
+                                  // look at w3schools to learn it's syntax.

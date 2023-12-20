@@ -1,0 +1,4 @@
+In the Optimization Algorithms: 
+    we enter an initial solution as a input to the algorithm, 
+    the main rule of the algorithm is to find the best solution, 
+    but sometimes it hit in hill-climbing then find a better solution but not the best one.

@@ -1,0 +1,15 @@
+1- Shared Hosts: 
+    -you can manage your website using [Cpanel].
+    -upload your website on [public html folder], clone your repo there,
+        when you add any updates in the development environment pull them in this folder .
+
+2- VPS and Dedicated Hosts: 
+    -it's an empty machine, you must install all tools and packages by yourself.
+    -you manage all things using [Terminal], there is no default Cpanel,
+    but you can but a Cpanel, install it in the machine, then use it instead of using Terminal.
+    -the system security is your responsibilty.
+
+
+    -usually system administrator or Devoops enginner deals with this type of servers.
+        initially they prepare the server, 
+        then he can upload website files on it, developers can do it, or using Auto Deployment.

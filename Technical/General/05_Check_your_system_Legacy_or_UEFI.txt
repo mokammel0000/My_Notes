@@ -1,0 +1,6 @@
+One way is to use the System Information tool in Windows 10. Here are the steps:
+
+search in windows with “System Information”.
+Open the System Information app from the search results.
+Look for the “BIOS Mode” entry on the right pane. If it says “UEFI”, then your device supports UEFI.
+    If it says “Legacy”, then your device uses BIOS.

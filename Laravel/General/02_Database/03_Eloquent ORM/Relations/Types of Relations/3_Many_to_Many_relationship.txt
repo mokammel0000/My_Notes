@@ -1,0 +1,48 @@
+Many TO Many relationship   1 : M + M : 1
+    [Each Model own Many of the other one].
+    [NOT parent-child relation علاقة ملكيه متبادلة].
+    -Any record in the First Model can own any number of records from the Second Model, 
+    also any record in the Second Model can own any number of records from the First Model.
+
+    -In the DB scheme:
+        Each table of the 2 tables contain it's attributes, aslo contain it's id(primary-key),
+            -note that: it can contain a foreign-key to link it with other table-
+
+        Then u should create a third table that link the 2 tables with each other,
+        the third table contains: [This table is used as an intermediate table that links the 2 tables]
+                    -The first table_id,
+                    -The second table_id,
+                    -The attributes that's related to the relation
+                                        (NOT RELATED TO EITHER FIRST OR SECOND TABLES INDIVIDUALLY).
+                                        
+                    -This table don't need a primary key,                // u can need them in some cases
+                    -This table don't need the timestamp attributes...   // u can need them in some cases
+                    -The third table is derived from the alphabetical order of the two tables.
+            
+    -Methods in the Model:
+        The first_table [belongsToMany()->withPivot('quantity')] of the second_table, 
+        The second_table [belongsToMany()->withPivot('quantity')] of the first_table.
+                    // don't define the relation in the 2 Models until u need it,
+
+    -eg. 
+        User belongsToMany roles and a role belongsToMany users.           // role_user 
+        Cart belongsToMany Products and a product belongsToMany carts.     // cart_product
+        Order belongsToMany Products and a product belongsToMany orders.   // order_product
+        User belongsToMany Products and a product belongsToMany users.   // product_user
+        
+
+Note that: 
+    U can fetch any data from the first table, because it has a Model, 
+    Also u can fetch any data from the second table, because it has a Model, 
+    WHAT ABOUT THE PIVOT TABLE??!    HOW CAN WE ACCESS IT'S ATTRIBUTES??!
+    To do that we can use <<<<<PIOVT>>>>> keyword, to fetch the pivot attributes from the pivot table...
+    PIOVT is the attributes about the relationship, 
+        It don't relate to any table individually, it relates to the relation between 2 tables.
+code: 
+    $user = User::find(1);
+    foreach ($user->roles as $role)
+    {
+        echo $role->pivot->years;
+    }
+
+    $roles = User::find(1)->roles()->orderBy('name')->get();

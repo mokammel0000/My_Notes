@@ -1,0 +1,14 @@
+URL
+    stands for [Uniform Resource Locator],
+    it can be written in words or as an IP address.
+
+    "academind.com/learn" is the (URL).
+    "academind.com" is the (domain) of an website,
+    "/learn" is the so-called (path),
+
+
+you can use the main domain to visit the main website page, 
+    also u can use the same domain followed by some predefined paths to visit more than one page.
+
+In addition, you can visit most websites via "www.academind.com" or just "academind.com".
+    Technically, "www" is a subdomain but most websites simply redirect traffic to "www" to the main page.

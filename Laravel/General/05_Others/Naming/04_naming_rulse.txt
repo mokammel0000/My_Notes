@@ -1,0 +1,67 @@
+Note that: any FOLDER act as a namespace, must start with a Capital Letter 
+            --such as Controller Floder
+otherwise the folder that u create to just organize files in your project,
+            --such as Views Floder 
+it doesn't matter to start it with CAPITAL or small litters.
+
+ 
+>>>Routes:
+    1-seperate words using(-).
+    2-put each Controller in it's correct folder(Website/ Dashboard/ API), 
+        and add prefixes to the dashboard file from RouteServiceProvider File.
+    eg.
+        '/add-to-cart'
+        '/remove-from-cart/{prodcutID}'
+
+
+>>>Controllers:
+    1-Controller name is single.
+    2-there is no spaces between words.
+    3-each word start with a CAPITAL LETTER.
+    4-add (Controller) word at the end of it.
+    5-the Controller name should be same as the TASK name.
+    6-put each Controller in it's correct folder(Website/ Dashboard/ API).
+
+    eg.
+        Website\CategoryController
+        Website\AuthController
+        Dashboard\CategoryController
+
+
+>>>Views:
+    1-seperate words using(_).
+    2-Make a layout Design that they extends it.
+    3-put each View in it's correct folder(Website/ Dashboard/ API),
+        and seperate them into small Folders to combine the same-task Views.
+    
+    eg.
+        \website\layout.blade.php
+        \dashboard\layout.blade.php
+        \website\search_results.blade.php
+        \dashboard\login.blade.php
+
+
+>>>Model:
+    1-Model name is single.
+    2-begins with a CAPITAL LETTER because it's a class.
+    3-there is no need to seperate them into folders,
+        because the website and dashboard using the same Model.
+
+    eg.
+        User
+        Category
+
+
+>>>Migrations:
+    1-table name is plural.
+    2-seperate words using(_).
+    3-the migration name should be expressive meaning.
+
+    eg.
+        create_categories_table
+        add_photo_field_to_categories
+
+
+>>>Appending Values To JSON:
+    ATTRIBUTES:     eg. featured_photo
+    METHOD:         eg. featuredPhoto()

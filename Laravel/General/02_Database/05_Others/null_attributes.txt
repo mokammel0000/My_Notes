@@ -1,0 +1,13 @@
+When can make the attribute nullable: 
+    -if the coloumn will be compared with any other field, don't make it nullable.
+    -if we will make any operation with it's column, don't make it nullable.
+    -if we will compute the sum or the average of it's column, don't make it nullable.
+    -if it will be called in any other place in the view, don't make it nullable.
+    
+    -if the attribute isn't neccesary to use,
+        we will not affect if it wasn't existing, then u can make it nullable.
+
+
+u can make the attribute default(): 
+    if it was neccesary to store a value, 
+    and at the same time, we want to ignore adding a value to it each time we add a new object to the table.

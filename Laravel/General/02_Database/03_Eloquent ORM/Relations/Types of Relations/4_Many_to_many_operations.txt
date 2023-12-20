@@ -1,0 +1,35 @@
+To ADD VALUES TO PIVOT TABLE, PASS THE 2 ID'S AND THE PIOVT ATTRIBUTES.
+-----------------------------------------------------------------------------------
+Insert: we can't use create(), we will use ATTACH() or updateExistingPivot():
+
+    To Insert Completely New Recore on the Pivot table:  
+        auth()->user()->cart->products()->attach(
+            #auth()->user()->id,
+            $request['product_id'], 
+            ['quantity'=> $request['quantity']]
+        );
+
+    To update some pivots on an existing Record: 
+        auth()->user()->cart->products()->updateExistingPivot(
+            #auth()->user()->id,         // will be passed automatically
+            $request['product_id'],      // pass it as it is
+            ['quantity'=> $newQuantity]  // pass it as an array
+        );
+
+
+-----------------------------------------------------------------------------------
+Delete: we can't use destroy(), we will use DEATACH():
+    auth()->user()->cart->products()->detach($productID);
+
+
+-----------------------------------------------------------------------------------
+Update: we can't use update(), we will use SYNC():
+    auth()->user()->cart->products()->sync($newQuantities);
+    
+    SYNC() delete the old values, and insert the new ones, so we use it in the update.
+
+
+-----------------------------------------------------------------------------------
+
+
+

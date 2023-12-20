@@ -1,0 +1,27 @@
+How can data transfere between different devices?
+    Once the server gets a request to access a particular website, data flow starts,
+        
+    Data is transferred in digital format via [optical fiber cables],
+    more specifically in the form of [light pulses].
+
+Light pulses:
+    sometimes have to travel thousands of miles via the optical fiber cable to reach their destination.
+    During their journey they often have to go through tough terrains such as hilly areas or under the sea.
+
+
+Optical Fiber Cables:
+    -The complex optical cable network is the [backbone of the Internet].
+    -Carrying the light are stretched across the seabed(قاع البحر) to your doorstep(عتبة باب بيتك)
+    where they are connected to a router.
+
+    The router converts these light signals to electrical signals.
+        An Ethernet cable is then used to transmit the electrical signals to your laptop.
+
+    However if you are accessing the Internet using cellular data,
+        from the optical cable the signal has to be sent to a cell tower,
+        and from the cell tower the signal reaches your cell phone in the form of electromagnetic waves.
+
+    
+There are a few global companies who lay and maintain these optical cable networks
+    (like Google, Orange, AT&T, Verizon).
+    

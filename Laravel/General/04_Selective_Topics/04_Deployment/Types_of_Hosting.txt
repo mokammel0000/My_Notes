@@ -1,0 +1,21 @@
+1- Shared Host:
+    -it's a server that's shared between differnt cleints
+        all your websites are being hosted on the same Machine.
+    -use it in unnecessary systems(when reliability is unnecessary).
+    -often u use admin panel to control your website on it.
+    -eg. godady and namecheap
+
+
+2- VPS Host: 
+   -Virtual Private Server
+   -the server(as a software) is dedicated for you.
+   -One hardware can run multiple Machines.
+   -the server runs on a VM, so u can change configurations on it.
+   -you can do what are you want on your VM.
+   -eg. Amazon - Digital Ocean(cheaper that amazon)
+        Heroku - Hostinger
+
+
+3- Dedicated Host: 
+    -the whole device(hardware and software) is dedicated for you.
+    الشركه موفره كهرباء ونت للجهاز، وإنته بتحجزه وتعمل فيه الي إنته عاوزه

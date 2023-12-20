@@ -1,0 +1,72 @@
+# Insert:
+    # The model's created_at and updated_at timestamps will automatically be set.
+    $flight = new Flight;
+    $flight->name = $request->name;
+    $flight->save();
+
+    $flight = Flight::create([
+        'name' => 'London to Paris',
+    ]);                                             
+    # Mass Assignment: write the attributes on $fillable or $guarded property on the model.
+
+________________________________________________________________________________________________________________
+
+# Update:
+    # The model's updated_at timestamps will automatically be updated.
+    $flight = Flight::find(1);
+    $flight->name = 'Paris to London';
+    $flight->save();
+
+    Flight::where('active', 1)
+      ->where('destination', 'San Diego')
+      ->update(['delayed' => 1]);
+    # Mass Assignment: write the attributes on $fillable or $guarded property on the model.
+________________________________________________________________________________________________________________
+
+# Upsert
+    # update an existing model or create a new model if no matching model exists
+    
+    # Performing just one Upsert
+    $flight = Flight::updateOrCreate(
+        ['departure' => 'Oakland', 'destination' => 'San Diego'],
+        ['price' => 99, 'discounted' => 1]
+    );
+    
+    # Performing multiple Upserts:
+    Flight::upsert([
+        ['departure' => 'Oakland', 'destination' => 'San Diego', 'price' => 99],
+        ['departure' => 'Chicago', 'destination' => 'New York', 'price' => 150]
+    ], ['departure', 'destination'], ['price']);
+
+________________________________________________________________________________________________________________
+# Deleteing/ Destroying
+    $flight = Flight::find(1);
+    $flight->delete();
+ 
+    $deleted = Flight::where('active', 0)->delete();
+
+    # if you know the primary key of the model:
+    Flight::destroy($id);
+    Flight::destroy(1);
+    Flight::destroy(1, 2, 3);  or  Flight::destroy([1, 2, 3]);  or  Flight::destroy(collect([1, 2, 3]));
+
+    Flight::truncate();
+
+
+
+# Soft Deleting
+    In addition to actually removing records from your database, Eloquent can also "soft delete" models.
+    When models are soft deleted, they are not actually removed from your database. Instead,
+    a [deleted_at] attribute is set on the model indicating the date and time at which the model was "deleted".
+
+    use this property in your model: use SoftDeletes;
+    and it will automatically cast the deleted_at attribute to a DateTime / Carbon instance for you.
+    [but take care of that, u must add deleated_at property in your DB table].
+
+    Schema::table('flights', function (Blueprint $table) {
+        $table->softDeletes();
+    });
+     
+    Schema::table('flights', function (Blueprint $table) {
+        $table->dropSoftDeletes();
+    });

@@ -1,0 +1,26 @@
+Run this command: 
+    sudo dnf upgrade
+
+-------------------------------------------------------------------------------------------------------  
+One Word: 
+    # My Commands
+    alias update='sudo dnf autoremove && sudo dnf clean all && sudo dnf --refresh update'
+    alias update_flatpak='sudo flatpak update --assumeyes && flatpak update -y'
+    
+-------------------------------------------------------------------------------------------------------
+After Installation: 
+    https://mmbesar.github.io/Tutorials/Fedora-39-Post/
+
+sudo systemctl enable --now firewalld: 
+    enable and start the Firewalld service immediately with elevated privileges.
+    This ensures that the firewall is active and running on the system.
+    The firewall is a crucial component for managing network security
+        by controlling incoming and outgoing network traffic based on a set of predefined rules.
+
+
+-------------------------------------------------------------------------------------------------------
+Genome Extinsions: 
+    1- Dash to Dock.
+    2- Vitals.
+    3- AppIndicator and KStatusNotifierItem.
+    3- Clipboard History.

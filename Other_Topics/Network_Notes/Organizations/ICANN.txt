@@ -1,0 +1,7 @@
+ICANN stands for Internet Corporation for Assigned Names and Numbers.
+
+Since the Internet is a global network,
+    It has become important to have an organization to manage things like
+        -IP address assignment,
+        -domain name registration.
+    this is all managed by ICANN institution located in the USA.

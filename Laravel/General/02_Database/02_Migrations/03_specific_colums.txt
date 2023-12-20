@@ -1,0 +1,6 @@
+$table->string('pin_code', 6):
+    to store the temporary pin code that reaches to user to activate his email.
+
+$table->rememberToken();
+    The rememberToken method creates a nullable, VARCHAR(100) equivalent column, 
+    that is intended to store the current "remember me" authentication token.

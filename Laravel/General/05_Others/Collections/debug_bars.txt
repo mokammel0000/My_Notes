@@ -1,0 +1,30 @@
+Laravel Debug Bar: 
+    -old,
+    -easy,
+    -tracing your project performance,
+    -calculateing query_responding_time(خدت وقت قد إيه), 
+    -how much RAM project consume, 
+    -how much Response_Time project consume.
+
+Laravel ClockWork: 
+    -more details than the first one,
+    -old,
+    -easy,
+    -tracing your project performance,
+    -calculateing query_responding_time(خدت وقت قد إيه), 
+    -how much RAM project consume, 
+    -how much Response_Time project consume.
+    
+
+
+Laravel Telescope:
+    -officially package with laravel,
+    -tracing your project performance,
+    -calculateing query_responding_time(خدت وقت قد إيه), 
+    -how much RAM project consume, 
+    -how much Response_Time project consume,
+    -more details than the first one.
+
+
+The first two ones are most recommended in DB dealings(queries and so on), 
+but Telescope is exelant in analysing your all project performance.

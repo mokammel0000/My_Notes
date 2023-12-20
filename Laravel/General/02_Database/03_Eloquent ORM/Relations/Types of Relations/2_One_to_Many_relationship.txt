@@ -1,0 +1,32 @@
+ONE TO Many relationship    1 : M + 1 : 1   
+    [parent-child relation]
+    [parent has any number of children, while child has only one parent]
+    
+    -In the DB scheme:
+        the parent has no need to store id of his children,
+        the child must have his parent's id as a foreign key,
+            (note that: each foreign key can refer any primary key,
+                        because the parent can have more than one child).
+        Just take the id from the parent record and put it in the child record.
+             
+
+    -Methods in the Model:
+        The parent [hasmany()] childs, 
+        The child [belongsto()] ONE parent.
+                    // don't define the relation in the 2 Models until u need it,
+
+    -eg. 
+        category hasmany() products, at the same time product belongsto() ONE category, 
+        product hasmany() photos, at the same time product belongsto() ONE product.
+
+
+
+code: 
+    $comments = Post::find(1)->comments;       // find all comments that's belongsto the post that has id = 1.
+    $comment = Post::find(1)->comments()->where('title', 'foo')->first();
+
+    
+
+    #The reverce process: 
+    $comment = Comment::find(1);               // find the comment that has id = 1, 
+    return $comment->post->title;              // retreive it's post's title.

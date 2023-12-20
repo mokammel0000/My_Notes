@@ -1,0 +1,29 @@
+Events concept under the Backend umberella:
+    If any action has occured, launch a corresponding event automatically
+
+    Event(specific action) ------dispatching-------> Listner(laravel will do it automatically)
+    any product has been created   ------------>     add SKU to it's sku field in DB.
+
+
+------------------------------------------------------------------------------------------------------
+Built-in Event: 
+    Laravel defining it automatically, u just hocked the event with your code, 
+    such as[created, updated, saved, deleted, trashed, forceDeleted, etc]
+    u can write it into Model using https://laravel.com/docs/10.x/eloquent#events
+
+
+
+------------------------------------------------------------------------------------------------------
+You can generate your own Events, that's not defined it laravel.
+
+Note that: 
+    -a single event can have multiple listeners that do not depend on each other.
+
+
+------------------------------------------------------------------------------------------------------
+Artisan Commands: 
+    php artisan event:generate
+    
+
+    php artisan make:event PodcastProcessed
+    php artisan make:listener SendPodcastNotification --event=PodcastProcessed

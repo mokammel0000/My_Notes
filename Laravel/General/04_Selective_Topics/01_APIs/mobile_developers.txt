@@ -1,0 +1,19 @@
+When u want to return some data to mobile developers: 
+    If u return the whole Model in the response, 
+        1- size of API will be so big, it's consume much time to transfer to him, 
+        2- Mobile Application will be heavey because it contains data that it don't need.
+
+    so, u must return just data that he need from the Model.
+
+
+API Resource: 
+    is to send just data that the mobile developer need, 
+    send some fields from the DB(not all fields), 
+    also u can name fields as u want(You are not forced to use DB names).
+
+
+Conditional Attributes: 
+    u can put some conditions on the fields, sometimes it will be sent, and other times it won't.
+
+    
+Customization API, Dynamic API: 

@@ -1,0 +1,6 @@
+ERP = Enterprise Resource Planning
+    system of systems(purchasing/ Supply chain/ Logistics/ CRM)
+
+    each system of the Enterprise can be dealed as an isolated system, 
+    but all of them are connected to the same DB, and are be under the same Rules
+    so, we can make a system of systems.

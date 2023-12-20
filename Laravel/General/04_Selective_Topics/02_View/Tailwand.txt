@@ -1,0 +1,8 @@
+In the last version of laravel, it replaced bootstrap and used Tailwind, 
+    so any thing is related to Views will displayed as Tailwind format. 
+    
+    
+What if I depened on Bootstrap on my project?
+    but bootstrap still work, if u write it's configurations in 
+        [App/provider/Appserviceprovider/write'Paginator::useBootstrapFour();'in the boot method].
+        [App/provider/Appserviceprovider/write'Paginator::useBootstrapFive();'in the boot method].

@@ -1,0 +1,4 @@
+Bio-Inspired Algorithms is set of Algorithms,
+    that we reach to after watching some biology operations in the Organisms
+
+    e.g. Genetic Algorithms(Crossover and Mutation).

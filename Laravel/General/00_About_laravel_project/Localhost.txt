@@ -1,0 +1,9 @@
+php can't run on the cleint side, php is a server side language, so it runs on the servers, 
+    so, u should make a virtual server in your machine so that php code can be interpreted and compiled.
+
+http://localhost:8000/ = http://127.0.0.1:8000/                     
+    Note that: '/' : is a sign to the home page.
+
+    
+http://localhost/phpmyadmin/ = http://127.0.0.1/phpmyadmin/ 
+    but u should open mysql in xampp

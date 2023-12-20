@@ -1,0 +1,19 @@
+1- Install Virtual Box:
+    -use it to create the virtual machine that you will install HomeStead on it.
+    -before installing a VM on your device make sure that you enabled creating them, 
+        F2(BIOS configurations) -> advanced -> advanced options -> enable VMs.
+
+2- Install Vagrant: 
+    -to create the development Environment on the virtual machine.
+    -Managing all VM configurations(Ram, core, hard_drive, etc) using [Scripting].
+
+3- Open git bash as an administrator and download HomeStead Box.
+
+
+4- clone the HomeStead Repo
+
+
+5- Edit Homestead VM configurations(homestead.yaml file and SSH keys).
+
+
+6- Open Homestead VM and add your website domain(look at it's file).

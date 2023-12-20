@@ -1,0 +1,10 @@
+Vite: 
+    is often used for building and bundling JavaScript and CSS assets in Laravel applications.
+    It supports modern JavaScript features (like ES modules)
+        and has built-in support for various front-end frameworks, such as Vue.js and React.
+
+
+Vite is designed to be fast and efficient, especially during development, providing a smooth and rapid development experience.
+
+
+

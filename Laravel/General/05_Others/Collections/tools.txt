@@ -1,0 +1,100 @@
+[ERD Plus]: website to draw UML diagrams
+
+
+------------------------------------------------------------------------------------------------------
+PHP Coding Standards Fixer[PHP CS FIXER]:
+    A  tool fixes your code to follow standards to reach to the PSR(PHP coding standards).
+
+
+------------------------------------------------------------------------------------------------------
+[Laravelsd.com]: 
+    a website that help you to draw your Database scheme before write it's migrations, 
+    it can create migration file for you...
+
+
+------------------------------------------------------------------------------------------------------
+[Json_formatter]: 
+    Extinsion in google chrome that convert json file to a readable file.
+
+
+------------------------------------------------------------------------------------------------------
+[FlatPicker]:
+    A plugin that helps you to compose some date time components in your design, 
+    -you can do that manually now using type="date" type="datetime-local" in Html5...
+
+------------------------------------------------------------------------------------------------------
+[cdnjs.com]: 
+    is a website that give u the links for all websites that u can link your project with, 
+    like: bootstrap, fontawsome, etc....
+
+
+------------------------------------------------------------------------------------------------------
+[Lorem Ipsum]: 
+    use it to generate a dummy data(Text data).
+
+
+------------------------------------------------------------------------------------------------------
+[Rich Text Editor], WYSIWYG(what you see is what you get), 
+    It's a pluggin to create a text areaa that can style words in it(format the paragraph).
+    It add html & css tags on the paragraph to store it in the desired format.
+
+The most ones: 
+    Minimal Rich Text Editor:
+        -is a jquery text editor that use traditional text area.
+        -easy to use, no need to write native javascript code or use one of it's frameworks.
+
+    Quill: 
+        -just adding simple features to the paragraph, 
+        -use it with the Egyption cleints....!!
+    
+    Tiny MCE:
+        -the most popular one todays, 
+        -wordpress pluggin, 
+        -can add a bunch or features that make it complex(Somewhat like Word)
+        -don't use it with traditional users(causes overhead for u).
+
+------------------------------------------------------------------------------------------------------
+[Flateicons]: 
+    A website to download an Icons and use it in your website.
+
+    
+------------------------------------------------------------------------------------------------------
+[Fontawsome].com
+Fontawsome.com/v5/cheatsheet: 
+    Like bootstrap but it gives u ICONS.
+        
+    -u can download it's files, 
+    -also u can link your project with it online.
+
+
+------------------------------------------------------------------------------------------------------
+[unsplash.com]: 
+    is a website that gives u a free high-quality images, 
+
+The following websites gives u a link to put in href="" attribute:
+
+    [placeholder.com]: 
+        give u a gray photo that u can use as a dummy image. 
+        u can specify image size as u want.
+    -------------------------------------------------------------
+    [placeimg.com]: 
+        give u different images As desired, 
+        u can specify image size as u want.
+        like: nature, people, tech,.....    
+    
+    
+    -------------------------------------------------------------
+    [picsum.photos]: 
+        as same as the last one(placeimg.com).
+    -------------------------------------------------------------
+    
+    
+    or u can use [Faker Php]: this is a php package that give u a dummy data to try showing data in your website.
+
+
+------------------------------------------------------------------------------------------------------
+[PowerToys]: 
+    give u some amazing tools that u can use in your daily tasks,
+    like:
+        -color picker.
+        -pointing with mouse. 

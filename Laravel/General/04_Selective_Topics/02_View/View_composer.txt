@@ -1,0 +1,19 @@
+if u want to put a specific view in more than one page(Header for example), 
+    it's difficult to pass the data to the view from several controllers. 
+    the best solution is to compose the data with the view itself,
+    in this case any time that the view will be needed, it will fetch it's data automatically using view composer.
+
+
+
+Steps:
+    once in the project: 
+    1- create '\app\Providers\ViewServiceProvider',
+        -u don't have to create ViewServiceProvider, u can use any service provider, 
+            but it's better to make a new customized one.
+    2- add the ViewServiceProvider to the '\config\app' to force laravel dealing see it.
+    3- create '\app\View\Composers' to add the your files in.
+
+    For each view: 
+    1- make the view in a specific file.
+    2- write the logic(fetching the data) in the composer file,
+    3- link the composer file in ViewServiceProvider file to enable laravel reading it.

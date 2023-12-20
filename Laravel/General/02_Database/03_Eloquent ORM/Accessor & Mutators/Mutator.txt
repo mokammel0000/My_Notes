@@ -1,0 +1,14 @@
+Mutator = Setter. 
+In ORM, we deal with the table using the Model, we can fetch or store data from the table using the Model, 
+    what if we want to store data but do some operations on it before storing? 
+Mutator Allowing u to Store data In the table, but with some modifications, to store it in an better format.
+
+in a simple way: do some operations in the value before storing it in it's table, 
+    but u don't do these operations in the controller, u send the value from the controller as it is,
+    and in the model: make these operations and store the value....
+
+eg. 
+    -Adding SKU when we add a product to products table, so user haven't to add the SKU with the input data.
+    -When u storing the critical value: encrypt it while it is stored in the database
+
+

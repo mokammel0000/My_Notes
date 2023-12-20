@@ -1,0 +1,28 @@
+-you can reach to a specific file in a rapid way, in the GUI it's a slow process
+    (think about the hosts file)
+
+-you can use [Loops & Regular_Expressions] in the CLI,
+    that will make creating and Searching in files faster and more easier.
+
+-In the same OS, The basic commands will be the same in all different distriputions.
+
+-Don't need much resources
+    its just a basic Interface that run commands,
+    no complex actions between different components as it is in the GUI.
+
+-There are nothing can distripute your concentration, 
+    it's all about the command line, no other distriputions.
+
+-There are some packages that can't be installed except through CLI.
+
+
+-Batches use CLI to modify some values on your device,
+    so when you install a batch it won't take much time to make changes,
+    (you can create your own batch to chagne what you want in a fast way), 
+    In case that you want to create your own batch you can 
+        1- either create it using windows CMD, 
+        2- or create it with any programming language, then run it on the windows.
+
+-you can automaite some functions using CLI, 
+    e.g. when any user create .txt file, add it's name to a specific file.
+

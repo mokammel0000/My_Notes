@@ -1,0 +1,13 @@
+When laravel find an error in the inputs(during the validation process), 
+    it back you to the form, and caching it's fields,
+    then you can use them in the helper method old().
+
+but what if you want to cach the fields unless there is no error occured?!
+there are 2 cases: 
+    1- if you return a view: 
+        write request()->flash(); to cach the old form fields with the current view.
+
+    2- if you redirect to a specific Route: 
+        write redirect->withInput(); to cache the old form fields with the current Route.
+
+        [Then you can use old() method in the form].

@@ -1,0 +1,10 @@
+Encryption:
+    Use APP_KEY to encrypte and decrypte the value [then you can get the original value], 
+
+    APP_KEY: Laravel use it to encrypte and decrypte Encrypted Files, Sessions, Cookies and Cached Fiels, 
+        so if you change it, you Can't return the Origianl Data.
+
+Hashing:
+    One-Way Process 
+    If you hash any object, you can't return it to the original value, [but you can compare it with others].
+    often laravel uses it in Passwords.

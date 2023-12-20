@@ -1,0 +1,5 @@
+To send and ID from Front to Back: 
+1- send it in the route, and in the controller deal with the same name you have been sended, 
+    (in this way user can see the ID for each object, is it critical...?)
+
+2- send it it a hidden field in the form, then receive it from $request or request()

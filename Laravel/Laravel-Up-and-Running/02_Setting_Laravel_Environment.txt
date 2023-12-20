@@ -1,0 +1,236 @@
+It’s hard to ﬁnd a web server that can’t serve PHP.
+    However, modern PHP tools have stricter requirements than those of the past.
+
+Your development environment will need to have all of the following installed in order to serve Laravel sites:
+    -PHP >= 8.1
+    -OpenSSL PHP extensionPDO PHP extension
+    -Mbstring PHP extension
+    -Tokenizer PHP extension
+    -XML PHP extension
+    -Ctype PHP extension
+    -JSON PHP extension
+    -BCMath PHP extension
+---------------------------------------------------------------------------------------------------------------
+
+Composer: [Dependency Manager]
+    composer -> PHP
+    NPM (Node Package Manager) -> Node
+    RubyGems -> Ruby
+
+    Composer is a tool that’s at the foundation of most modern PHP development.
+    Composer is also the foundation of much of our 
+        testing,
+        local script loading,
+        installation scripts, and much more. 
+        
+    You’ll need Composer to 
+        install Laravel, 
+        update Laravel, 
+        and bring in external dependencies.
+---------------------------------------------------------------------------------------------------------------
+
+Local Development Environments: 
+
+To Run Any PHP project:
+
+    1- Using a [simpler toolset] like: MAMP or WAMP or XAMPP.
+
+    2- PHP’s built-in server: 
+        run: [php -S localhost:8000 -t public] from your Laravel site’s root folder,
+        and PHP’s built-in web server will serve your site at http://localhost:8000/.
+
+    However, if you want a little more power in your development environment 
+    (diﬀerent local domains for each project) or  (management of dependencies like MySQL, etc.),
+
+To Run Laravel Project: (the last two and the next 5)
+    
+    1- Artisan Serve: (just like  PHP’s built-in web server.)
+        run: php artisan serve
+        it’ll serve it at http://localhost:8000
+
+
+    2- Laravel Sail: (Recommended for everyone)
+        -is the simplest way to get started with local Laravel development.
+        -used on all operating systems.
+        -comes with a [PHP web server], [databases], and [a host of other niceties].
+        -It uses Docker to accomplish the above, and Docker on macOS is just slow.
+
+
+    3- Laravel Valet: (Recommended for Mac-OS)
+        -It's primary for macOS users (there are also unoﬀicial forks for Windows and Linux).
+
+
+    4- Laravel Herd: 
+        -Herd is a native macOS app that bundles Valet and all its dependencies as a single installer.
+
+
+    [Vagrant is a tool for managing virtual machines]
+    5- Laravel Homestead: 
+        -a conﬁguration tool that sits on top of Vagrant.
+        -provides a preconﬁgured virtual machine image that is perfectly set up for Laravel development.
+        -mirrors the most common production environment that many Laravel sites run on.
+---------------------------------------------------------------------------------------------------------------
+
+Creating a New Laravel Project: (two ways, both from terminal)
+
+1- install the Laravel installer tool (using Composer):
+    composer global require "laravel/installer"
+    composer global update "laravel/installer"
+
+    then: (laravel new projectName)
+
+
+2- use Composer’s create-project feature:
+    (composer create-project laravel/laravel projectName)
+
+3- if you use Sail:
+    Look at the book.
+---------------------------------------------------------------------------------------------------------------
+
+Laravel’s Directory Structure: 
+
+-> Folders: 
+
+    -app: 
+        Where (the bulk of your actual application) will go.
+        -Models, -controllers, -commands, -Traits, -Requests, and your PHP domain code all go in here.
+
+
+    -bootstrap: 
+        Contains the ﬁles that the Laravel framework uses (to boot every time it runs).
+
+    -conﬁg:
+        Where all (the conﬁguration ﬁles live).
+
+    -database:
+        Where database -migrations, -seeds, and -factories live.
+    
+    -public
+        The directory the server points to when it’s serving the website.
+        This contains (index.php),
+            which is the front controller that kicks oﬀ the bootstrapping process and routes all requests appropriately.
+            هو الي بيوجه كل ريكويست داخل لل كونترولر بتاعه 
+        It’s also where any (public-facing ﬁles) like images, stylesheets, scripts, or downloads go.
+
+    -resources: 
+        Where ﬁles that are needed for other scripts live.
+        -Views, and (optionally) -source CSS and -source JavaScript ﬁles live here.
+
+    -routes:
+        Where all of the route deﬁnitions live, 
+        both for -HTTP routes and -“console routes,” or Artisan commands.
+    
+    -storage:
+        Where -caches, -logs, and -compiled system ﬁles live.
+
+    -tests:
+        Where -unit and -integration tests live.
+
+    -vendor: 
+        Where (Composer installs its dependencies).
+        It’s Git- ignored because Composer is expected to run as a part of your deploy me process on any remote servers.
+        عشان كده كل مره حد يسحب الريبو بتاعت البروجيكت لازم يسطب الحاجات دي عنده بنفسه
+
+
+-> The Loose Files: 
+
+    -.editorconﬁg:  
+        Gives your IDE/text editor instructions about Laravel’s coding standards 
+        (e.g., the size of indents, the charset, and whether to trim trailing whitespace).
+
+    -.env and .env.example: 
+        .env: (settings for this environment)
+            Dictate the environment variables
+            (variables that are expected to be diﬀerent in each environment and are therefore not committed to version control).
+
+        .env.example: (templatefor all environments) ﬁles
+            is a template that (each environment should duplicate) 
+            to create its own .env ﬁle, which is Git- ignored.
+    
+    -.gitignore and .gitattributes: 
+        Git conﬁguration ﬁles.
+
+    -artisan: 
+        Allows you to run Artisan commands from the command line.
+    
+    -composer.json and composer.lock: 
+        [Conﬁguration ﬁles for Composer]
+        composer.json is user- (editable) and composer.lock is (not).
+        These ﬁles share some basic information about the project and also deﬁne its PHP dependencies.
+    
+    -package.json: 
+        Like composer.json, but for (frontend assets and dependencies) of the build system;
+        it instructs NPM about which JavaScript-based dependencies to pull in.
+    
+    -phpunit.xml: 
+        A conﬁguration ﬁle for PHPUnit, the tool Laravel uses for testing out of the box.
+
+    -readme.md: 
+        A Markdown ﬁle giving a basic introduction to Laravel.
+        You won’t see this ﬁle if you use the Laravel installer.
+
+    -vite.conﬁg.js: 
+        The (optional) conﬁguration ﬁle for Vite. 
+        This ﬁle instructs your build system about how to compile andprocess your (frontend assets).
+
+
+
+what is the folders and files that are NOT being committed to the version control: 
+    -Vendor Folder: 
+        so, you need to run composer install/ or composre update.
+        composer.json and composer.lock files will contain all informations about the packages and dependencies that's used in the project.
+    
+    -.env file: 
+        so, you need to make your .env copy.
+---------------------------------------------------------------------------------------------------------------
+
+Conﬁguration: 
+
+config files: 
+    Any conﬁguration variables for your application 
+    such as -database connection settings, -queue and -mail settings, etc.
+    live in ﬁles in the conﬁg folder.
+
+    config('services.sparkpost.secret').
+
+    
+.env: 
+    Any conﬁguration variables that (should be distinct for each environment) will live in your .env ﬁles.
+    
+    env('BUGSNAG_API_KEY').
+
+    contains groups of authentication information for various services (Pusher, Redis, DB, Mail)
+
+    APP_KEY:  
+        A randomly generated string that’s used to encrypt data.
+        If this is ever empty, you may run into the error “No application encryption key has been speciﬁed.”
+        In that case, just run [php artisan key:generate], and Laravel will generate one for you.
+
+    APP_DEBUG:
+        is used to (control the debugging mode) of your Laravel application, 
+
+        When APP_DEBUG is set to true -> it means that your application is in debug mode.
+            In this mode, detailed error messages with stack traces are displayed on the screen in case an error occurs.
+            This can be very helpful during the development phase, as it provides more information about what went wrong,
+            making it easier to debug and fix issues.
+
+        In a production environment, you should set APP_DEBUG to false to disable detailed error messages on the screen.
+            This helps to enhance the security of your application 
+            by not exposing sensitive information about the application's structure or potential vulnerabilities to users.
+
+
+
+    do NOT use the env() in your project, 
+    set up a config item to refrence to it, and then use this config item anywhere in your project.
+
+    return [
+        'bugsnag' => [
+        'key' => env('BUGSNAG_API_KEY'),
+        ],
+    ];
+    // In controller, or whatever
+    $bugsnag = new Bugsnag(config('services.bugsnag.key'));
+
+    don't use variables form .env file in your application,  
+        either use variables from the config itself, 
+        or put the .env variables in a specific config items, and then use them from the config file.

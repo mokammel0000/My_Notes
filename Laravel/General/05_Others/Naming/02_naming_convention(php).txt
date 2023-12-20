@@ -1,0 +1,26 @@
+[Variable and Boolean Varialbes]:          (camelCase| descriptive and meaningful names)
+    $userName, $itemCount                       
+    $isLoggedIn, $hasPermission, $canDenyOrder
+
+ 
+[Function and Method within classes]:      (camelCase| descriptive names)
+    calculateTotal(), getUserData(), getUserById(), saveData()
+
+
+[Constant and Global Constants]:           (uppercase letters with words separated by underscores)
+    DEFINE_PI, MAX_ATTEMPTS, DATABASE_NAME
+
+
+[Class Naming]:                              (PascalCase/ StudlyCase)
+    UserManager, UserController, ProductService      
+[Interface Naming]:
+    CacheInterface, LoggerInterface                  -same as Classes.
+[Trait Naming]: LoggableTrait, SerializableTrait     -same as Classes.
+
+
+[File Naming]:
+    PHP files should have filenames that (match the class name) they contain.
+    For example, the UserManager class should be in a file named UserManager.php.
+[Namespace Naming]:
+    If you're using namespaces, they should follow the StudlyCase convention.
+    For example: App\Controllers\UserController, App\Models\Product, etc.

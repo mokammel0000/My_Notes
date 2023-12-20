@@ -1,0 +1,20 @@
+IP address:
+    Every [Network] that is connected to the Internet
+    -whether it is connected to servers or computers or mobile phones-
+    is identified uniquely by a string of numbers known as an [IP address].
+
+    IP address similar to your home address which uniquely identifies your home.
+    And each apartment in the home has other internally ID to make it distingushed in the building, 
+    Likewise, each device in the network is distingushed using [MAC ADDRESS].
+
+    Any letter sent to you reaches you precisely because of your home address.
+    Similarly in the internet world,
+    An IP address acts as a shipping address through which all information reaches its destination.
+
+    
+Types of IP adderss: 
+    -IP v.4: "172.56.180.5"          32-bit addressing
+    -IP v.6  "AB13.F540.180C.00D5"   128-bit addressing
+
+    
+

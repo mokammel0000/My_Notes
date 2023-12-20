@@ -1,0 +1,12 @@
+N+1 problem occures when u write a query in a loop,
+    that causes a load on the server(bunch of requests), 
+    u can get rid of that by call the query once in the controller, and loop on the result.
+
+    in the controller, u can call the query,
+                       also u can fetch it's relationships using(with()/ load()).
+
+
+    
+note that: 
+    -u can use a function that is call a query in it, SO
+        [don't loop on a query, or in a function that contains a query.]

@@ -1,0 +1,19 @@
+Accessor = GETTER
+In ORM, we deal with the table using the Model, we can fetch or store data from the table using the Model, 
+    what if we want to fetch data but adding some operations on it after fetching it? 
+Accessor Allowing u to FETCH data from table, but with some modifications, to fetch it in an better format.
+
+
+in a simple way: do some modifications in the value after fetching it from it's table, 
+    but u don't do these modifications in the controller, u receive the value from the table as it is,
+    and the model: make these modifications then return the value for u...
+eg. 
+    when u fetching the price: put the ($) next to the value.
+        -take care: in the price case don't do that, u can make calculations on it...
+            so don't make it a string value.
+    -when u fetching the price: add the (VAT) to it-here we do some calculations on the price-.
+
+Note that: 
+    To avoid changing the original value after fetching it,
+        u can use [Appending_values_to_json] to add a new attribute, 
+        in this case u can use the original one, and the modified one.

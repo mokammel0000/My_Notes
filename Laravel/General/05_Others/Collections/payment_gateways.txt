@@ -1,0 +1,8 @@
+Payment Gatways: 
+    paypal - Stripe - Hyperpay - Paytabs - Payfort
+
+Note That: 
+    -u should give them the Commercial Record for your busniss, and your website domains.
+    -paypal has a trial account that enables u to try some dummy data, called "Sandbox account".
+    -Most payment gateways have the same Integration process,
+        learn how to integrate with any one of them, and the others will be same as it.

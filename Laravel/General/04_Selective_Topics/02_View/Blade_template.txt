@@ -1,0 +1,23 @@
+Writing Php and Laravel in the html design...
+    eg.
+        href="{{ url('/login/') }}"
+        <p> {{ $user()->name }} is @php($age += 15) in the time is {{ time() }}</p>
+
+
+In blade Template: 
+    {{   }}
+        -showing the php code in them as it is, don't read html tags in it.
+        -scaping the html elements that's written in it.
+        -show the code in it as a text, don't convert it to html code...
+
+    {!! !!}
+        --showing the php code and convert and extract html tags from it.
+        -doesn't scape the html elements that's written in it.
+        -show the html code that exist in it
+        
+        By default, Blade {{ }} statements 
+        are automatically sent through PHP's htmlspecialchars function to prevent XSS attacks.
+        If you do not want your data to be escaped, you may use the following syntax:
+        Hello, {!! $name !!}.
+
+    {{-- --}}   ---> Comments.      

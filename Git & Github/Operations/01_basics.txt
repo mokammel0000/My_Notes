@@ -1,0 +1,31 @@
+git
+git --version
+git --help
+
+
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+___________________________________________________________________________________________________________________
+# creating a repo on your project(empty one with NO commits).
+git init    
+
+
+# Get the status of the current repo: 
+git status                      #- on any branch u are(eg. main branch)
+                                #- are there any commits(eg. no commits yet)
+                                #- tracked or untracked files.
+
+
+# Check your current branch: To see which branch you are on, use the following command:
+git branch
+
+
+# all the commits that added to your project (شجرة التعديلات).
+git log  
+
+___________________________________________________________________________________________________________________
+
+Origig: 
+    is a commonly used default name for the remote repository from which you originally cloned or fetched your local Git repository.
+    It acts as a shorthand reference to that remote repository.

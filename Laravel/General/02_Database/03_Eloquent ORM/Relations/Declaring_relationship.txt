@@ -1,0 +1,21 @@
+Take care: don't define a relationship unless:
+    1- There exist a real relation between the 2 tables in the DB (primary key and foreign key OR pivot table). 
+    2- U will need to call this relationship, 
+        In some cases, u will NOT define the relationship in the Model(because u don't need it),
+            eg. Is It Important to define a user relation in the cart? 
+            Are u going to call the user who have this cart? 
+                ut the relation must be defined because it's critical to define the cart relation in the User Model.
+
+
+Tabel can have relation/ relations with other tables, 
+    In ORM we deal with the table using the Model, so Model can have relation/ relations with other Models. 
+
+
+Declaring the relationship in the Model: 
+    belongsTo       : when you define a one to many relationship in the child side
+    hasmany         : when you define a one to many relationship in the parent side
+    belongsToMany   : when you define a many to many relationship in the child side
+        [if there is a pivot table, you have to declare it's pivots when you declare the relation] 
+
+
+

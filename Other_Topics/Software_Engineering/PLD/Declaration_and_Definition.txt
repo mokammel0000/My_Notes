@@ -1,0 +1,17 @@
+Declaration:
+    Declare an Identifier in the program, 
+    int x;
+    you are saying there is a variable in program, but you don't initialize it with any value,
+    [so, OS will Not reserve any place in the memory to this Variable].
+
+
+Definition: 
+    Initialize a value to an Identifier in the program,
+    x = 0;
+    after declaring a variable(or a method), we can Initialize a value to it
+    [in this process, we allocate a real space in the memory to this variable].
+
+
+
+    int x = 5; 
+    declaration and definition

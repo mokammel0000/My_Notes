@@ -1,0 +1,26 @@
+Take care: don't call a relationship unless u need it, 
+    In some cases u will need ONLY the model, and there is no need to any one of it's relations, 
+    So don't call the relation unless u need to call it's propeties.
+
+
+------------------------------------------------------------------------------------------------
+Calling the relationship in the controller: 
+    WITH(): 
+        calling the relationship when u define the Model itself, 
+        examples: 
+            $products = Product::with(['category'])->paginate(10);
+
+            $product = product::with(['category', 'photos'])->find($id);
+
+
+    LOAD(): 
+        calling the relationship AFTER defining the Model, 
+        u fetch the Model previously, and u want to fetch it's relationships,
+        or laravel fethed the model for u, and u want to fetch it's relationships,
+        examples: 
+            $product->load(['category', 'photos']);
+
+            $orders = auth()->user()->orders;
+            $orders->load('products');
+        
+

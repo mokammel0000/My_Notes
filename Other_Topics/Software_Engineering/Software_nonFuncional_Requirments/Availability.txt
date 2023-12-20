@@ -1,0 +1,4 @@
+إحتمالية إنك لما تطلب النظام تلاقيه متاح وبيرد عليك
+sometimes Availability will be more important than Reliability
+    e.g. in Telecomunication systems.
+    مهم في أي وقت تطلب الخدمة تلاقيهم بيردوا عليك

@@ -1,0 +1,7 @@
+Jquery is a library that contain amazing javascript functions, 
+    as the framework concept: it tries to gather the famous functions that any website need it. 
+
+    u can use it to write ajax code in a simple way, javascript details.
+
+    don't forget that: 
+        it's a library, u should without distracting yourself's links to use it's functions (like bootstrap). 

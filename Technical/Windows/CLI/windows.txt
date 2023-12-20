@@ -1,0 +1,14 @@
+-cls
+-dir
+
+-explorer .  open the folder/ file in the currnet path.
+-explorer    open the windows explorer.
+
+
+-title: 
+    change the title of the current Terminal.
+
+    
+-color -help
+-color 04:   0 is the background color, 4 is the font color.
+-color:      return the original color.

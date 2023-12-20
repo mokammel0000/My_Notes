@@ -1,0 +1,9 @@
+# To check if there any updates in the remote repo
+git remote update
+
+# pull updates from the default remote repository (usually named "origin") and the currently checked-out branch:
+git pull    
+
+#explicitly specify the remote repo and the branch name: 
+git pull origin main
+git rebase main

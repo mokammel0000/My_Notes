@@ -1,0 +1,37 @@
+صلاحياتك لدخول الموقع - هل الإيميل والباسوورد صح؟
+
+
+    
+using the auth() helper function,
+    which also provides access to the authentication service.
+    The auth() helper function is a global helper available throughout your Laravel application
+        and is commonly used to interact with the authentication service.
+
+auth()->user()->id;    // can write any attribute in the user's table(email - phone - created_at - etc...)
+    -fetch the name of the current user(from the user object, fetch his name attribute).
+
+auth()->id();
+    -directly fetch the id of the current user.
+    
+
+
+
+------------------------------------------------------------------------------------------------------------
+using the [Auth facade], 
+    which is a static proxy to the underlying authentication service.
+    The Auth facade provides a convenient way to access authentication methods
+        without explicitly resolving the underlying service instance.
+        It's a shorthand way of accessing the authentication service.
+
+Auth::attempt($credentials);    
+    -take this email and password and check if there are authenticated to login or not.
+    -if they are authenticated, perform what is in if statement(like go to your profile).
+
+Auth::check();
+    -check if the user has logged in or not.
+
+Auth::user();
+    -fetch the object of the current logged user in this session.
+
+Auth::user()->name;     // can write any attribute in the user's table(email - phone - created_at - etc...)
+    -fetch the name of the current user.

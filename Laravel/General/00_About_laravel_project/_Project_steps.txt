@@ -1,0 +1,36 @@
+1- Composing The Blade Design:      جهز التيمبلت الي هتشتغل عليه
+   -put css, javascript, fonts and images in the assets in the public folder
+                                       (next to index file/ accessable to user),
+      so u can reach to them from any page in the website using absolute path(asset('path')).
+   -create the master layout in the views, and then compose other views(extends, section, yeilds).
+
+2- Create DB Scheme and add it's name in the .env file
+
+3- Specify the TASK that u will start with(e.g Categories Task), 
+   Specify the REQUIRMENTS of this Task
+   Create the TABLE SCHEME on the paper or using (laravel Scheme Design)
+
+4- Make the Migration and Model for the table.
+            DDL            DML
+
+5- Specify each action should be done,
+   Specify if it will be get or post, 
+   Create it's ROUTE, 
+    -also u can create resource route
+    -u can give a name to the route, to call it easialy
+   Create it's Controller(contains the functions that belongs to a specefic task)
+    -if it was a complete CRUD make a resource controller, and make a resource controller for it.
+
+   Put the route link in the blade template,
+   Finish it's function in the controller, and redirect to the view or return to other view.
+
+
+View/ Url >>> Route >>> Controller(action) >>> View
+                        -can use Model
+
+When u want to create any form in the view, specify what is it's form method?
+   to create it's correct route...
+Note that: the traditional link(a) always be a [get] route, because usually we don't send data using it
+   (we can send unimportant data with it in the route itself,
+   but we can't store a form or upload files using it). 
+                    

@@ -1,0 +1,13 @@
+Attributes that u define in a specific html element, to send some data with the element, 
+for example if u want to send the $product_id with a button which u can't send it using value,
+    then u can use data_attributes.
+    -data-productid=""
+    -data-cartid=""
+
+
+    eg.
+    <button type="button" class="remove_btn" data-pid="{{ $product->id }}">
+        <i class="fal fa-times"></i>
+    </button> 
+
+    to hold it: let productID = $('remove_btn').data('pid');

@@ -1,0 +1,2 @@
+.SVG Files = html canvas: 
+    images that u can edit it using html, css, javascript code.

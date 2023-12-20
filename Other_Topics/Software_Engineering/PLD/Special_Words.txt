@@ -1,0 +1,16 @@
+Special Words: are the words those are comming with the language(if, switch, for, while,... )
+some languages deal with the Special Words as Key Words, and others deal with them Reserved Words.
+
+Key Words: 
+    languages which deal with the Special Words as Key Words: Fortran,
+    you can use the Special Words as [Identifiers].
+
+    in Fortran: Real X = 5.4;   # Real here is a datatype
+                Real = 5.4;     # Real here is a variable
+
+        
+
+Reserved Words:
+    languages which deal with the Special Words as Reserved Words: cobol, C#, ...,
+    you [Can NOT] use the Special Words as [Identifiers]
+        [You can't name any variable or method with any Special Word]

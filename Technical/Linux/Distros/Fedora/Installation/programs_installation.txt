@@ -1,0 +1,33 @@
+sudo dnf --refresh upgrade
+
+
+[chromium]: 
+    1- sudo dnf install chromium
+    2- chromium
+
+-----------------------------------------------------------------
+[Brave]: Flathub
+
+-----------------------------------------------------------------
+[vscode]:  Flathub
+[vscodium]:  Flathub
+
+-----------------------------------------------------------------
+[github]: 
+    1- flatpak search github: git github desktop id
+    2- flatpak install flathub io.github.shiftey.Desktop: flatpak install flathub <github-desktop-package-name>
+    3- flatpak run io.github.shiftey.Desktop
+
+-----------------------------------------------------------------
+[Telegram]:  Flathub
+    
+-----------------------------------------------------------------
+[Adventure List]:  Flathub
+    
+-----------------------------------------------------------------
+[jupyter]: https://brave.com/linux/#release-channel-installation 
+    1- python3 --version
+    2- sudo dnf install python3-notebook
+    3- jupyter notebook
+
+-----------------------------------------------------------------

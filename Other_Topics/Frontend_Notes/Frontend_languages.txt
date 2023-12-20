@@ -1,0 +1,40 @@
+HTML: (for the structure)
+    HTML stands for "Hyper Text Markup Language".
+    It describes the structure of a webpage.
+    technically, it's not a programming language, you can't write any logic in it.
+   
+    
+    Every HTML tag has some semantic meaning which the browser understands, because HTML is also [standardized].
+    Hence there is no guessing about what a <h1> tag means.
+
+    HTML does not include any instructions regarding what the site should look like (i.e. how it should be described).
+    It really only defines the structure and tells the browser:which content is a heading,
+    which content is an image, which content is a paragraph etc.
+    This is especially important for accessibility,
+    screen readers get all the useful information out of the HTML structure.
+
+
+-------------------------------------------------------------------------------------------------------------------
+CSS: (for the styling)
+    CSS ("Cascading Style Sheets").
+    CSS is all about adding styling to the website. That is done via [CSS rules].
+
+
+-------------------------------------------------------------------------------------------------------------------
+JavaScript:  (for dynamic content)
+    It's actually is a programming language.
+
+    It's not always visible but, It's resposible for [all dynamic content you find on a website],
+    It's basically responsible for everything that changes in the browser after the page has been loaded.
+
+    (e.g. tabs, overlays etc.) is actually only possible because of JavaScript.
+    It allows web developers to define code that runs in the browser (not on the server),
+    hence JavaScript can be used to change the website whilst the user is viewing it.
+
+
+-------------------------------------------------------------------------------------------------------
+Conclusion: 
+    Html and Css generate -let's say- a template that represent a static webpage without any reactions, 
+    Html and Css are necessary to complete the page loading process.
+    then JavaScript make components change after the page has been realoaded. 
+

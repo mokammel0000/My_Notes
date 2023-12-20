@@ -1,0 +1,9 @@
+Dynamic Vs. Static languages.
+    Statically Typed Language: 
+        each variable must have it's own type during COMPILE TIME, 
+        so, in the RUN TIME each variable know what is the values can be stored in.
+
+    Dynamically Typed Language: 
+        there is no type is declared to the variable during COMPILE TIME, 
+        so, in the RUN TIME each variable can hold any value.
+        -this is a good option, but it can make unexpected errors...

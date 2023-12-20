@@ -1,0 +1,3 @@
+If you have some attributes in the DB table, that u wish u can hide them, so No one can call them...
+Hide this attributes using 
+protected $hidden = ['password'];

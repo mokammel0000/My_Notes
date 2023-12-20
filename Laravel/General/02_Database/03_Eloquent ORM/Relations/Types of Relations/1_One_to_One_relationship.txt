@@ -1,0 +1,20 @@
+ONE TO ONE relationship     1 : 1 + 1 : 1   
+    [parent-child relation]
+    [Parent has ONLY ONE child, and child relate to JUST one parent]
+    
+    -In the DB scheme:
+        the parent has no need to store id of his child,
+        the child must have his parent's id as a foreign key, 
+            (note that: each foreign key can refer to just one unique primary key,
+                        because the parent can't have more than one child).
+        Just take the id from the parent's record and put it in the child's record.
+     
+    -Methods in the Model:
+        The parent [hasOne()] child,
+        The child [belongsto()] ONE parent.
+                        // don't define the relation in the 2 Models until u need it,
+
+    -eg.
+        user hasOne() cart, in the same time the cart belongsto() just one user.
+        user hasOne() phone, in the same time the phone belongsto() one user.
+                -we suppose that the phone is a separated table(contains all data that belongs to phone number).

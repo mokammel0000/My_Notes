@@ -1,0 +1,9 @@
+If u use a relation to make any operation, then laravel will pass the ID of this relation automatically, 
+in this example: 
+    auth()->user()->cart->products()->updateExistingPivot(
+        #auth()->user()->id,
+        $request['product_id'], 
+        ['quantity'=> $newQuantity]
+    );
+    u haven't to send user_id, although it is not a nullable value, 
+    because laravel do that for u, it send user_id because u add a value from a user relation.

@@ -1,0 +1,93 @@
+$table->char('code', 10); // CHAR(10)
+    This is a fixed-length character column type. It always uses the specified length for storage, padding shorter strings with spaces. CHAR is suitable when you need fixed-length strings, and it can be more efficient for searching and sorting compared to VARCHAR because all values have the same length. However, it may waste storage space if most of your values are shorter than the defined length.
+
+$table->string('name', 10);
+    Equivalent to VARCHAR(255). It is commonly used when you don't need to specify a specific length for your string columns. It's a good choice for general text columns when you don't have strict length requirements.
+    by default VARCHAR(255) but you can change it's value,
+
+$table->lineString('name', 10);
+
+$table->multiLinestring('name', 10);
+
+________________________________________________________________________________________________________________________________
+$table->tinyText('name', 10); 
+    up to 255 characters
+    # usernames, titles, or short descriptions.
+
+$table->text('name', 10);
+    65,535 characters
+    #  long pieces of text, such as blog posts, comments, or descriptions.
+
+$table->mediumText('name', 10);
+    up to 16,777,215 characters
+    # long content.
+
+$table->longText('name', 10);
+    up to 4,294,967,295 characters
+    # full articles, books, or extensive textual content.
+
+________________________________________________________________________________________________________________________________
+
+$table->tinyInteger('bag_num');
+    is a 1-byte signed integer, which can store values in the range of -128 to 127
+
+$table->smallInteger('bag_num');
+    is a 2-byte signed integer, which can store values in the range of -32,768 to 32,767.
+
+$table->integer('bag_num');
+    is a 4-byte signed integer, capable of storing values in the range of approximately -2.1 billion to 2.1 billion.
+
+$table->mediumInteger('bag_num');
+    is not a standard MySQL data type, and it's equivalent to the [integer] type in Laravel. It can store values in the same range as the integer type.
+
+$table->bigInteger('bag_num');
+    is an 8-byte signed integer, which can store very large values in the range of approximately -9.2 quintillion to 9.2 quintillion.
+
+
+$table->unsignedTinyInteger('bag_num');
+    is an unsigned 1-byte integer, which can store values in the range of 0 to 255.
+
+$table->unsignedSmallInteger('bag_num');
+    is an unsigned 2-byte integer, which can store values in the range of 0 to 65,535.
+
+$table->unsignedInteger('bag_num');
+    is an unsigned 4-byte integer, capable of storing values in the range of 0 to approximately 4.3 billion.
+
+$table->unsignedMediumInteger('bag_num');
+    is not a standard MySQL data type, and it's equivalent to the unsignedInteger type in Laravel. It can store values in the same range as the unsignedInteger type.
+
+$table->unsignedBigInteger('bag_num');
+    is an unsigned 8-byte integer, which can store very large non-negative values in the range of 0 to approximately 18.4 quintillion.
+________________________________________________________________________________________________________________________________
+
+$table->double('amount', 8, 2);
+    8 is the total number of digits that can be stored, including both the integer part and the decimal part. The 2 represents the number of decimal places.
+$table->unsignedDecimal('bag_num', 10, 8);
+: This indicates that the column will store decimal numbers with an unsigned (non-negative) range.
+$table->double('bag_num');
+
+In summary, if you need to store decimal values with a specific precision and scale, unsignedDecimal is typically a better choice.
+If you're dealing with general floating-point numbers and don't require precise control over the number of decimal places, you can use double.
+________________________________________________________________________________________________________________________________
+
+year
+
+dateTimeTz
+dateTime
+date
+
+timeTz
+time
+timestampTz
+timestamp
+timestampsTz
+timestamps
+
+________________________________________________________________________________________________________________________________
+
+$table->enum('difficulty', ['easy', 'hard']);
+    The enum method creates a ENUM equivalent column with the given valid values.
+$table->set('flavors', ['strawberry', 'vanilla']);
+    The set method creates a SET equivalent column with the given list of valid values.
+
+________________________________________________________________________________________________________________________________

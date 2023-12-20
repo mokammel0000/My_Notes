@@ -1,0 +1,8 @@
+chat gpt
+
+githup copilot
+    write a comment, make a class or a function for you.
+
+codeium
+    accout >> extension >> login 
+    it will give u suggestions in your code to facilitate your coding process.

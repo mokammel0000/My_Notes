@@ -1,0 +1,12 @@
+when you define a STATUS column in the DB, define it as a UNSIGNEDTINYINT value, For the following reasons: 
+    1- it costs small space in the DB(smaller than strings).
+    2- to AVOID spelling Errors that can be happened specially if there is more than one developer in the project.
+    3- that's also useful in the multilanguage websites,
+        make every status with a number and then translate it in the view as u like.
+
+
+but don't deal with them as numbers in the code, that's difficult to read, the code in this case will be unreadable, 
+also it will be difficult to modify a specefic number in all your code,
+    if u want to change something in the logic or want to change the number meaning.
+
+so, define a CONSTANT that hold each number, and deal in your code with the CONSTANT.

@@ -1,0 +1,8 @@
+Graph = Nodes + Edges
+    Store some data about each node.
+    Showing diffrenet Relations between nodes and each others.
+    Store some data about each relation between any 2 nodes(if it is needed).
+
+
+you can store Graph in the Relational DB, but it will be hard
+    [It's prefered to do that in Graph DB(NOSQL DB)].

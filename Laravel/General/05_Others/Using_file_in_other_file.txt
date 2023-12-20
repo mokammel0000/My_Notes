@@ -1,0 +1,2 @@
+If you have 2 files in the same Folder, u haven't to use anyone in the other's code, 
+eg. if u have 2 models in the same flolder, don't use anyone at the other's code, they can see eachothers.

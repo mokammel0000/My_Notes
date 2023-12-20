@@ -1,0 +1,5 @@
+# Fork means that to create a copy from an existing repo under your GitHub account, 
+# To fork a repository, go to the repository's GitHub page and click the "Fork" button in the top-right corner.
+
+    # after forking the repo, u must clone your copy to be able to work on it in your machine.
+    git clone https://github.com/your-username/repository-name.git

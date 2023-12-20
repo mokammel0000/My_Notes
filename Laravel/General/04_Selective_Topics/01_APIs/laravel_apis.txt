@@ -1,0 +1,7 @@
+Return api routes to return data in json format. 
+
+API file in laravel has some features: 
+    1- has a prefix (write api/ after the website's domain).
+    2- when u returns data from DB, it convert it directly to JSON format.
+        also if u want to return an array, it convert it to json file,
+    but it's preferd that u convert it automatically using(return response()->json(returned data);)

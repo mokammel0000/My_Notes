@@ -1,0 +1,11 @@
+[Don't Write a > at the end of the statement...]
+
+
+.tr*3>.td*3
+
+
+.row>.col-3 (to put the element in one of 4 parts of the screen)
+you can add 3 columns beside this div...
+
+to create a div with a specific class name: 
+.img-box

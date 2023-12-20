@@ -1,0 +1,25 @@
+Validate the request BEFORE any thig in the controller, 
+    to validate the sending data, before doing any action, 
+    if the sending data isn't right, redirect to the form with the error messeges.
+
+
+[The easiest way] to validate a request, is to validate the request data that is send, 
+    $request->validate([
+            'name'=>'required',
+            'phone'=>'required',
+            'photo'=>'required| mimes:jpg,bmp,png',
+            
+            'email'=>'required',
+            'password'=>'required|confirmed',
+    ]);
+    take care that the $request variable will hold the data that pass from validation process...
+    In the last way: if the validate fails, it will redirect user to the last page automatically
+    so, we can't use it with api validations
+
+[Other Way]:
+
+
+
+In the UNIQUE attribute: 
+    if the name of the field as same as the name of the coloumn in the table in DB.
+    you don't have to write the coloumn name.

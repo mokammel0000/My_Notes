@@ -1,0 +1,26 @@
+Solving Problems by Searching can be done in 2 ways: 
+
+1- Un-informed Search:   g(n)
+    -problem formulation
+    
+    -Examples:
+        BFS
+        UCS
+        DFS
+        DLS 
+        IDS
+        BS 
+
+2- Informed Search 
+    -Optimization Algorithms
+    -Heuristic Function is [Required]
+    
+    -it's devided to 2 categories: 
+        
+        A- Best First Search 
+            Greedy Search h(n)
+            A* Search h(n)+f(n)
+
+        B- Local Search (Optimization Algorithms)
+            Hill Climbing algorithm 
+            Genetic algorithm

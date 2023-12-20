@@ -1,0 +1,9 @@
+NPM: 
+    stands for Node Package Manager.
+    NPM is a package manager for JavaScript programming language and is commonly used in web development, including Laravel projects.
+
+
+Laravel, often relies on various front-end tools and libraries that are managed and installed using Node Package Manager.
+    These tools could include things like JavaScript libraries, CSS frameworks, build tools,
+    and other dependencies needed for the front-end development of a Laravel application.
+

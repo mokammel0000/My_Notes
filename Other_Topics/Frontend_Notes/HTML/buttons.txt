@@ -1,0 +1,12 @@
+There are 2 types of buttons in html: 
+1- <button type="submit"> </button>
+    button of type submit: submit the current form and go to the url in the action of this form.
+    if u want to force him to perform a specific task, use prevent default()
+    function in Jquery to prevent it's default functions and customize it according to your needs.
+
+2- <button type="button"> </button>
+    button of type button: don't do any action, 
+    it's just appear as a button, if u click it, it can NOT do any thing, 
+    however, u can link it with a javascript/ jquery code to tell him what should he when others click on it.
+    so u should give him an id or a class to hold him in jquery code.
+        $('.remove_btn').click(function () {});

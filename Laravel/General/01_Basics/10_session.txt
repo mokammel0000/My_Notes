@@ -1,0 +1,13 @@
+put a value in the session to use it when you go back to a specific view: 
+
+
+public function store(Request $request)
+    {
+        return back()->with('success', 'Product has been added succsessfully');
+    }
+
+@if (session('success'))
+<div class="alert alert-success text-center" role="alert">
+    {{session('success')}}
+</div>
+@endif

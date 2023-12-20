@@ -1,0 +1,15 @@
+Laravel facades: 
+    A way to interact with the underlying components of the Laravel framework 
+    through a simple and expressive syntax,
+    providing a static interface to classes managed by the service container.
+
+
+use Illuminate\Support\Facades\Log;
+
+Log::info('This is an informational message.');
+
+In this example, Log::info is a facade for the Illuminate\Log\Logger class.
+    Laravel automatically resolves the underlying instance from the service container and calls the info method on it.
+
+    The facade provides a convenient and expressive way to work with the logging functionality
+    without needing to manage the class instance yourself.

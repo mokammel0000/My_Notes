@@ -1,0 +1,9 @@
+You can compact data to the view with sending a KEY, VALUE array: 
+    return view('welcome', ['name' => 'Samantha']);
+
+
+Also You can compactdata to the view using compact() function, to send variables dirctly:  
+    return view('welcome', compact($name));
+
+    note: you can compact more than one variable using compact() function: 
+    return view('website.category', compact('products', 'category', 'start'));

@@ -1,0 +1,15 @@
+Git:
+    -Version Controll: to trace your old versions
+                        -knowing the content in each one,
+                        -can replace any current version with an older stable one.
+                        
+    -help u in Team Work: 
+        push your updated, and pull your project-mates updates, and merging each other in one project, 
+        (it's better than using a hard drive, or sd card that u can't controll conflicts using it).
+        
+    -can work with any type of data(text, images, vedios, etc..),
+        but it's better to use it with text files, 
+
+
+all past versions of your project, and all objects that related to git will be saved in git folder, 
+    so, be carful when u use it, it's better if that u don't touch it.

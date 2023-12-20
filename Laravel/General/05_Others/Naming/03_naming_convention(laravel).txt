@@ -1,0 +1,31 @@
+[Model Naming]:
+    User, Product                                            (StudlyCas| singular)
+
+[Table Naming]:
+    users, products, categories, password_reset_tokens       (snake_case| plural)
+    Laravel's Eloquent will automatically assume the corresponding table name based on the pluralized form of the model name.
+
+[Controller Naming]:
+    UsersController, ProductsController                 (StudlyCase| plural)
+
+[Route Naming]:                                                         (kabab_case)
+    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/product/{id}', [ProductController::class, 'show'])->name('view_product');
+    Route::get('/change-password', [UserController::class, 'getChangePassword'])->name('change_password');
+    Route::get('/products/del-image/{id}', [ProductController::class, 'delImage'])->name('delete_image');
+    Route::get('/toggle-slide-active/{id}', [SliderController::class, 'toggleActive'])->name('toggle_active');
+
+[Views Naming]:
+    show_user_profile.blade.php. (snake_case) 
+    follow the same naming as the corresponding controller method, showUserProfile()--->show_user_profile.blade.php.
+
+[Migration Naming]:
+    2023_07_28_create_users_table.php                   (snake_case| descriptive)
+    For example: 
+
+[Configuration File Naming]:
+    mail.php, database.php                      (snake_case)
+
+
+[Language File Naming]:
+    en/auth.php, fr/products.php                     (snake_case)

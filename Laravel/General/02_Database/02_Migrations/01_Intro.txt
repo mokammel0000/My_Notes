@@ -1,0 +1,34 @@
+[Migrations is the DDL for the DB in Laravel]:
+
+Note that: 
+-in the team project, don't modify on a migration is sended to your team, 
+they migrate it, 
+so, u should make a new one, even if it will add just one column.
+
+-Laravel has a built-in table that's called 'migrations': 
+it store all the migration-files that's been migrated to ignore them when migrate a new migrations.
+
+------------------------------------------------------------------------------------------------------------
+[Without Migrations]: 
+In php projects:
+    u create your DB (DDL) in your machine, using any DB scheme application 
+        (like: Terminal - PhpMYAdimn - MySqlWorkpench - DBeaber), 
+    what if u want to share this DB scheme with your team members? 
+        -in this case u must send the Scheme to them,
+        -then they will export it,
+        -they merge it with the scheme in their machine about this project.
+
+    and if u do any change in your scheme, u must send it to them,
+    and veca-verse...
+
+    or all of u can work on an online server(shared DB): 
+        but what if server has been failed(وقع)??!
+        what if u forced to work offline??!
+        what if u haven't any mony to pay the host? 
+
+
+
+Then using Laravel, u can avoid all these Barriers, using [MIGRATIONS], 
+    Write some code, and then send it to all your project-mates, 
+    they will run the code, and deal with DB in their own machines.
+        

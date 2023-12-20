@@ -1,0 +1,18 @@
+Redis: 
+    refers to a powerful open-source, in-memory data structure store. 
+    It can be used as a caching mechanism, a message broker, and (a general-purpose data store). 
+
+
+Laravel provides built-in support for Redis,
+    allowing developers to easily integrate it into their applications.
+
+    common use cases for Redis in the context of Laravel:
+        1- Cache Store
+
+        2- Session Storage
+
+        3- Queue System
+
+    By using Redis in Laravel,
+        developers can take advantage of its speed and efficiency for tasks like caching, session management, and queuing,
+        enhancing the overall performance and scalability of their applications.

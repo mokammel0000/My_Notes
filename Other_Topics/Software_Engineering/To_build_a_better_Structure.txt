@@ -1,0 +1,3 @@
+The way to build a better structure: 
+    Think of your program in a smaller way/ smaller things/ smaller blocks...
+    and you're building them up(instead of one big thing).

@@ -1,0 +1,40 @@
+LAMP:
+    Linux, Apache, MYSQL, PHP
+
+CRUD: 
+    Create - Read - Update- Delete
+    Insert - Select
+
+Query String:
+    the parameters that's be send after ? in the url.
+    you can send more than one, each one has it's name, then you can receive them with $_GET['parameter_name']
+
+Service: = class
+    Class contains all the attributes and functions that related to a specific task
+    eg. Notification Service
+
+Action: any method in the Controller.
+
+Internal Navigation:
+    each page has a link, linking it with other pages, 
+    then u don't to write the route in the url to reach for the specific page.
+
+Inline Route/ Call Back Route: 
+    route use function to perform it's task, 
+    don't convert u to a Controller.
+
+MultiVendor Vs. OneVendor: 
+    -MultiVendor: each user has his own policies and privilages.
+    (Admin - vendor -  User)
+
+    -OneVendor: Just one user in the website.
+
+Bulk Update Vs. Ajax Update:
+    -Bulk Update: refreshing the page with each click.
+
+    -Ajax Update: All the page remaining as it is without no changeing,
+    expect the html element that is linked to ajax request.
+
+Toast: 
+    eg. the product has been added to the cart successfully.
+

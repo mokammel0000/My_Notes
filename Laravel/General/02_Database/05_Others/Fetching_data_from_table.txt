@@ -1,0 +1,15 @@
+Fetching data from any table, you have 2 ways: 
+    1- using Query Builder:
+        write the table's name.
+    2- using ORM:
+        but in this case you have to create a model for this table.
+
+
+Fetching data from Pivot table, you have 2 ways: 
+    1- using Query Builder:
+        consider the pivot table like any table in the DB, and write it's name.
+    2- using ORM: 
+        this can be done in two ways: 
+            1- create specific model for the pivot table.
+            2- fetch the pivot table data with any one of the 2 tables he centered(using relations)
+                do that if you will need the original table data.

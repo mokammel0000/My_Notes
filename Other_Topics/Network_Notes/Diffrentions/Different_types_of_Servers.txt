@@ -1,0 +1,50 @@
+Server 
+    Server is simply a program that's run on a powerful computer,
+    We called it Server because it's job is to serve cleints(providing them the stored data when they request it).
+    
+    Server is anything that is ready to handle requests 24*7 as it's connected with the internet all the time.
+
+    Server do the following:
+        -responds your Web requests (Apache/Nginx).
+        -Processes your data(PHP/Python).
+        -handles your database queries(MySQL/MariaDB/Postgres).
+    Server is a general word that's we say about all the three components.
+    
+    If u have ONE machine that u host your website on it, that mean it must have 
+    -Web server,    -Application server,      -Database server.
+    To handle: 
+        -Web requests,  -Application processes,   -Database queries.
+    All of these softwares are installed in a same machine and a single machine,         
+
+
+------------------------------------------------------------------------------------------------------------------------------------------        
+If u want to maximize the uptime and to improve monitoring,
+    you will host your database on different machine and call it a [Database server].
+    To handle all your database queries.
+
+If u want to maximize your revenue by processing their data which will require too much processing.
+    It will increase load on your server that handles your web requests and application processes.
+    So, you will host your application on another machine that handle requests from the web server.
+    It will become your [Application server],
+    The server that is handling your web requests will become your dedicated [Web server].
+
+Now you get better monitoring and can find out bugs and unusual activities on each and every part of your web application.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Summary: 
+    Server is the all following three components
+    Either they was compined in one machin, or they seperated it two or three diffirent machines: 
+        -Web Server: 
+            Handles your web requests sent by visitors visiting your website.
+            Web server runs on Apache, Nginx, Microsoft IIS, etc.
+
+        -Application server: 
+            It runs all the processes your application requires in order to work properly,
+            It works between Web server and database server and basically manages, processes the data.
+            (performing actions that is in the controller)
+
+        -Database Server: 
+            It handles database queries.
+            It runs on MySQL, PostgreSQL, MariaDB, etc.

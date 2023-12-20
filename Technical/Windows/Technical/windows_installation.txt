@@ -1,0 +1,19 @@
+1- Install windows.
+
+2- Install Updates,
+    active the >>> buttom, to let him install updates once it's downloaded.
+
+3- register with your university email, 
+    go to Accounts-> [access work or school]. 
+
+4- install google chrome and login with your gmail,
+    and download all your programs and data.
+
+
+
+
+
+--don't delete any programs or data which came with window.
+
+--adobe pdf and office 365 require internet to be installed, 
+    make sure that internet is stable while installing them.

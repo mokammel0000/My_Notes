@@ -1,0 +1,28 @@
+what is this book about:
+    -Its primary purpose is to provide developers with a high-level overview and concrete examples
+    to learn what they need to work in any Laravel codebase with any and every Laravel feature and subsystem.
+    
+    -Understanding the foundational concepts behind Laravel.
+
+How This Book Is Structured: 
+    -the early chapters cover the foundational components you’ll need to get started,
+    and the later chapters cover less foundational or more esoteric features.
+
+    -Each section of the book can be read on its own, 
+    but for someone new to the framework, I’ve tried to structure the chapters so that
+    it’s actually very reasonable to start from the beginning and read until the end.
+
+Editions: 
+    The ﬁrst edition: 
+        -December 2016
+        -covered Laravel versions 5.1 to 5.3.
+    
+    The second edition:
+        -April 2019
+        -added coverage for 5.4 to 5.8 and Laravel Dusk and Horizon
+        -added an 18th chapter 
+        (about community resources and other noncore Laravel packages that weren’t covered in the ﬁrst 17 chapters). 
+    
+    This third edition: 
+        -Septemper 2023
+        -catches the book up to Laravel 10 and adds Breeze, Jetstream, Fortify, Vite, and much more.

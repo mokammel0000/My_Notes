@@ -1,0 +1,11 @@
+cd homestead  "c\users\galaxy\homestead"
+vagrant up
+vagrant ssh
+
+    [take care, now you are in the homestead VM, now you aren't on your windows]
+    here you will find code file, it's the one on the Linux
+        -create new projects inside it,
+        -if you want to edit or update the project you can do that from the code file on the windows.
+
+
+exit (to return to the windows again)

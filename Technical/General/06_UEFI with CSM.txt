@@ -1,0 +1,6 @@
+UEFI with CSM:
+    is a boot mode that allows a UEFI-based system to be compatible with legacy BIOS systems.
+    CSM stands for Compatibility Support Module, which is a component of the UEFI firmware that emulates a BIOS environment.
+    This way, you can boot from disks that are formatted with the MBR partition scheme, or use operating systems and devices that do not support UEFI123
+
+If you have a modern system that comes with Windows 10 pre-installed, you probably don’t need to enable CSM, as Windows 10 supports UEFI and GPT by default. However, if you want to install an older version of Windows that does not support UEFI, or use some legacy hardware or software, you may need to enable CSM in your BIOS settings1

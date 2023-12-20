@@ -1,0 +1,179 @@
+Why Use a Packages?
+    With packages, someone else is responsible for 
+    developing and maintaining an isolated piece of code that has a well-deﬁned job
+    and in theory, that person has a deeper understanding of this single component than you have time to have.
+
+Why Use a Framework?
+    Frameworks like Laravel and Symfony, Lumen, and Slimprepackage 
+    [a collection of third-party components together with custom framework “glue”]
+    like 1-conﬁguration ﬁles, 2-service providers, 3-prescribed directory structures, and 4-application bootstraps. 
+    So, the beneﬁt of using a framework in general is that someone has made decisions 
+    -not just about individual components for you- but also about how [those components should ﬁt together].
+-------------------------------------------------------------------------------------------------------------------
+
+Web Application Frameworks: 
+
+Ruby on Rails: 2004
+    influincing all other web frameworks in that time.
+    Rails popularized 
+        1- MVC, 
+        2- RESTful JSON APIs, 
+        3- convention over conﬁguration, 
+        4- ActiveRecord, 
+        and many more tools and conventions.
+
+PHP Frameworks: 
+    -CakePHP was the ﬁrst in 2005
+    -Symfony
+    -CodeIgniter
+    -Zend Framework
+    -Kohana (a CodeIgniter fork)
+    -Yii arrived in 2008
+    -Aura and Slim in 2010.
+    -FuelPHP 2011 
+    -Laravel 2011
+    
+    Notes: 
+    -CakePHP and CodeIgniter were the two early PHP frameworks 
+        that were most open about how much their inspiration was drawn from Rails.
+
+    -CodeIgniter quickly rose to fame and by 2010 was arguably the most popular of the independent PHP frameworks.
+    
+    -both of FuelPHP and Laravel were not quite CodeIgniter oﬀshoots فروع, but instead proposed as alternatives.
+    
+    -Symfony and Zend, focused more on (enterprise design patterns and ecommerce).
+
+
+    The Good and the Bad of CodeIgniter:
+        Good: CodeIgniter was 1-simple, 2-easy to use, 3-boasted amazing documentation and a 4-strong community.
+        Bad: 1- its use of modern technology and patterns advanced slowly
+            2- CodeIgniter started falling behind in terms of botht technological advances and out-of-the-box features.
+            [while the framework world grew and PHP’s tooling advanced]
+
+
+Laravel Releases: 
+    -Laravel 1
+        -June 2011: 
+        -featured a custom ORM (Eloquent)
+        -closure-based routing (inspired by Ruby Sinatra)
+        -a module system for extension
+        -helpers for forms,
+        -validation,
+        -authentication, and more.
+    
+    -Laravel 2, and 3: 
+        November 2011 and February 2012, respectively.
+        -controllers, 
+        -unit testing, 
+        -a command-line tool, 
+        -an inversion of control (IoC) container, 
+        -Eloquent relationships,
+        -migrations.
+
+    -Laravel 4: (entirely new structure)
+        May 2013
+        -Taylor rewrite the framework as a [collection of components], distributed and bundled together by [Composer]
+        -Taylor developed a set of components under the code name [Illuminate]
+
+        Laravel now pulled in the majority of its components from Symfony 
+            and the Illuminate components through Composer.
+
+        -queues, 
+        -mail component,
+        -facades, 
+        -database seeding.
+
+        (Laravel 4.2 was released on November 4, 2014).
+
+
+    -Laravel 5: (there have been no major changes like in previous versions || only adding new amazing features)
+        February 2015
+        -a revamped directory structure, 
+        -removal of the form and HTML helpers,
+        -the introduction of the contract interfaces,
+        -a spate of new views,
+        -Socialite for social media authentication,
+        -Elixir for asset compilation,
+        -Scheduler to simplify cron,
+        -dotenv for simpliﬁed environment management,
+        -form requests,
+        -brand-new REPL (read–evaluate–print loop).
+
+
+    -Laravel 6: 
+        September 2019
+        Two primary changes: 
+            1- removal of the string and array global helpers Laravel oﬀers (in favor of facades);
+            2- moving to SemVer (semantic versioning) for version numbering.
+
+
+    -Laravel Versions in the New SemVer World (6+): 
+        Laravel now become a stable framework, the new versions doesn't contain monumental changes.
+-------------------------------------------------------------------------------------------------------------------
+
+What’s So Special About Laravel?
+
+    1-The Philosophy of Laravel: 
+        The two most strongly communicated values of the framework are: 
+        1-to increase developer speed and 2-developer happiness.
+
+        Where other frameworks may target (architectural purity) as their primary goal,
+        or compatibility with the goals and values of enterprise development teams,
+        Laravel’s primary focus is on serving the individual developer.
+
+    2-How Laravel Achieves Developer Happiness: 
+        All of the most common tasks in building web applications such as:
+            1-database interactions to 
+            2-authentication to 
+            3-queues to 
+            4-email to 
+            5-caching, 
+        are made simpler by the components Laravel provides.
+
+        Laravel components provide a (consistent API) and (predictable structures) across the entire framework.
+
+        Laravel provides an entire ecosystem of tools for building and launching applications.
+            [Sail and Valet and Homestead] for local development,
+            [Forge] for server management, 
+            [Envoyer and Vapor] for advanced deployment.
+
+        And there’s a suite of add-on packages:
+            [Cashier] for payments and subscriptions,
+            [Echo] for WebSockets,
+            [Scout] for search,
+            [Sanctum and Passport] for API authentication,
+            [Dusk] for frontend testing,
+            [Socialite] for social login,
+            [Horizon] for monitoring queues,
+            [Nova] for building admin panels,
+            [Spark] to bootstrap your SaaS.
+
+        Laravel is trying to take the repetitive work out of developers’ jobs so they can do something unique.
+    
+        Projects built on Laravel take less time than those built on most other PHP frameworks.
+
+        It’s possible to use (dependency injection) and (mocking) and (the Data Mapper pattern) 
+            and (repositories) and (command query responsibility segregation) 
+            and all sorts of other more complex architectural patterns with Laravel, if you want. 
+            
+            Other frameworks might suggest using those tools and structures on every project, 
+        but Laravel focuses deeply on simplicity, don't make your project to be complex, 
+        Start with the simplest possible implementation 
+            -a global function here, -a facade there, -ActiveRecord over there. 
+        
+        This allows developers to create the simplest possible application to solve for their needs,
+            without limiting its usefulness in complex environments.
+    
+    3-The Laravel Community: 
+
+        A successful open source project needed two things: 
+            1-good documentation and a 2-welcoming community.
+        And those two things are now hallmarks of Laravel.
+
+        -Jeﬀrey Way’s Laracasts video tutorials
+        -Laravel News
+        -Slack and IRC and Discord channels
+        -Twitter friends
+        -bloggers
+        -podcasts
+        -Laracon conferences

@@ -1,0 +1,34 @@
+Relative path: 
+    A relative path describes the location of a file relative to the current (working) directory.
+    If the current file position changes, this path will not work with it, 
+    Changes when u want to go to the same file from 2 different files.
+
+An absolute:
+    Path describes the location from the root directory.
+    If the current file position changes, this path will still work
+        because it's not depended on the current file position, 
+    Doesn't change when u want to go to the same file from 2 different files, 
+        because we use the same start point
+            [each file must reach to the start point then go through the absolute path].
+
+
+-------------------------------------------------------------------------------------------------
+url('path'):  generate the full qualified path to any route
+    give u the website domain, and u write the whole route.
+    [The start point is the domain of the website, so write the rest of the route after the '/' ]
+    [the APP_URL is written in the .env file to inform url() with it.] 
+    eg. 
+        url('/product/'.$product->id);
+        url("/product/$product->id");
+        url("/product/{$product->id}");  #THE BEST WAY
+
+asset('path'):  generate the full qualified path to any folder in public folder.
+    reach u to the public folder to reach to the css, javascript, fonts, images.
+        note that: public folder is open to all pages that them can access to it,
+            so don't put an important files/ images in it. 
+    [The start point is the public folder, so write the rest of the files hierarchy ].
+    eg. 
+        asset('assets/css/style.css')
+        asset('assets/js/custom.js')
+        asset('uploads/Products/image-placeholder-base.png')
+-------------------------------------------------------------------------------------------------

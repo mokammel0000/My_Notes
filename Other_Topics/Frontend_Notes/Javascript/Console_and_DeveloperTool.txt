@@ -1,0 +1,4 @@
+ConSole: Allows you to write and executer Javascript code in the browser
+
+Developer Tools: is the profiler in google chrome
+    allows you to track your website performance.

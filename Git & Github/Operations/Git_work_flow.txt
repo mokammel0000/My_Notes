@@ -1,0 +1,25 @@
+Git Work flow means how we can organize dealing with a git repo.
+
+Main Branch always must be completed, we can't merge an uncompleted Branches into the main.
+    then if u want to deploy the project, u will not deploy uncompleted tasks.
+
+Each programmer work in any task, should make a new branch to upload his updates on it, 
+    after he completed this task, teamleader will merge it to the main and resolve Conflicts.
+    
+The most popular techniqes in organizing Git Work Flow: 
+    each team specify which techniqe will be followed in the current project.
+
+    1-Gitflow: 
+        the most popular one of them.
+
+        Steps in it: 
+            1- create a new Branch with your task name(eg. authorization).
+            2- commit your code as u work on it(main branch can't see your work).
+            3- test your task after finishing it.
+            4- merge your branch with main branch(on the main branch, merge your branch).
+
+    2-Centralized Workflow
+
+    3-Feauture Branch Workflow
+
+    4-Forking Workflow

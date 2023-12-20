@@ -1,0 +1,15 @@
+Query_builder:
+    DML for the DB in Laravel.
+
+Laravel's database query builder provides a convenient, fluent interface to creating and running database queries.
+The Laravel query builder uses [PDO parameter binding] to protect your application against SQL injection attacks.
+
+Using Qurey Builder u can: 
+    -Fetch data from DB.
+    -make operation on the DB: insert - upsert - update - delete - 
+                               increment/ decrement a column - truncate table
+
+
+Dumping a query before execute it: -to see what is the returning results-
+    DB::table('users')->where('votes', '>', 100)->dd();    
+    DB::table('users')->where('votes', '>', 100)->dump();

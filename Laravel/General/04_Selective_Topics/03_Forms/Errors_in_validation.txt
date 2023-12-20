@@ -1,0 +1,32 @@
+After validation occuring, if there are any errors,
+laravel redirect u the last web page that contains the form
+    [and store the old values of the last form inputs to enable u use it if you need],
+and you can show error messages in it...
+
+
+To show all the errors in one block:    
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
+To show each Error endividually in it's input field:
+    <label>Category Name</label>
+    <input type="text" name="name"class="form-control @error('name') is-invalid @enderror">
+
+    @error('name')
+        <small class="text-danger"> {{$message}} </small>
+    @enderror
+
+
+$errors->any();
+    returns True if there is any errors occurs during validation process, returns False if not.
+
+$errors->all();
+    returns array contains all errors messages.
+

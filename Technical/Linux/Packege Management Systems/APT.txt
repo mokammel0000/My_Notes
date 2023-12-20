@@ -1,0 +1,18 @@
+APT: 
+    stands for "Advanced Package Tool"
+    It is a package management system used in Debian-based Linux distributions.
+    APT is a set of command-line tools used to install, update, upgrade, and manage software packages on your Linux system.
+
+    APT command is the general command for installing programs and manipulating installed programs:
+    
+    provides a user-friendly interface to the underlying package management system, which includes tools like "apt-get" and "dpkg"
+
+    The Difference between apt and apt-get: (Both commands perform the same fundamental task)
+        [apt]: 
+            -is considered more user-friendly and straightforward, especially for new users.
+            -part of the more modern APT package management system and is designed to provide a more consistent and intuitive command structure.
+            -provides a more concise and human-readable output, making it easier to understand the status of the update process
+
+        [apt-get]: 
+            -an older command that uses the traditional APT tool, which some users may find less intuitive.
+            -may provide more verbose (مطول) output, which can be useful for more advanced users or scripting but can be overwhelming for some.

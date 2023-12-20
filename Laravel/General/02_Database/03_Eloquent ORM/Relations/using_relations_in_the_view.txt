@@ -1,0 +1,23 @@
+Using the relationship as a [ATTRIBUTE]: 
+    write the relation withoute ()
+    examples: 
+        $product->category;
+        $product->photos
+    [accesses the value of a property directly]
+        this means we want to return all the data in the relation
+        if there are 10 photos in the photos table, it will be returned here.
+
+    
+    
+------------------------------------------------------------------------------------------------    
+Using the relationship as a [METHOD]: 
+    write the relation with ()
+    calls a method defined within the model,
+    examples:
+        $product->category();
+        $product->photos() 
+    [that may return a relationship or perform specific operations related to the photos attribute.]
+        this means we want to return an object about the relation, 
+        we can use this object to represent some meta-data like: 
+            [number of records, or somethig else that you specify]
+

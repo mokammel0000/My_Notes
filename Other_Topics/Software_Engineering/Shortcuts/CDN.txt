@@ -1,0 +1,18 @@
+CDN:
+    stands for: Content Deliver Network
+    the Normal behavoir for using an external package/ plugin/ website
+        is to download it's source code in your project, and then call it.
+
+    Using CDN, you can do this process without download the source code, 
+    [Link your project with the source code via Internet]
+    but be careful, if you want to use the project offline it won't work,
+        because project can NOT see the source code.
+    also using CDN will make your project a bit slower.
+
+When it's prefer to use CDN? 
+    -when you want to try something before
+        (to make sure if it will be suitable to use this package or not).
+
+    -when you use the package in very small range in your project,
+        and it's will be overwhealming if you download the whole package for this small section
+        (specially if the package source code was big).

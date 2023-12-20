@@ -1,0 +1,89 @@
+Available Router Methods: 
+    - Get - Post - Put  - Patch  - delete 
+    - options:
+    - match: to create a route that match group of methods.
+    - any: to create a route that match any type of methods.
+
+Route::get('cities', [CityController::class, 'cities']);
+Route::get('cities', 'App\Http\Controllers\Api\CityController@cities');
+
+Route::resource('user', UserController::class)->only('index');
+Route::resource('user', UserController::class)->except('index', 'show');
+Route::resource('user', UserController::class, ['only' => ['index', 'show']]);
+Route::resource('user', UserController::class, ['except' => ['create', 'show']]);
+
+Route::apiResource('/opinions',OpinionController::class,array("as" => "api"))->middleware(['auth:sanctum','verified']);
+
+
+-------------------------------------------------------------------------------------------------------
+Routes Groups: 
+
+In Route Groups: you can add: 
+    1- Middleware: To assign middleware to all routes within a group (you can add more than middleware).
+    2- Controller: define the common controller for all of the routes within the group.
+    3- Prefixes: to prefix each route in the group with a given URI.
+    4- Name: adding a specific name to all the routes in the group, and then add a name to each one of them.
+    5- Subdomain: allowing you to capture a portion of the subdomain for usage in your route or controller.
+
+
+Route::group(['middleware' => 'auth:sanctum', 'prefix' => 'contact', 'controller' => ContactController::class], function () {
+    Route::get('/', 'index');
+    Route::get('/view/{contact_id}', 'show');
+    Route::post('/delete/{contact_id}', 'destroy');
+});
+
+Route::controller(App\Http\Controllers\Api\VideoController::class)->middleware(['auth:sanctum','verified'])->group(function(){
+    Route::get('/get-video','getVideo')->middleware('canPullVideo');
+    Route::get('/get-videos','getVideos')->middleware('isPurchased');
+});
+
+
+-------------------------------------------------------------------------------------------------------
+Named Routes:
+    If you have a frequently used route,
+    add a name to it to facilitate calling it especially if it path was large
+    Route::get('/', function () {
+        return view('dashboard.index');
+    })->name('admin.index');
+    
+    Benefits of using Named Routes:
+        -You don't need to write out the full path each time.
+        -If you want to change the route path,
+            you only need to do it once, and the change will be reflected on all pages that use this route.
+
+
+-------------------------------------------------------------------------------------------------------
+It's prefer to seperate each group of routes in a specefic folder, 
+    -to add a prefix to any group of them.
+    -to add a specefic middleware on any group of them.
+
+    To add a new Routes Folder, u must add it's name to App/Providers/RouteServiceProvider
+
+
+api.php :       Mobile routing(retreiving json files).
+channels.php:   realTime messeges.
+console.php:    if u want to create a program that work from console(like artisan).
+
+
+--------------------------------------------------------------------------------------------------------
+Route:resource('/categories', CategoryController::class);
+    // create 7 routes to going to the 7 actions.
+Route:apiResource('/categories', CategoryController::class);
+    // create 5 routes to going to the 5 actions.
+
+    In the resource controller: 
+    index: /get 
+    show: /get
+    
+    create: /get    [it's not found in the api controller]
+    store: /post
+
+    edit: /get      [it's not found in the api controller]
+    update: /put
+
+    destroy: /delete
+
+--------------------------------------------------------------------------------------------------------
+Note That: 
+    -you can name 2 ROUTES with the same name, but with different methods(get/ post)
+        # resource routes do that by default.

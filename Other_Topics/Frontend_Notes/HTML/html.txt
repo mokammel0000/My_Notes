@@ -1,0 +1,13 @@
+Attributes: ____ = "____" 
+Styles:     ____ : ____;
+    note that: there is an attribute is called style="" we write styles in it.
+    href=""         style  =  "color   :   red"        
+    attribute       attribute  property    value
+
+<span style="color:blue"> </span>:
+    -to color the text that written in it.
+
+<pre> </pre>:
+    -html properties remove all spaces between the words in it, 
+    -when u use the pre tag, u force html to write the spaces and underlines in the web page.
+    -also can used to show code in your page.(code should be written in a specific style).

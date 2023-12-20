@@ -1,0 +1,169 @@
+What is HTTP protocol:
+    Stands for hypertext Transfer Protocol.
+    Tell us how the web works.
+    HTTP is the messenger in the web.
+    The most used [internet] protocol in the world.
+    It's defined by a set of precise rigorous rules.
+
+    HTTP is a tcp/ip based application layer protocol,
+        that allows web based applications to communicate and exchange data.
+
+    Computers that's communicate via the HTTP must speak the HTTP protocol.
+
+    We use the HTTP protocol,
+        because it is a convenient way to quickly and reliably move data on the web 
+
+    
+    It is an [application layer] protocol,
+        that allows web based applications to communicate and exchange data.
+
+    It is tcp/ip based protocol and it is used to deliver contents (eg. images, videos, audios, documents, etc).
+    
+    Servers and Cleints must communicate with each other using HTTP protocol.
+
+    HTTP was created first to fetch HTML documents and sends it back to the client,
+    so we can say that the HTTP was designed for the web in the first place,
+    that's all what the HTTP was doing in the 1991, 
+    and it didn't support other media types [just delivering HTML documents].
+    
+    But because it was designed in an exquisite way,
+    and it was being continually evolved with amazing features were being added to it,
+    it became the most convenient way to quickly and reliably move data on the web, 
+    It has alot of amazing features.
+
+
+----------------------------------------------------------------------------------------------------------------
+Three Important Things about HTTP protocol[HTTP protocol features]: 
+    1-HTTP can deliver any sort of data as long as the two computers are able to read it.
+    2- HTTP protocol is a [connectionless protocol]:
+        The computers that communicate via the HTTP -as we said in a request response cycle-
+        after making the request, the two computers disconnects from each other,
+        and when the response is ready the connection reestablishes again to deliver the response, then it closes.
+
+    
+    
+    3-HTTP protocol is a [stateless protocol] 
+        the client and server know about each other just during the current request,
+        if the connection closes completely and the two computers want to connect again,
+        they need to provide information to each other again, and the connection is handled as the very first one.
+
+    -there are other important things in features about the HTTP.
+
+
+----------------------------------------------------------------------------------------------------------------
+How the Internet Works: 
+    To make any 2 devices in the world being connected with each other,
+        you have to put a physical cable, that's connected the 2 devices with each others, 
+        [That's what is internet doing], 
+        Internet mean that we put all devices in a one network, to enable communicating between them. 
+
+        But it's necessary to use some protocols(like TCP/IP protocol),
+            to organize the connection between different devices,
+        
+        So, the job of the internet using the tcp/ipsuite of protocols:
+            is to establishes the connection using a combination of cable media and wireless media,
+            and do all the necessary work to prepare the environment for the two computers to talk 
+
+
+How the web works using HTTP protocol [Request-Response-cycle]:
+    after a physical connection has been established between different devices (using internet and it's protocols),
+        
+    How can we Transfer data(either html web pages, or other types of data...) between them ?!!
+
+    [Via the HTTP protocol],
+    When cleint wants to send request to the server: 
+        1- The connection establishes,
+        2- The client sends a request called an HTTP message
+            -and because the HTTP is a connectionless protocol
+            the client disconnects from the server waiting for the response-
+        
+    The server on the other side: 
+        1- process the request,
+        2- prepare the response,
+        3- establishes the connection again
+        4- and send back the response again in form of an HTTP message to the client.
+
+    then the two computers completely disconnect from each other until there was a new connection need to establish, 
+    they will establish a new completely connection.
+    
+
+----------------------------------------------------------------------------------------------------------------
+HTTP is a protocol it is defined by a set of precise rigorous rules:
+
+HTTP Messages consists of three main sections 
+    1- [THE START LINE] it's located on the top of the message.
+    2- [THE HEADERS] it's on the middle of the message.
+    3- [THE BODY] it's located at the buttom of the message. 
+    
+    The three sections contain plaintext information -unless if the body contains binary data-
+    but in general HTTP messages are plain text and easy to read.
+    
+    The information in the three sections very dependent on the HTTP message
+    -whether it is a request or a response-
+    A request HTTP message differs from a response one.
+
+
+    -------------------------------------------------------------------------------------------
+The components of the HTTP request in the case of [Request HTTP message]: 
+    1- [The start line contains]:
+        -[The method] GET, POST, DELETE, PUT, etc...:
+            The method is a sort of command from the client,
+            It tells the server what it should do,
+                for example -give me data -delete this -put this in the database.
+        
+                there are two well-known HTTP methods:
+                1- GET: tell the server to send you the data(displaing a web page on the browser).
+                2- POST: to tell it to store data in the database.
+                and there are others such as put delete etc, 
+
+
+        -[The URI] complete path or the request:
+            The URI Uniform Resource identifier:
+                URI is a set of readable characters,
+                in a way to locate the resources we are requesting from the server
+                for example in our case is "products/myproducts.HTML".
+
+
+        -[The HTTP version] what is the http version that the cleing use? eg. 1, 2, etc...:
+            HTTP version that the client is using,
+            so that the server understands the message well 
+        
+
+    2- [The headers] specifies some information in rules:
+        are basically name value pairs and there can be a lot of headers
+        -The host:
+            The address of the server to which we are sending the request (like www.cms.gov.com).
+
+        -Accept:
+            What are the languages that's cleint can understand (like en-us).
+
+        -Accept language:
+            What type of the files that's cleint can request, 
+            it holds a miami type has its value (like type/extension).
+        
+
+    3- [The Body]: if it's nedded in the request.
+
+
+    -------------------------------------------------------------------------------------------
+The components of the HTTP request in the case of [Response HTTP message]: 
+    1- [The start line contains]:
+        In the response we don't have the method or the URI, we there is no need to them here
+        -[The HTTP version] what is the http version that the cleing use? eg. 1, 2, etc...:
+            HTTP version that the client is using,
+            so that the server understands the message well 
+
+        -[Status Code]:
+            This code tells the client if the request succeeded or failed,
+            it may contain 200:ok which means the request succeeded,
+            or it may contain 404:file not found status code 
+            and there are other codes.
+
+            
+    2- [The headers]:
+        are basically name value pairs and there can be a lot of headers
+        -except language.
+
+        -content length.
+
+    3- [The Body]: contains the requested file.

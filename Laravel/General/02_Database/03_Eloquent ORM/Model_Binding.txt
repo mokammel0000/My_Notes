@@ -1,0 +1,20 @@
+Model Binding: 
+    Binding Route with it's record in the Model,
+        then u don't need to find() the record in the controller.
+
+
+eg. 
+    use App\Models\User;
+    
+    Route::get('/users/{user}', function (User $user) {
+        return $user->email;
+    });
+
+Note that: 
+    the Model name that u write in the parameter, must be similar to the Model name in the Route
+    in other words: 
+        u can't do that: 
+            #Route::get('/users/{user}', function (User $theUser) {
+            #    return $theUser->email;
+            #});
+        Laravel can't bind the model variable on the route with the parameter in the action.

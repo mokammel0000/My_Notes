@@ -1,0 +1,76 @@
+To visit a website: 
+    1- Fire up your browser.
+
+    2- Enter the domain of the website, 
+        u can write http/ before it, or if u ignore it, browser will add it automatically.
+
+    3- Browser contacts a DNS domain name system server
+        -which is basically like a huge dictionary where each domain name is mapped to an IP-
+        and then they offered this DNS server translates your domain into an IP address.
+    
+    4- This IP address is then given to the browser,
+        and with that the browser can actually make that [request] to the server,         
+        
+    5- Then server will generate the source code to return it as a [response].
+
+    6- Browser will display the content of the returned response(returned source code).
+
+
+----------------------------------------------------------------------------------------------------------
+Request is a package of data that contains: 
+    1- URL,
+    2- The type of request(get | post | Put | Delete),
+    3- if u want to send data(post request): Request will contain it,
+        if you're only requesting something or only want to get something, Request then will have NO data,
+    4- some metadata so called [headers]
+
+
+----------------------------------------------------------------------------------------------------------
+Response also is a package of data that contains what you're getting back from the browser:
+    1- HTML code that should be rendered,
+    2- some metadata
+
+
+----------------------------------------------------------------------------------------------------------
+The core technologies to make the web works are: 
+    1- Http, Https protocols: 
+        to transfer data between server and cleint in a standard way.
+
+    2- Html, Css, JavaScript: 
+        to display data on cleint's browser.
+
+----------------------------------------------------------------------------------------------------------
+Frameworks:
+    -are basically packages of utility functions.
+    
+    -give you some rules on how to use them.
+    
+    -make writing code simply easier because you don't have to reinvent the wheel for all the nitty-gritty details. 
+
+    -you can focus on your business logic,
+        and things like parsing incoming requests and so on is done by such a framework
+        so that you don't have to manually go through all the lines of an incoming request
+
+        instead of writing the parsing logic -which would always be the same-
+            you just get the finished parse data, and deal with it(make your own business with this data).
+
+
+    Frameworks at Frontend: 
+        You might have applications where a lot of stuff is happening with the help of JavaScript 
+        to provide a nicer user experience where you don't always need to fetch new pages for every click the user does,
+        but where you want to show an overlay? where you want to change content on the page while the user is on the page?
+        that's why we use frameworks, you don't have to write the logic on how the change happens on the page
+        but instead you just write a logic for what should change when and the framework takes over and dusty heavy-lifting.
+
+    so frameworks all's an important part of web development but of course a part that is
+    typically hidden away from you if you're just visiting pages.
+
+
+----------------------------------------------------------------------------------------------------------
+Real Time messaging: 
+    It's an advanced technology, 
+    where you don't have request response,
+    but where the server can actively push a new message to the client 
+    so the client never sent a request but gets new data anyways through an established connection
+    with the technology named WebSockets
+----------------------------------------------------------------------------------------------------------

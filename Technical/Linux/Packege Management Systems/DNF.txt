@@ -1,0 +1,12 @@
+DNF:
+    stands for Dandified Yum
+    is the successor to YUM (Yellow-Dog Updater Modified). 
+
+    is a higher-level package management tool that relies on RPM underneath.
+    It was introduced (as a replacement for Yum), providing additional features and improvements.
+
+    is more user-friendly and handles dependency resolution.
+    When you install a package with DNF, it (automatically resolves and installs the required dependencies).
+
+    also supports modular repositories, making it easier to manage software versions and configurations.
+    interacts with RPM in the background, using it to install and manage packages.

@@ -1,0 +1,27 @@
+Controller is the link between all laravel components, 
+    it request the user requests and act with it, then he respond with them, 
+    it deals with the DB, either using ORM, or using DB query builder.
+    it can respond with returning data to user, returned data can be: 
+    1- Html (for browsers) 2- json format (for mobiles) 3- XML.
+
+Each object in your project should have a specific controller, to Fetch it's data and deal with it's logic, 
+    [Categories, Products, Photos, Users, Orders, Cart, ...etc]
+
+Controllers Contains Logic and Calculations in the System,
+    -don't use Call Back Route except you need it.
+    -also don't write any Logic or Calculations in the view, for the next reasons: 
+        1- To reuse the view template without alot of modifications. 
+        2- To send data to the various views,
+            suppose u write some Calculations in the web view,
+            then the mobile app developer must write them in his application,
+            some problems can appear like: Different results between web and mobile.
+        
+        Write all logic and Calculations in an action in a controller and send it to all views, 
+        unless it was simple Calculations, like sum 2 numbers, let them do it.
+
+Each task has it's own Controller to perform it's actions, 
+    -Controller method will be performed when we call it's route, 
+    -it take the parameters using request() or $request.
+
+    -Controller fetch the data from DB using ORM or Qurey Builder
+    -and then pass it to the view using COMPACT().

@@ -1,0 +1,27 @@
+"echo" command is used to display text or variables on the terminal's output.
+    It is often used for 
+    1- printing messages,
+    2- displaying the values of variables,
+    3- or Writing to files: By using the redirection operator (">") or (">>")
+
+echo Hi  
+echo Hi > Osama.txt     (create the file if it isn't exist or override it's value if it exist)
+echo Hi >> Osama.txt    (create the file if it isn't exist or append to it's value if it exist)
+-----------------------------------------------------------------------------------------------
+
+
+"cat" command is used to display the contents of one or more files on the terminal's output.
+    The name "cat" stands for "concatenate"
+    as it can be used to concatenate and display the contents of multiple files together.
+
+cat osama.txt               (اعرض محتوى الفايل)
+cat osama.txt mohamed.txt   (اعرض محتوى ال 2 files)
+cat *                       (اعرض محتوى كل الفايلات الي موجوده في الفولدر عندك)
+    [this operator (*) is called whild card character]
+
+
+cat last.txt > osama.txt    (copy last.txt in osama.txt (override))
+cat last.txt >> osama.txt    (copy last.txt in osama.txt (appending))
+
+cat one.txt two.txt three.txt four.txt > Final.txt
+cat one.txt two.txt three.txt four.txt >> Final.txt

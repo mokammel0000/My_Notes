@@ -1,0 +1,10 @@
+When you fetch any data in the query, try to filter it in the query to use it directly in the view, 
+    do NOT fetch the whole table and it's relatoins and then loop in all this query in the View.
+
+What is the better? 
+    fetch 10000 record and store them in RAM,
+        and make a condition in the loop to choose who is the propper to display in the view?
+
+    or to fetch 400 record and loop on them in the View directly? (it's better in the speed and memory)
+
+Try to fetch a customized data as it is possible....

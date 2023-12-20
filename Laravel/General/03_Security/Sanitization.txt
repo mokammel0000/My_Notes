@@ -1,0 +1,7 @@
+Sanitization
+    is the process that u make sure that the data has no virsus with it,
+    or make sure that the data isn't harmful for your system.
+
+    eg.
+    Make sure that there is no SQL code in the entered data.
+    Make sure that there is no HTML code in the entered data.

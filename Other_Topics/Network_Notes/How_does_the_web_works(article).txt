@@ -1,0 +1,40 @@
+When we say web we don't mean websites only, 
+    [Web mean any technology that's dependened on the cleint-server requests by exchanging data between them].
+    data can be:
+        html file if the cleint was a Website(webpage, website, webApplication), 
+        JSON File if the cleint was a (mobile app - smart machine-use IOT- etc...). 
+
+
+-------------------------------------------------------------------------------------------------------------        
+How Websites Work
+    Let's start with the most obvious way,
+    You visit a website using the internet
+    The moment you enter this address in your browser and you hit ENTER, a lot of things happen:
+    
+    1- The URL gets resolved:
+        DNS servers translate domain to IP addresse, and then redirect u to the target server.
+    
+    2- A Request is sent to the server of the website:
+        After resolving the IP address,
+        The browser goes ahead and makes a request to the server with that IP address.
+
+        Request bundles up a bunch of information
+            (what is the current url? - Which kind of request should be made? - Should metadata be attached? -...)
+            (also request may contain some data that must be sent to server(like some inputs from a form)),
+        and sends that data package to the IP address.
+
+    3- The response of the server is parsed:
+
+        At the end, a response has to be sent.
+        That response can contain the  website page or can contain any data including files or images.
+
+        The browser checks the data and metadata that's enclosed in the response.
+            And based on that, it decides what to do, 
+            for example the response would contain a specific piece of metadata,
+            that tells the browser that the response data is of type text/html.
+
+    4- The page is rendered and displayed
+        the browser goes through the HTML data returned by the server and builds a website based on that.
+
+        The browser knows how to parse HTML and now simply goes through the entire response data
+        (also called "the response body") to render the website.

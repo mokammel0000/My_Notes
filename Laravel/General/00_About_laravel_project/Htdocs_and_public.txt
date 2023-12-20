@@ -1,0 +1,17 @@
+HTACCESS: 
+
+
+HTDOCS:
+    is the public folder in xampp virtual server, 
+    public folder means that it's accessable to all users,
+    [any files out this file will not be able to see for them.]
+
+    so we put server files out of the htdocs account.
+
+
+public Folder in laravel: 
+    contain all the folder's that's must be accessable by the user, 
+    [css, javascript, images, fonts, favicon, index.php]
+    the index.php file is the entry point for all website routes, so it must be added in the public folder.
+
+    anything that's related to DB or actions that's been calculated, put it outside public.

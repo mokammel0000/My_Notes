@@ -1,0 +1,26 @@
+->first()	Place the column "first" in the table (MySQL).
+->after('column')	Place the column "after" another column (MySQL).
+
+
+->unsigned()	Set INTEGER columns as UNSIGNED (MySQL).
+->autoIncrement()	Set INTEGER columns as auto-incrementing (primary key).
+
+
+->nullable($value = true)	Allow NULL values to be inserted into the column.
+->default($value)	Specify a "default" value for the column.
+->from($integer)	Set the starting value of an auto-incrementing field (MySQL / PostgreSQL).
+
+
+->charset('utf8mb4')	Specify a character set for the column (MySQL).
+->collation('utf8mb4_unicode_ci')	Specify a collation for the column (MySQL/PostgreSQL/SQL Server).
+
+
+->comment('my comment')	Add a comment to a column (MySQL/PostgreSQL).
+->invisible()	Make the column "invisible" to SELECT * queries (MySQL).
+->storedAs($expression)	Create a stored generated column (MySQL / PostgreSQL).
+->useCurrent()	Set TIMESTAMP columns to use CURRENT_TIMESTAMP as default value.
+->useCurrentOnUpdate()	Set TIMESTAMP columns to use CURRENT_TIMESTAMP when a record is updated (MySQL).
+->virtualAs($expression)	Create a virtual generated column (MySQL).
+->generatedAs($expression)	Create an identity column with specified sequence options (PostgreSQL).
+->always()	Defines the precedence of sequence values over input for an identity column (PostgreSQL).
+->isGeometry()	Set spatial column type to geometry - the default type is geography (PostgreSQL).

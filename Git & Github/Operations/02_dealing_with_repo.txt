@@ -1,0 +1,17 @@
+# To statge the current file(put it in the stage):
+git add                         # statge just the current file.
+git add .                       # statge all files that aren't be statged.
+
+
+# To remove file from statging: 
+git rm 'file_name'                  
+
+# To discard changes in the working directory
+git restore 'file_name'
+
+# To make a [real snapshot] that will be saved in Git Folder: 
+git commit                      # commit the current statged files
+git commit -m ""                # commit the current statged files with a message                       
+
+# If u want to return your projct to a specific commit.
+git checkout + 'commit_number'  

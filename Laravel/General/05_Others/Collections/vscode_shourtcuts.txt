@@ -1,0 +1,24 @@
+F12:    Inspect/ Developer Tools
+
+Tab: Inteligent Tab Completion,
+    To complete paths and common commands.
+
+ctrl k C
+ctrl k U
+
+ctrl [
+ctrl ]
+
+ctrl P          // بحث عن ملف داخل مشروع
+ctrl F          // بحث عن كلمة داخل ملف، أو صفحة ويب
+ctrl shift F    // بحث عن كلمة في ملفات المشروع كلها
+
+ctrl shift P                             // كتابة ال artisan commands 
+ctrl shift P + warp with abbreviation    // تغليف
+
+ctrl shift N    // إنشاء فولدر جديد
+ctrl B
+
+
+tr>td*4
+.row>.col-3

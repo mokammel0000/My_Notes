@@ -1,0 +1,4 @@
+F10
+system configrations
+Action keys mode
+enable/ disable

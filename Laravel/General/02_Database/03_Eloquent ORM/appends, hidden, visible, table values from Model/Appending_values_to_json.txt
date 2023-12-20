@@ -1,0 +1,31 @@
+Model see table attributes as a variables, what if we need to add a new variabel to it?!!!
+
+In the DB tables there are attributes, when using ORM We deal with table using Model, 
+    we can deal with the table attributes using the $fillable array, 
+
+ORM enables you to create your own attributes in the Model,
+    and u can deal with this attribute as the table attributes.
+
+eg. 
+    featured_photo attribute: 
+        this attribute returns the first photo of the product if it has more than one photo, 
+        also it returns the placeholder photo if the product has no photos in it's table.
+    price_with_sign_attribute: 
+        return the price value from the DB, and add a $ to it, to show the price with it's sign in all pages.
+
+IT'S hard to do this operations every time u need them in the controller or in the view,
+    (like adding $ every time u call the price, what if we need to replace $ with SAR)
+    if u want to change something in the attribute, u don't have to go to all views that show the attribute, 
+    u can edit it's function in the Appendig_values_to_Json and then it will be modified in all the views.
+    
+    so it's better to do this one in the Model, and retreive this attribute when u need it(as the real attributes).
+
+
+Code: // TAKE CARE OF THE NAMES: 
+    protected $appends = ['is_admin'];
+    protected function isAdmin(): Attribute
+    {
+        return new Attribute(
+            get: fn () => 'yes',
+        );
+    }

@@ -1,0 +1,24 @@
+MBR and GPT are two different ways of storing the partitioning information on a drive.
+
+MBR:
+    -stands for Master Boot Record.
+    -R is an older standard that was introduced in 1983.
+    -can only support up to 4 primary partitions per drive, or 3 primary partitions and 1 extended partition
+        with unlimited logical drives.
+    -MBR can only handle drives up to 2 TB in size. (مش هيقرأ أكثر من كده)
+    -MBR also stores a boot loader code that is used to start the operating system.
+    -MBR is more compatible with older systems and devices.
+    -[LEGACY BIOS] is needed to boot the OS from MBR hard-drive.
+
+
+
+GPT:
+    -stands for GUID Partition Table.
+    -is a newer standard that was introduced in 2010.
+    -can support up to 128 partitions per drive, and there is no limit on the partition size.
+    -also stores a backup copy of the partition table and a checksum for error detection and recovery.
+    -does not store a boot loader code,
+        but instead uses a special partition called EFI System Partition (ESP) that contains the boot files.
+    -GPT is more robust and secure than MBR,
+        but it requires a newer system that supports UEFI (Unified Extensible Firmware Interface).
+    -[UEFI BIOS] is needed to boot the OS from GBT hard-drive.

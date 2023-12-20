@@ -1,0 +1,13 @@
+Seeder enables u to seed some data in DB,
+    -u specify which table u will seed data into it, and the number of records that will be seeded.
+    -u can create a new seeder to each Model, or u can use the DataBaseSeeder Class to seed data into any table.
+    eg. seeding Administrator data in the users table.
+
+Important Note: don't manually add records to the DB tables, that will done in your own device, 
+    but your project members will not see that, use seeder to do that automatically.
+
+------------------------------------------------------------------------------------------------- 
+Factory can generate dummy data for you so,
+    -u specify the datatypes of the generated data.
+    -u can use it to generate date, then seeder will seed it in the DB, 
+    -note that: Factory use [Faker php package] to generate data.

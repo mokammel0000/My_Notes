@@ -1,0 +1,23 @@
+GET|HEAD: 
+    -Fetch the data from the server to show it in the cleint side.
+    -any traditional link (a) is considered as a get route.
+    -Returning some data, or returning a View.
+
+POST
+    -Sending data to the server.
+
+
+DELETE
+    -Deleting data from the server.
+
+
+PUT| PATCH
+    -Uploading data to the server(photo| file).
+
+
+in the HTML forms: there is no DELETE or PUT methods,
+    so make it POST method and then use the @method('DELETE') to inform route that it isn't a traditional POST.
+
+DELETE AND PUT methods are new standardes of http protocol,
+    if u want to ignore them, do it, and make form post as it is, 
+    but in this case you can't use category resource...

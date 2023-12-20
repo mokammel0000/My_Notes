@@ -1,0 +1,69 @@
+[Carbon] is the most popular package to deal with DATES, 
+    it's downloaded in laravel by default.
+
+Carbon methods can't be applied to any date, it can be applied only on a specific format.
+    Laravel make the TimeStamp dates in this format, so can use Carbon methods on them directly.
+
+
+---------------------------------------------------------------------------------------------------
+[Guzzlehttp] is a PHP HTTP client library, (تبعت ريكويست على دومين موقع آخر، وتستقبل الناتج)
+    it give u the ability to use other websites apis,
+    u can give it the link, and the form method(get/ post), and the required data,
+    and it will response to u,
+    giving u: all informations about your response(status code, header line, response body-the real data-).
+
+
+eg. 
+    using a weather website, 
+    using a Currency exchange website, (موقع تحويل عملات).
+
+
+Note that: 
+    it return a json file for you, u can convert it to an assosiative array.
+
+
+---------------------------------------------------------------------------------------------------
+[Packegist] is The PHP Package Repository, in other words [Php packages search engine], 
+    u can use it to search about any package in php, 
+    u can get the composer command for any php package to download it, 
+    u can know the most popular commands in this package
+        to know more informations about it, u can go to it's website.
+
+
+    Note that, u can use it with native php project, not just Laravel projects
+
+
+---------------------------------------------------------------------------------------------------
+[Intervention_Image]:
+If u enabel users to upload images in your website,
+    each one will upload photos with different attributes(size, extension, quality)
+
+    Then if u want to show these photos in your page,
+    you will find it misrable (each photo will be shown in a some way that's differ from others).
+
+you can leave the front-end developer deal with this dilemma, but it's solutions will not be effecient, 
+    photo will be pixiled, will be cropped from an important part, aspect ratio will be bad, ...etc.
+
+
+So, it's important to deal with photos in the backend part, before storing it: 
+    to do that: 
+    u can use some packeges in php or in laravel to facilitate things, the famous packeges are: 
+
+
+If u write Native php code: [Image proccessing and Generation/ GD and Image Functions]
+                            [GD Library and Imagick Library].
+            but u will write a bunch of code...
+
+
+Using Laravel: [Intervention Image], is a php packege,
+    You can consider it as a small photo Editor, 
+    using it, u can do the following: 
+        -check if it's a photo or not, 
+        -convert it's type from one to another(for example: .jpg to .png),
+        -Reasizing the photo(don't change the aspect ratio Otherwise it will be a bad photo), 
+            package can help u keep the photo with the same aspect ratio.
+        -write on the photo, 
+        -blur some parts of it, 
+        -rotate it, 
+        -adding Filters, 
+        -Crop some parts.

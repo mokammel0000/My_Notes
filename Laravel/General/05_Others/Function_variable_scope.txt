@@ -1,0 +1,6 @@
+Function can't see any variable expect those who are defined in it's parameters, 
+if u want to use an outer variable, write it in the use() in the signature of the Function.
+
+public function print($x) use($y){
+    echo($x + $y);
+}

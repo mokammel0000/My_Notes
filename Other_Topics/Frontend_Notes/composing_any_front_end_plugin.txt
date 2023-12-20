@@ -1,0 +1,15 @@
+1- download all it's files(css and javascript) and compose it in your project,
+    put it's files in the public folder.
+
+2- link it's files with your main code(css and javascript).
+
+3- Important: 
+    look if this plugin is depended on any other library/ plugin(like Jquary, Bootstrap or Fontawsome),
+    You must download and link it's dependancies to use it...
+
+4- Use it in your code  
+    note that: 
+        -if this plugin using other plugin(for example Jquary),
+            write it's code after link your project with Jquary 
+
+        -ممكن يكون مربوط بتنفيذ فانكشن معينه، إعملها كاال عشان يتنفذ

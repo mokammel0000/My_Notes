@@ -1,0 +1,48 @@
+DML 
+    stands for Data manupulation language. 
+    DML basic operations        (Select - Insert - Update - Delete) values on the table, 
+    the same as CRUD operations,  read -  create - update - delete.
+
+
+DML commands: 
+    -insert into users values(_, _, _, _, _, _);     // number of the values should be as the same as number of attributes on the table.
+                                // values
+
+    -insert into users (_, _, _ ) values (_, _, _);   // putting values to only mentioned columns.
+                    // columns names     // values
+                        
+    -insert into users set
+            column_name = value, 
+            column_name = value, 
+            column_name = value, 
+            column_name = value, ;                           // this form only used in mysql
+
+
+    -----------------------------------------------------------------------------------------------------------------
+    -select * from users;
+
+    -select _, _, _, _, _ from users;
+
+           columns_names
+    -select * from users where id=3;
+
+    -select _, _, _, _, _ from users where id=3;
+
+    Note that: 
+        u can filter the query using table_attributes, or using table_records;
+
+
+    -----------------------------------------------------------------------------------------------------------------
+    -update users set column_name = value;
+    Note that: u must write a filter at the end ot the previous query
+               to prevent it from modifing all the records in the table.
+
+
+    -----------------------------------------------------------------------------------------------------------------
+    -delete from users;    // it's a disaster, don't use this query, it will delete all data from the table.
+    
+    -delete from users where _ = _;  //it will delete the whole record.
+
+
+    Note that: if any record will be deleted, it's [id] will be deleted
+               but No new record can take the deleted id, it's possible that's id was linked to some objects using relations...

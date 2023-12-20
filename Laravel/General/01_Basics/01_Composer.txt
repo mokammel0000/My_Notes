@@ -1,0 +1,75 @@
+[Comboser] is A Dependency Manager for PHP
+u can use it in 
+    -download packages and it's dependancies.
+    -upgrade/ downgrade packege if it needed.
+    -install the same versions of packages as it is in your team project, to avoid conflict.
+    -autoload the packages in your website.
+
+    before composer there were some problems that's related to packeges, like: 
+    -conflicting between package and code in your project.
+    -conflicting between package and other packeges.
+    -conflicting between packages versions.
+    -There is no autoloading for packages, u must autoload them manually,
+        [using include, or using autoload function in php].
+    -There is no possibility to share the same version with your team-mates to install the same version, 
+        at some cases, the different between versions will raise errors.
+
+Composer
+    -Dependancy manager for php packeges [مدير إدارة الباكيجات الخارجيه].
+    -u shold setup it, in your machine before use it, 
+        and to setup it, u must setup php on the same machin. 
+
+----------------------------------------------------------------------------------------------------------
+Benifits of using composer: 
+
+    -Autoload the packages that u need in a specific file.
+
+    -Unifing the style that's followed to write any code of any php package,
+        then you will not find any conflicts between packages and each others.
+
+    -If u install any package, it will install it's dependancies with it.
+
+    -Can update any package in your project,
+        also can go back to an old version.
+
+    -installing the same versions on your project-mates(to avoid conflicts),            --->install
+    or u can install the same packages in their project but install the updated version.--->updated
+
+
+----------------------------------------------------------------------------------------------------------
+Composer Commands:
+    -composer init: initilizing a new project,
+                   usually u don't need this command, laravel do this command for u.
+
+    -composer require: to download an outer package, and install it in your project.
+
+    -composer install: to install the packages on other project with the [same] versions.
+
+    -composer update: to install the packages on other project with the [updated] versions.
+
+    -composer dump-autoload: to reload the composer.json file.
+
+----------------------------------------------------------------------------------------------------------
+When u install Composer in any project, there are three files must be showen:
+
+    -composer.json: what are the packages in the project, and it's [older] versions.
+                    if u install packages that are in your friend's project, 
+                    there names and versions will be added to composer.json and composer.lock, 
+                    if u want to update these packages, [composer.json will not be changed].
+
+    -composer.lock: what are the packages in the project, and it's [newer] versions.
+                    if u install packages that are in your friend's project, 
+                    there names and versions will be added to composer.json and composer.lock, 
+                    if u want to update these packages, [composer.json will be changed].
+
+    -Folder "Verdor": 
+                    contains packages files, 
+                    don't try to modify it, only use it in your project. 
+                    contains autoloadin file, so u don't need to include any package from it.
+                    [don't forget: require the autoload file, to enable it autoload files in your project.]
+
+
+----------------------------------------------------------------------------------------------------------
+Note that: 
+    Laravel can be considered as a composer package, u can install it using composer.
+    
