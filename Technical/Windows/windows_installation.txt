@@ -1,14 +1,15 @@
-1- Install windows.
+1- Install windows(don't sign in to outlook account - sign in as a local account).
 
 2- Install Updates,
     active the >>> buttom, to let him install updates once it's downloaded.
 
-3- register with your university email, 
+3- Register with your university email, 
     go to Accounts-> [access work or school]. 
 
-4- install google chrome and login with your gmail,
-    and download all your programs and data.
+4- Install Office and it's packages. 
 
+5- Install google chrome and login with your gmail,
+    and download all your programs and data.
 
 
 

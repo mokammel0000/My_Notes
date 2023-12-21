@@ -1,0 +1,29 @@
+1-Pressing the power button: 
+    -Sends a signal to the power supply unit (PSU) to start providing power to the computer's components.
+
+2-CPU: 
+    -The central processing unit (CPU) is the first component to receive power.
+    -The CPU checks if the essential hardware components (RAM, CPU, GPU, etc.) are functioning properly.
+
+3-BIOS/UEFI Initialization:
+    -There is a firmware that's stored on a chip on the motherboard that's called BIOS/ UEFI.
+        if your hard is MBR---> BIOS (Basic Input/Output System).
+        if your hard is GPT---> UEFI (Unified Extensible Firmware Interface).
+    -The BIOS or UEFI is activated.
+    -This firmware provides the basic instructions for the hardware components.
+    -The BIOS/UEFI: 
+        -performs system checks,
+        -initializes the hardware(mouse - keyboard - printers - etc...),
+        -and identifies connected devices.
+
+4-Boot Loader and Operating System Loading:
+    -The BIOS/UEFI hands over control to the bootloader, which is typically part of the operating system (OS).
+    -The bootloader loads the operating system into the computer's memory (RAM)
+        from the storage device (usually a hard drive or SSD).
+
+5-Kernel Initialization:
+    -The operating system's kernel is loaded into memory and takes control of the system.
+    -The kernel initializes drivers and establishes communication with hardware components.
+
+6-OS Working: 
+    -the operating system loads the user interface or desktop environment.

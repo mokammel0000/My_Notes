@@ -7,9 +7,13 @@ sudo dnf --refresh upgrade
 
 -----------------------------------------------------------------
 [Brave]: Flathub
+    -Privacy & Security Settings.
+    -Free VPN.
+    -Reader Mode.
+    -Stop Autoplay.
 
 -----------------------------------------------------------------
-[vscode]:  Flathub
+[vscode]:  From Terminal (to use shourtcuts Effictively)
 [vscodium]:  Flathub
 
 -----------------------------------------------------------------
